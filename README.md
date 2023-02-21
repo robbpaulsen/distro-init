@@ -19,5 +19,11 @@ mkdir -p $HOME/Documents/code/ $HOME/Documents/code/bash/ $HOME/Documents/code/p
 2. Adding $USER to groups and setting permissions
 
 ```
-sudo usermod -aG adm,disk,lp,mail,proxy,dialout,fax,voice,cdrom,floppy,wheel,audio,,www-data,video,plugdev,input,kvm,netdev,i2c,redsocks,kismet,postgress,tcpdump,bluetooth,redis,mosquitto,scanner,wireshark,docker,vboxusers,vboxsf,storage,http $USER
+sudo usermod -aG adm,disk,lp,mail,proxy,dialout,i2c,fax,voice,cdrom,flatpak,floppy,ftp,wheel,audio,,www-data,video,plugdev,input,kvm,netdev,i2c,redsocks,kismet,postgress,tcpdump,bluetooth,redis,mosquitto,rfkill,scanner,wireshark,docker,vboxusers,vboxsf,storage,http $USER
+```
+
+3. Before Updating/Upgrading I always tweak some configuration files from the pkg manager for faster downloads and setup parallel tasks
+
+```
+On Arch based distro edit the /etc/pacman.conf file, read it carefully and lookup for a line that has the word "PARALLEL" and depending on how many Cores your machine has the usual 
 ```
