@@ -32,3 +32,41 @@ sudo usermod -aG adm,disk,lp,mail,proxy,dialout,i2c,fax,voice,cdrom,flatpak,flop
 On Arch based distro edit the /etc/pacman.conf file, read it carefully and lookup for a line that has the word "PARALLEL" and depending on how many Cores your machine has, the usual VOXPOPULI choice is to set to either "4" or "8", even if your machine is of great power keeping in mind that I refer to regular house hold mother board and Ryzen 7 or 5.
 ```
 
+4. Programming language toolchains installation:
+
+```
+# Scripts to auto download, create direcotries, setup and config in one bash script Golang, rustlang, cargo, nvm, npm, node,yarn, and other tools and pkg.
+
+wget https://golang.google.cn/dl/go1.*linux-amd64.tar.gz $HOME/Downloads
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf $HOME/Downloads/go1.*amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.zshrc
+echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.profile
+echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.bashrc
+source $HOME/.profile
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh    # This oneliner installs Rust and all the toolchain headless, no need to intervene
+
+# Adding Cargo tu env and then setting up local cargo call
+export PATH=$PATH:$HOME/.cargo/bin
+echo 'export PATH=$PATH:$HOME/.cargo/bin >> ~/.zshrc
+echo 'export PATH=$PATH:/usr/local/go/bin >> ~/.profile
+echo 'export PATH=$PATH:/usr/local/go/bin >> ~/.zprofile
+# source $HOME/.profile     # have to check why I added this source file command here
+
+# NVM headless installation
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source $HOME/.zshrc
+
+# NPM installation and setting the version
+cd
+nvm install --lts
+nvm use --lts
+nvm install 'lts/*' --reinstall-packages-from=default --latest-npm
+
+# Yarn installation with npm
+npm install --global yarn
+
+# Commented out installation via cargo, might be a better practice to source install
+#cargo install fd-find du-dust lscolors vivid bat hexyl xplr ripgrep arp-scan navi
+```
