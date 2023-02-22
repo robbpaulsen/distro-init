@@ -40,12 +40,12 @@ On Arch based distro edit the /etc/pacman.conf file, read it carefully and looku
 wget https://golang.google.cn/dl/go1.*linux-amd64.tar.gz $HOME/Downloads
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf $HOME/Downloads/go1.*amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
-echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.zshrc
-echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.profile
+echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.zshenv
+echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.zprofile
 echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.bashrc
-source $HOME/.profile
+source $HOME/.zprofile
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh    # This oneliner installs Rust and all the toolchain headless, no need to intervene
+curl https://sh.rustup.rs -sSf | sh -s -- --profile default --no-modify-path --default-toolchain nightly rustup-managed toolchain nightly && #  <---- just add the flags yo wish to install cargo and rust
 
 # Adding Cargo tu env and then setting up local cargo call
 export PATH=$PATH:$HOME/.cargo/bin
