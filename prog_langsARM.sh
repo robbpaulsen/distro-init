@@ -32,7 +32,8 @@ cd  &&
 
 # NVM headless installation
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
-source $HOME/.zshrc &&
+source $HOME/.zshrc 2>& /dev/null &&
+source $HOME/.bashrc 2>& /dev/null &&
 
 # NPM installation and setting the version
 nvm install --lts &&
