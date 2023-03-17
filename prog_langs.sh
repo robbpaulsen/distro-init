@@ -34,7 +34,7 @@ source $HOME/.bashrc &&
 # NPM installation and setting the version
 nvm install --lts &&
 nvm use --lts &&
-# nvm install 'lts/*' --reinstall-packages-from=default --latest-npm
 
 # Yarn installation with npm
 npm install --global yarn
+# nvm install 'lts/*' --reinstall-packages-from=default --latest-npm
