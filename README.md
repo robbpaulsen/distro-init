@@ -11,13 +11,13 @@ If by random chance you end up here and and have something to add or suggest it 
 1. Post install and in $USER home folder create all the directories needed
 
 ``` 
-mkdir -p $HOME/Projects/ &&
-mkdir -p $HOME/Documents/{code,drivers,projects,notes,reading,tools,writeups} &&
-mkdir -p $HOME/Documents/tools/prog_langs/src/ &&
-mkdir -p $HOME/Documents/tools/drivers/src/ &&
-mkdir -p $HOME/Pictures/wallpapers/ $HOME/.local/bin/ $HOME/.local/share/ $HOME/.local/share/fonts/ $HOME/.local/share/icons/ $HOME/.src/ $HOME/.src/drivers/ &&
-mkdir -p $HOME/.config/{autostart,bspwm,bat,lsd,fd,ripgrep,alacritty,kitty,polybar,dmenu,eww,nvim,vim,zsh,bash,xplr,ranger,sxhkd,i3,neofetch,nuclei,protonvpn,termshark,dunst,openbox,lxsession,tint2} &&
-mkdir -p $HOME/Documents/code/ $HOME/Documents/code/bash/ $HOME/Documents/code/python/ $HOME/Documents/notes/ $HOME/Documents/writeups/
+mkdir -p $HOME/Documents/{code,drivers,projects,notes,reading,tools}
+mkdir -p $HOME/Documents/tools/prog_langs/src
+mkdir -p $HOME/Documents/tools/drivers/src/8821au-20210708
+mkdir -p $HOME/Documents/tools/drivers/src/8814au
+mkdir -p $HOME/Pictures/wallpapers/ $HOME/.local/bin/ $HOME/.local/share/ $HOME/.local/share/fonts $HOME/.local/share/icons/ $HOME/.src/ $HOME/.src/drivers/
+mkdir -p $HOME/.config/{bspwm,bat,lsd,fd,ripgrep,alacritty,kitty,polybar,dmenu,eww,nvim,vim,zsh,bash,xplr,ranger,sxhkd,i3,autostart,neofetch,nuclei,protonvpn,termshark,dunst}
+mkdir -p $HOME/Documents/code/ $HOME/Documents/code/bash/ $HOME/Documents/code/python/ $HOME/Documents/notes/ $HOME/Documents/writeups/ $HOME/Documents/projects/
 ```
 
 2. Adding $USER to groups and setting permissions
@@ -37,36 +37,36 @@ On Arch based distro edit the /etc/pacman.conf file, read it carefully and looku
 ```
 # Scripts to auto download, create direcotries, setup and config in one bash script Golang, rustlang, cargo, nvm, npm, node,yarn, and other tools and pkg.
 
-mkdir -p $HOME/Documents/tools/prog_langs/src &&
-cd $HOME/Documents/tools/prog_langs/src &&
-wget https://go.dev/dl/go1.20.2.linux-amd64.tar.gz &&
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20* &&
-export PATH=$PATH:/usr/local/go/bin/ &&
-echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zprofile &&
-echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile &&
-echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bash_profile &&
-cd &&
-sleep 3 &&
+wget https://golang.google.cn/dl/go1.*linux-amd64.tar.gz $HOME/Downloads
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf $HOME/Downloads/go1.*amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.zshenv
+echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.zprofile
+echo 'export PATH=$PATH:"/usr/local/go/bin"' >> ~/.bashrc
+source $HOME/.zprofile
 
-curl https://sh.rustup.rs -sSf | sh -s -- --profile default --no-modify-path --default-toolchain nightly && #  <---- just add the flags yo wish to install cargo and rust
+curl https://sh.rustup.rs -sSf | sh -s -- --profile default --no-modify-path --default-toolchain nightly rustup-managed toolchain nightly && #  <---- just add the flags yo wish to install cargo and rust
 
-# Adding Cargo tu env and then setting up local cargo binary dir
-export PATH=$PATH:$HOME/.cargo/bin/ &&
-export PATH=$PATH:$HOME/.rustup/ &&
-echo "export PATH=$PATH:$HOME/.cargo/bin/" >> ~/.profile &&
-echo "export PATH=$PATH:$HOME/.cargo/bin/" >> ~/.zprofile &&
-echo "export PATH=$PATH:$HOME/.cargo/bin/" >> ~/.bash_profile &&
+# Adding Cargo tu env and then setting up local cargo call
+export PATH=$PATH:$HOME/.cargo/bin
+echo 'export PATH=$PATH:$HOME/.cargo/bin >> ~/.zshrc
+echo 'export PATH=$PATH:/usr/local/go/bin >> ~/.profile
+echo 'export PATH=$PATH:/usr/local/go/bin >> ~/.zprofile
+# source $HOME/.profile     # have to check why I added this source file command here
 
 # NVM headless installation
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
-source $HOME/.zshrc &&
-source $HOME/.bashrc &&
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source $HOME/.zshrc
 
 # NPM installation and setting the version
-# NPM installation and setting the version
-nvm install --lts &&
-nvm use --lts &&
+cd
+nvm install --lts
+nvm use --lts
+nvm install 'lts/*' --reinstall-packages-from=default --latest-npm
 
 # Yarn installation with npm
 npm install --global yarn
+
+# Commented out installation via cargo, might be a better practice to source install
+#cargo install fd-find du-dust lscolors vivid bat hexyl xplr ripgrep arp-scan navi
 ```

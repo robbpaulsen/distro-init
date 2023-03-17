@@ -1,0 +1,41 @@
+git clone https://github.com/Botspot/pi-apps.git &&
+git clone https://github.com/jmcerrejon/PiKISS.git &&
+git clone https://github.com/sayanarijit/xplr.git &&
+git clone https://github.com/thibmaek/awesome-raspberry-pi.git &&
+git clone https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials.git &&
+git clone https://github.com/RaspAP/raspap-webgui.git &&
+git clone https://github.com/archlinux/archinstall.git &&
+git clone https://github.com/pivpn/pivpn.git &&
+git clone https://github.com/FD-/RPiPlay.git
+git clone https://github.com/microsoft/IoT-For-Beginners.git
+git clone https://github.com/classy-giraffe/easy-arch.git
+git clone https://github.com/sudorook/archlinux.git
+git clone https://github.com/archlinux/archinstall.git
+git clone https://github.com/kimocoder/wifite2.git
+git clone https://github.com/hakandundar34coding/system-monitoring-center.git
+git clone https://github.com/kimocoder/realtek_rtwifi.git
+git clone https://github.com/classy-giraffe/easy-arch.git
+git clone https://github.com/classy-giraffe/RemoteSSH.git
+git clone https://github.com/microsoft/IoT-For-Beginners.git
+git clone https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials.git
+git clone https://github.com/pivpn/pivpn.git
+git clone https://github.com/classy-giraffe/easy-arch.git
+git clone https://github.com/hakandundar34coding/system-monitoring-center.git
+git clone https://github.com/morrownr/8814au.git
+git clone https://github.com/morrownr/8821au-20210708.git
+git clone https://github.com/morrownr/Monitor_Mode.git
+git clone https://github.com/morrownr/USB-WiFi.git
+git clone https://github.com/trickest/scripts.git &&
+git clone https://github.com/arturoherrero/command-line-one-liners.git &&
+git clone https://github.com/D4Vinci/One-Lin3r.git &&
+git clone https://github.com/onceupon/Bash-Oneliner.git
+
+
+
+---
+Para android:
+
+https://github.com/kimocoder/monitorer.git
+---
+wget -qO- https://raw.githubusercontent.com/actionschnitzel/PiGro-Aid-/installer/install.sh |bash &&
+
