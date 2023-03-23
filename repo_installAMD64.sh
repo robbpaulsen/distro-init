@@ -18,35 +18,35 @@ git clone https://github.com/morrownr/8821au-20210708.git $HOME/.src/drivers/882
 
 cd $HOME/Documents/tools/xplr/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/xplr/ &&
+cargo install --all-features --path=$HOME/Documents/tools/xplr/ &&
 cd $HOME/Documents/tools/bat/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/bat/ &&
+cargo install --all-features --path=$HOME/Documents/tools/bat/ &&
 cd $HOME/Documents/tools/fd/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/fd/ &&
+cargo install --all-features --path=$HOME/Documents/tools/fd/ &&
 cd $HOME/Documents/tools/vivid/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/vivid/ &&
+cargo install --all-features --path=$HOME/Documents/tools/vivid/ &&
 cd $HOME/Documents/tools/lsd/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/lsd/ &&
+cargo install --all-features --path=$HOME/Documents/tools/lsd/ &&
 cd $HOME/Documents/tools/oxker/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/oxker/ &&
+cargo install --all-features --path=$HOME/Documents/tools/oxker/ &&
 cd $HOME/Documents/tools/navi/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/navi/ &&
+cargo install --all-features --path=$HOME/Documents/tools/navi/ &&
 cd $HOME/Documents/tools/mdBook/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/mdBook/ &&
+cargo install --all-features --path=$HOME/Documents/tools/mdBook/ &&
 cd $HOME/Documents/tools/dust/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/dust/ &&
+cargo install --all-features --path=$HOME/Documents/tools/dust/ &&
 cd $HOME/Documents/tools/ripgrep/ &&
 cargo update &&
-cargo install --enable-all-features --path=$HOME/Documents/tools/ripgrep/ &&
+cargo install --path=$HOME/Documents/tools/ripgrep/ &&
 cd
 
-## ---> cd $HOME/.src/drivers/8814au/ && # have to further tink around with the installation to make it more automated
-## ---> cd $HOME/.src/drivers/8821au-20210708 # have to further tink around with the installation to make it more automated
+## cd $HOME/.src/drivers/8814au/ && # have to further tink around with the installation to make it more automated
+## cd $HOME/.src/drivers/8821au-20210708 # have to further tink around with the installation to make it more automated

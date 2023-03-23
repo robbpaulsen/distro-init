@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo usermod -aG adm,disk,lp,mail,proxy,dialout,i2c,fax,voice,cdrom,flatpak,floppy,ftp,wheel,audio,,www-data,video,plugdev,input,kvm,netdev,i2c,redsocks,kismet,postgress,tcpdump,bluetooth,redis,mosquitto,rfkill,scanner,wireshark,docker,vboxusers,vboxsf,storage,http $USER
+sudo usermod -aG network,adm,wheel,rfkill,video,audio,ftp,input,kvm,lp,http,vboxsf,avahi,dhcpcd,git,openvpn,usbmux,nvidia-persistenced,kismet,wireshark,ldap,flatpak,vboxusers $USER
