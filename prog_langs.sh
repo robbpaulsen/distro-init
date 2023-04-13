@@ -16,18 +16,19 @@ export PATH=$PATH:/home/$USER/.rustup &&
 
 # Golang unattended installation
 cd $HOME/.src/prog_langs/ &&
-wget https://go.dev/dl/go1.20.2.linux-arm64.tar.gz &&
+wget https://go.dev/dl/go1.20.3.linux-arm64.tar.gz &&
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.2* &&
 export PATH=$PATH:/usr/local/go/bin &&
 export PATH=$PATH:/home/$USER/go/bin &&
-# --> echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zshenv && 
-# --> echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zprofile &&
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zshenv && 
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zprofile &&
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile &&
 cd  &&
 ---
 
 # NVM headless installation
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
-# --> source $HOME/.zshrc &&
+# source $HOME/.zshrc &&
 
 # NPM installation and setting the version
 nvm install --lts &&
@@ -36,4 +37,4 @@ nvm use --lts &&
 
 # Yarn installation with npm
 npm install --global yarn
-# -->  Commented out installation via cargo, might be a better practice to source install
+#  Commented out installation via cargo, might be a better practice to source install

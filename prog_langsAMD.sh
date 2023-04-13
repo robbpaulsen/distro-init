@@ -9,6 +9,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -sSf | sh -s -- -y --p
 # Adding Cargo tu environment and then setting up local cargo call
 export PATH=$PATH:/home/$USER/.cargo/bin &&
 export PATH=$PATH:/home/$USER/.rustup &&
+echo 'export PATH=$PATH:/home/$USER/.cargo/bin' >> ~/.zprofile && &&
+export PATH=$PATH:/home/$USER/.rustup && >> ~/.zs &&
 # echo "export PATH=$PATH:$HOME/.cargo/bin" >> ~/.zshrc &&   # Podemos ahorrarnos problemas con el PATH si solo seguimos la syntaxis del archivo de "~/.profile" y solo al final de las instalaciones borrar el presente y colocar el propio
 
 ---
@@ -16,7 +18,7 @@ export PATH=$PATH:/home/$USER/.rustup &&
 
 # Golang unattended installation
 cd $HOME/.src/prog_langs/ &&
-wget https://go.dev/dl/go1.20.2.linux-amd64.tar.gz &&
+wget https://go.dev/dl/go1.20.3.linux-amd64.tar.gz &&
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.2* &&
 export PATH=$PATH:/usr/local/go/bin &&
 # echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zshenv &&
