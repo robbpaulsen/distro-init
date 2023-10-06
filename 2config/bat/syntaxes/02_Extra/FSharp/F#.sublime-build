@@ -1,0 +1,8 @@
+{
+  "cmd": ["fsharpi", "$file"],
+  "windows": {
+    "cmd": ["fsi.exe", "$file"]
+  },
+  "file_regex": "^((?:.*)\\.(?:fs(?:i|x)?))\\(([0-9]*),([0-9]*)\\): (.*)$",
+  "selector": "source.fsharp"
+}

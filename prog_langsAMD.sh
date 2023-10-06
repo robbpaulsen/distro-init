@@ -1,42 +1,47 @@
-#!/usr/bin/bash
+#!/bin/bash
+#!/bin/bash
+#set -e
+##################################################################################################################
+# Author 	: Robbpaulsen
+# Website   : https://github.com/robbpaulsen
+# Email     : pemmetest.087@gmail.com
+##################################################################################################################
+#
 # Script for a more unattended, headless setup and configurationg for the basic things on any new linux installation.
-
+#
+##################################################################################################################
+#tput setaf 0 = black
+#tput setaf 1 = red
+#tput setaf 2 = green
+#tput setaf 3 = yellow
+#tput setaf 4 = dark blue
+#tput setaf 5 = purple
+#tput setaf 6 = cyan
+#tput setaf 7 = gray
+#tput setaf 8 = light blue
+##################################################################################################################
+#
 # Rust and Cargo unattended installation
-cd && 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -sSf | sh -s -- -y --profile default --no-modify-path --default-toolchain stable &&
-. "$(HOME/.cargo/env)" &&
-
-# Adding Cargo tu environment and then setting up local cargo call
-# export PATH=$PATH:/home/$USER/.cargo/bin &&
-# export PATH=$PATH:/home/$USER/.rustup &&
-# echo 'export PATH=$PATH:/home/$USER/.cargo/bin' >> ~/.zprofile && &&
-# export PATH=$PATH:/home/$USER/.rustup && >> ~/.zs &&
-# echo "export PATH=$PATH:$HOME/.cargo/bin" >> ~/.zshrc &&   # Podemos ahorrarnos problemas con el PATH si solo seguimos la syntaxis del archivo de "~/.profile" y solo al final de las instalaciones borrar el presente y colocar el propio
-
-# ---
-# source $HOME/.profile     # have to check why I added this source file command here
-
-# Golang unattended installation
 cd &&
-wget https://go.dev/dl/go1.21.3.linux-amd64.tar.gz &&
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.2* &&
-export PATH=$PATH:/usr/local/go/bin &&
-# echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zshenv &&
-# echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zprofile &&
-cd  &&
----
+	clear
 
-# NVM headless installation
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -sSf | sh -s -- -y --profile default --no-modify-path --default-toolchain stable &&
+	source '$HOME/.cargo/env' &&
 
-# NPM installation and setting the version
-nvm install --lts &&
-nvm use --lts &&
+	# Golang unattended installation
+	cd &&
+	wget https://go.dev/dl/go1.21.3.linux-amd64.tar.gz &&
+	sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.2* &&
+	export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+/bin/rm -rf go1.21.* &&
+	cd &&
 
-#---
-# nvm install 'lts/*' --reinstall-packages-from=default --latest-npm
-#---
+	# NVM headless installation
+	wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
+	nvm install --lts &&
+	nvm use --lts &&
 
-# Yarn installation with npm
-npm install --global yarn
-# Commented out installation via cargo, might be a better practice to source install
+	# Yarn installation with npm
+	npm install --global yarn

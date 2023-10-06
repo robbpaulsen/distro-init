@@ -1,0 +1,69 @@
+{
+    "target": "elm_make",
+    "selector": "source.elm",
+    "cmd":
+    [
+        "elm-make",
+        "$file",
+        "--output={null}",
+        "--report=json",
+        "--yes"
+    ],
+    "working_dir": "$project_path",
+    "file_regex": "^\\-\\- \\w+: (?=.+ \\- (.+?):(\\d+):(\\d+))(.+) \\- .*$",
+    "error_format": "-- $type: $tag - $file:$line:$column\n$message\n",
+    "info_format": ":: $info\n",
+    "syntax": "Packages/Elm Language Support/Syntaxes/Elm Compile Messages.sublime-syntax",
+    "null_device": "/dev/null",
+    "warnings": "true",
+    "osx":
+    {
+        "path": "/usr/local/bin:$PATH"
+    },
+    "linux":
+    {
+        "path": "$HOME/.cabal/bin:/usr/local/bin:$PATH"
+    },
+    "variants":
+    [
+        {
+            "name": "Run",
+            "cmd":
+            [
+                "elm-make",
+                "$file",
+                "--output={output}",
+                "--report=json",
+                "--yes"
+            ]
+        },
+        {
+            "name": "Ignore Warnings",
+            "warnings": "false"
+        },
+        {
+            "name": "Run - debug",
+            "cmd":
+            [
+                "elm-make",
+                "$file",
+                "--output={output}",
+                "--report=json",
+                "--debug",
+                "--yes"
+            ]
+        },
+        {
+            "name": "Run - Ignore Warnings",
+            "warnings": "false",
+            "cmd":
+            [
+                "elm-make",
+                "$file",
+                "--output={output}",
+                "--report=json",
+                "--yes"
+            ]
+        }
+    ]
+}

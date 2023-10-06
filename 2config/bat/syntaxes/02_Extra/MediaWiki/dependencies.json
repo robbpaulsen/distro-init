@@ -1,0 +1,30 @@
+{
+   "windows": {
+        "*": [
+            "requests",
+            "oauthlib",
+            "requests-oauthlib",
+            "python-jinja2",
+            "markupsafe",
+            "python-pywin32"
+        ]
+   },
+   "linux": {
+        "*": [
+            "requests",
+            "oauthlib",
+            "requests-oauthlib",
+            "python-jinja2",
+            "markupsafe"
+        ]
+   },
+   "osx": {
+        "*": [
+            "requests",
+            "oauthlib",
+            "requests-oauthlib",
+            "python-jinja2",
+            "markupsafe"
+        ]
+    }
+}

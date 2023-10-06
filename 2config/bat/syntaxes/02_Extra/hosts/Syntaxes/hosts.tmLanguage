@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>fileTypes</key>
+  <array>
+    <string>hosts</string>
+  </array>
+  <key>keyEquivalent</key>
+  <string>^~H</string>
+  <key>name</key>
+  <string>hosts</string>
+  <key>patterns</key>
+  <array>
+    <dict>
+      <key>match</key>
+      <string>\#.*</string>
+      <key>name</key>
+      <string>comment.line.number-sign</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>^\s*([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}|[0-9a-f:]+)</string>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>constant.numeric.ipaddress</string>
+        </dict>
+      </dict>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>\s(localhost|ip6-loopback|ip6-localhost|ip6-localnet|ip6-mcastprefix|ip6-allnodes|ip6-allrouters|ip6-allhosts)\b</string>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.host.predefined</string>
+        </dict>
+      </dict>
+    </dict>
+  </array>
+  <key>scopeName</key>
+  <string>source.hosts</string>
+  <key>uuid</key>
+  <string>0C04066A-12D2-43CA-8238-00A12CE4C13E</string>
+</dict>
+</plist>

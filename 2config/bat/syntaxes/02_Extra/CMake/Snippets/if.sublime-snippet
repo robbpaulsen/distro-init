@@ -1,0 +1,8 @@
+<snippet>
+	<description>control flow</description>
+	<content><![CDATA[if(${1:predicate})
+	$0
+endif()]]></content>
+	<tabTrigger>if</tabTrigger>
+	<scope>source.cmake - meta.function-call.arguments - variable.other.readwrite.cmake - string - comment</scope>
+</snippet>

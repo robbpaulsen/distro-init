@@ -1,0 +1,34 @@
+[
+    {
+        "caption": "Robot Framework: Create Database",
+        "command": "scan_index"
+    },
+    {
+        "caption": "Robot Framework: Create Database Tables",
+        "command": "scan"
+    },
+    {
+        "caption": "Robot Framework: Update Internal Database For Active Tab",
+        "command": "scan_and_index_open_tab"
+    },
+    {
+        "caption": "Robot Framework: Show Keyword Documentation",
+        "command": "show_keyword_documentation"
+    },
+    {
+        "caption": "Robot Framework: Jump To Keyword",
+        "command": "jump_to_keyword"
+    },
+    {
+        "caption": "Robot Framework: Setting Importer",
+        "command": "setting_importer"
+    },
+    {
+        "caption": "Robot Framework: Command Logging",
+        "command": "log_commands"
+    },
+    {
+        "caption": "Robot Framework: Open Log File",
+        "command": "open_log_file"
+    }
+]

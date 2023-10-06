@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>{% sandbox %}
+	$0
+{% endsandbox %}</string>
+    <key>name</key>
+    <string>sandbox</string>
+    <key>scope</key>
+    <string>text.html.twig</string>
+    <key>tabTrigger</key>
+    <string>sandbox</string>
+    <key>uuid</key>
+    <string>C176446B-394B-454A-A6F9-528DC68F22A2</string>
+</dict>
+</plist>

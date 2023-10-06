@@ -1,0 +1,45 @@
+* org-sublime
+
+This is a /very/ basic TextMate/Sublime Text syntax for [[http://orgmode.org/][Emacs org-mode]] files. I created it mostly so that I can get syntax highlighting for my org-mode files in [[http://www.textasticapp.com/][Textastic for iOS]].  It started life as a TextMate =.tmbundle= but I'm now using Sublime Text to test/develop it.
+
+Not all colour schemes include rules for all of the used ~markup.*~ elements, particularly the headings.  Those that do include:
+
+- Cobalt
+- Eiffel
+- Mac Classic
+- Sunburst
+- Twilight
+- Vintage
+
+Please use/abuse/modify it under the terms of the [[http://choosealicense.com/licenses/bsd/][BSD 2-clause license]].
+
+** Todo list
+
+- [X] Headings
+- [X] Keywords in headings
+- [X] TODO tags in headings
+- [X] *Bold*
+- [X] /Italics/
+- [X] _Underline_
+- [X] ~Code~
+- [X] =Verbatim=
+- [X] Comments
+- [X] Quote (#+BEGIN/END_QUOTE)
+- [X] Lists
+  - [X] Unordered
+  - [X] Ordered
+  - [X] Definition
+- [X] LaTeX blocks
+- [X] HTML blocks
+- [X] Links
+- [X] Bare URLs
+- [ ] Footnotes
+- [X] Source code blocks
+  - [X] Generic
+  - [X] Ruby
+  - [X] Python
+  - [X] elisp
+- [X] Horizontal rules
+- [X] Property drawers
+- [X] File-level options & metadata
+- [X] Inline elements within block elements

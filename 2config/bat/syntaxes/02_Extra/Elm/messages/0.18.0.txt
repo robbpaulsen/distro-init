@@ -1,0 +1,11 @@
+New in Elm Language Support 0.18.0 (May 13, 2017)
+
+- New: Snippets that provide shortcuts for typing common Elm syntax: case … of,
+  case … of (Maybe), case … of (Result), function (1-4 arguments), import,
+  import … as, let … in, module, type, and type alias.
+
+  See http://docs.sublimetext.info/en/latest/extensibility/snippets.html for
+  more info on using snippets in Sublime Text.
+
+- Improvement: Option to specify the name of the elm-format binary, for systems
+  where the version number is included in the filename (e.g. elm-format-0.18).

@@ -1,0 +1,49 @@
+[
+	{
+		"decl": "function integer abs",
+		"definition": "",
+		"name": "abs",
+		"port": [
+			{
+				"array": "",
+				"bw": "",
+				"decl": "input integer value",
+				"name": "value",
+				"tag": "decl",
+				"type": "integer",
+				"value": ""
+			}
+		],
+		"return": "integer ",
+		"type": "function"
+	},
+	{
+		"decl": "function automatic string join_string",
+		"definition": "",
+		"name": "join_string",
+		"port":
+		[
+			{
+				"array": "dynamic",
+              	"array_dim": "[]",
+				"bw": "",
+				"decl": "ref string a[]",
+				"name": "a",
+				"tag": "decl",
+				"type": "string",
+				"value": ""
+			},
+			{
+				"array": "",
+				"bw": "",
+				"decl": "input string c",
+				"name": "c",
+				"tag": "decl",
+				"type": "string",
+				"value": "\".\""
+			}
+		],
+		"return": "string",
+		"type": "function"
+	}
+]

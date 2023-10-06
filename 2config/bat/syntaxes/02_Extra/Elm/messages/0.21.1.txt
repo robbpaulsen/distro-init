@@ -1,0 +1,4 @@
+New in Elm Language Support 0.21.1 (Nov 8, 2017)
+
+- Fix: Syntax definition now allows for numbers in module names.
+  (Thanks, @ianmackenzie!)

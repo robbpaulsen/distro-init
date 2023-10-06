@@ -1,0 +1,194 @@
+// SYNTAX TEST "Protobuf.sublime-syntax"
+syntax = "proto2";
+// <- keyword.other.syntax.proto
+//        ^^^^^^ string.quoted.double.proto
+
+package escape_dungeon;
+// <- keyword.other.namespace.proto
+//      ^^^^^^^^^^^^^^ entity.name.namespace.proto
+
+import "escape_dungeon/weapons.proto";
+// <- keyword.other.import.proto
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double.proto
+
+option java_package = "com.example.foo";
+// <- storage.type.annotation.proto
+//     ^^^^^^^^^^^^ variable.annotation.proto
+//                  ^ keyword.operator.assignment.proto
+//                    ^^^^^^^^^^^^^^^^^ string
+
+message Player {
+// <- meta.class.proto storage.type.message.proto
+//      ^^^^^^ entity.name.class.proto
+
+  required string name = 1;
+  // ^^^^^ storage.modifier.proto
+  //       ^^^^^^ support.type.proto
+  //              ^^^^ variable.other.field.proto
+  //                   ^ keyword.operator.assignment.proto
+  //                     ^ constant.numeric.proto
+  //                      ^ punctuation.terminator.proto
+  optional float health = 2;
+  //       ^^^^^ support.type.proto
+
+  optional uint64 xp = 3;
+  //       ^^^^^^ support.type.proto
+
+  map<string, Stats> stats = 4;
+  // <- support.type.map.proto
+  //  ^^^^^^ support.type.proto
+  //          ^^^^^ variable.type.proto
+  //                 ^^^^^ variable.other.field.proto
+  repeated Buff buffs = 5;
+  repeated escape_dungeon.Weapon weapons = 6;
+  optional bytes avatar = 7;
+  //       ^^^^^ support.type.proto
+
+  optional bool alive = 8;
+  //       ^^^^ support.type.proto
+
+  optional
+  // ^^^^^ storage.modifier.proto
+      very_long_namespace_name.VeryLongMessageType
+  //  ^^^^^^^^^^^^^^^^^^^^^^^^ variable.namespace.proto
+  //                           ^^^^^^^^^^^^^^^^^^^ meta.class.proto variable.type.proto
+          very_long_field_name = 9;
+  //      ^^^^^^^^^^^^^^^^^^^^ variable.other.field.proto
+
+  reserved 42;
+  // <- storage.modifier.proto
+  //       ^^ constant.numeric.proto
+  reserved 100 to 200;
+  // <- storage.modifier.proto
+  //       ^^^ constant.numeric.proto
+  //           ^^ keyword.other.to.proto
+  //              ^^^ constant.numeric.proto
+  reserved "deprecated_field", "another_field";
+  // <- storage.modifier.proto
+  //       ^^^^^^^^^^^^^^^^^^ string.quoted.double.proto
+  //                         ^ punctuation.separator.proto
+  //                           ^^^^^^^^^^^^^^^ string.quoted.double.proto
+
+
+  extensions 10000 to max;
+  // <- storage.modifier.proto
+  //         ^^^^^ constant.numeric.proto
+  //               ^^ keyword.other.to.proto
+  //                  ^^^ constant.language.proto
+
+  // Stats describing the user characteristic (Strenght, Intelligence, ...).
+  // <- comment.line.proto punctuation.definition.comment.begin.proto
+  message Stats {
+  // <- meta.class.proto meta.class.proto storage.type.message.proto
+    required string id = 1;
+    // <- storage.modifier.proto
+    optional int32 max_value = 2;
+    optional int32 value = 3 [(custom.annotation) = -1];
+    //                       ^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.field.attributes.proto
+    //                         ^^^^^^ variable.namespace.proto
+    //                                ^^^^^^^^^^ variable.annotation.proto
+    //                                              ^^ constant.numeric
+  }
+
+// <- meta.class.proto -(meta.class.proto meta.class.proto)
+}
+
+// <- - meta.class.proto
+
+message Config {
+  oneof config {
+    StatConfig stat = 1;
+    LevelConfig level = 2;
+    WeaponConfig weapon = 3;
+  }
+}
+
+message LevelConfig {
+  optional int32 max_level = 1 [default = 100];
+  //                            ^^^^^^^ support.function.proto
+  //                                      ^^^ constant.numeric
+  repeated uint64 xp_levels = 2 [packed=true];
+  //                             ^^^^^^ support.function.proto
+  //                                    ^^^^ constant.language
+  optional int32 min_level = 3 [(str.option)="important", (another)="foo"];
+  //                             ^^^ variable.namespace.proto
+  //                                 ^^^^^^ variable.annotation.proto
+  //                                         ^^^^^^^^^^^ string.quoted
+  //                                                       ^^^^^^^ variable.annotation.proto
+  optional int32 another_value = 4 [proto={ enum: FROZEN }];
+  //                                      ^^^^^^^^^^^^^^^^ meta.embedded.prototxt
+  //                                        ^^^^ variable.other.member.prototxt
+  //                                              ^^^^^^ meta.embedded.prototxt constant.numeric.enum.prototxt
+  optional int32 another_value = 4 [proto={ nested {} enum: FROZEN }];
+  //                                               ^^ meta.embedded.prototxt
+  optional int32 another_value = 4 [unset=];
+  //                                      ^ punctuation.definition.attributes.end.proto
+}
+
+enum Buff {
+// <- meta.enum.proto storage.type.enum.proto
+//   ^^^^ entity.name.enum.proto
+
+  option allow_alias = true;
+  // <- storage.type.annotation.proto
+  //     ^^^^^^^^^^^ variable.annotation.proto
+  //                 ^ keyword.operator.assignment.proto
+  //                   ^^^^ constant.language
+
+  NO_BUFF = 0;
+  // <- constant.other.enum.proto
+  //      ^ keyword.operator.assignment.proto
+  //        ^ constant.numeric.proto
+  FROZEN = 1;
+  BURNING = 2;
+  POISONED = 2 [(doc) = "Poisoned by a magic weapon."];
+  //           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.field.attributes.proto
+  //           ^ punctuation.definition.attributes.begin.proto
+  //             ^^^ variable.annotation.proto
+  //                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double.prototxt
+  INVALID == 2;
+  //       ^ -keyword
+  //         ^ -constant
+}
+
+service PlayerService {
+// <- meta.service.proto storage.type.service.proto
+  rpc GetPlayer (PlayerRequest) returns (PlayerResponse);
+  // <- storage.type.rpc.proto
+  //  ^^^^^^^^^ entity.name.function.rpc.proto
+  //             ^^^^^^^^^^^^^ variable.type.proto
+  //                            ^^^^^^^ keyword.other.returns.proto
+  //                                    ^ punctuation.definition.parameter.rpc.begin.proto
+  //                                     ^^^^^^^^^^^^^^ variable.type.proto
+  //                                                   ^ punctuation.definition.parameter.rpc.end.proto
+
+  rpc GetAllPlayers(AllPlayersRequest) returns (stream PlayerResponse) {
+  // <- storage.type.rpc.proto
+  //  ^^^^^^^^^^^^^ entity.name.function.rpc.proto
+  //                ^^^^^^^^^^^^^^^^^ variable.type.proto
+  //                                   ^^^^^^^ keyword.other
+  //                                            ^^^^^^ storage.modifier
+  //                                                   ^^^^^^^^^^^^^^ variable.type.proto
+    option security_label = "read";
+    // <- meta.service.proto meta.rpc.body.proto
+    //     ^^^^^^^^^^^^^^ meta.service.proto meta.rpc.body.proto variable.annotation.proto
+    //                    ^ meta.service.proto meta.rpc.body.proto keyword.operator.assignment.proto
+    //                      ^^^^^^ meta.service.proto meta.rpc.body.proto string.quoted.double.prototxt
+    //                            ^ meta.service.proto meta.rpc.body.proto punctuation.terminator.option.proto
+    option deadline = 5.0;
+    // <- storage.type.annotation.proto
+    //     ^^^^^^^^ variable.annotation.proto
+    //              ^ keyword.operator.assignment.proto
+    //                ^^^ constant.numeric.float.prototxt
+    //                   ^ punctuation.terminator.option.proto
+    option (method_doc) =
+    // <- storage.type.annotation.proto
+    //      ^^^^^^^^^^ variable.annotation.proto
+    //                  ^ keyword.operator.assignment.proto
+        "Returns all the player."
+        "This documentation doesn't fit in one line,"
+        "nor in two.";
+    //   ^^^^^^^^^^^ string.quoted.double.prototxt
+    //               ^ punctuation.terminator.option.proto
+  }
+}

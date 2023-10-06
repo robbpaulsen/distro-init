@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>{% embed '${1:template}'${2: ignore missing}${3: with ${4:vars}${5: only}} %}$0{% endembed %}</string>
+    <key>name</key>
+    <string>embed</string>
+    <key>scope</key>
+    <string>text.html.twig</string>
+    <key>tabTrigger</key>
+    <string>embed</string>
+    <key>uuid</key>
+    <string>8DD30199-2D35-460F-9107-EB68A4F03B45</string>
+</dict>
+</plist>

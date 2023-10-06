@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+Debug.log "${1:debug $TM_LINE_NUMBER:}"
+]]></content>
+    <description>Debug.log</description>
+    <tabTrigger>debug</tabTrigger>
+    <scope>source.elm</scope>
+</snippet>

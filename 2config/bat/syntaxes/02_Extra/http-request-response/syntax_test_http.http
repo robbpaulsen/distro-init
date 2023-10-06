@@ -1,0 +1,249 @@
+## SYNTAX TEST "http-request-response.sublime-syntax"
+POST /foo/bar?id=4&x=y%20z HTTP/1.1
+##^^ meta.http-verb keyword.operator.word
+##   ^^^^^^^^ meta.url
+##   ^ punctuation.separator.path.directory
+##       ^ punctuation.separator.path.directory
+##           ^ punctuation.separator.sequence.querystring
+##            ^^^^^^^^^^^^ meta.querystring
+##                        ^^^^^^^^^^ - meta.querystring - meta.url
+##                         ^^^^^^^^ constant.language.protocol-version
+X-Forwarded-For: 54.187.216.72
+Content-Length: 3077
+##^^^^^^^^^^^^^^^^^^^ meta.headers
+##^^^^^^^^^^^^ keyword.other.http-header.key
+##            ^ punctuation.separator.key-value
+##              ^^^^ meta.number.integer.decimal constant.numeric.value
+Cache-Control: no-cache
+X-Forwarded-Proto: https
+Content-Type: application/json; charset=utf-8
+##^^^^^^^^^^ meta.headers keyword.other.http-header.key
+##          ^ meta.headers punctuation.separator.key-value
+##            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.unquoted.http-header.value
+##                            ^ punctuation.separator.mapping.key-value
+##                              ^^^^^^^ variable.parameter
+##                                     ^ keyword.operator.assignment
+Host: 7261363d4b2c.ngrok.io
+User-Agent: Stripe/1.0 (+https://stripe.com/docs/webhooks)
+Accept: */*; q=0.5, application/xml
+Accept-Encoding: gzip
+
+{
+## <- meta.body source meta.mapping punctuation.section.mapping.begin
+  "id": "blahblahblahblah",
+  "object": "event",
+  "api_version": "2020-03-02",
+  "created": 1626790174,
+  "data": {
+  ...
+
+
+HTTP/1.1 200 OK
+##^^^^^^ constant.language.protocol-version
+##       ^^^^^^ markup.info
+##       ^^^ meta.http-status-code meta.number.integer.decimal constant.numeric.value
+##           ^^ meta.http-response-status-text string.unquoted
+Server: nginx
+##^^^^ meta.headers string.unquoted.http-header.value keyword.other.http-header.key
+##    ^ meta.headers string.unquoted.http-header.value punctuation.separator.key-value
+##      ^^^^^ meta.headers string.unquoted.http-header.value
+Date: Fri, 23 Jul 2021 10:15:12 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-Control: private; max-age=0
+##^^^^^^^^^^^ meta.headers string.unquoted.http-header.value keyword.other.http-header.key
+##           ^ meta.headers string.unquoted.http-header.value punctuation.separator.key-value
+##             ^^^^^^^^^^^^^^^^^^ meta.headers string.unquoted.http-header.value
+##                    ^ punctuation.separator.mapping.key-value
+##                      ^^^^^^^ variable.parameter
+##                             ^ keyword.operator.assignment
+##                              ^ meta.number.integer.decimal constant.numeric.value
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: origin
+Strict-Transport-Security: max-age=31556900
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdnjs.cloudflare.com/; frame-src 'self' https://www.google.com/recaptcha/; style-src 'self' 'unsafe-inline'
+Content-Encoding: gzip
+
+
+<!DOCTYPE html>
+##^^^^^^^ meta.body text.html meta.tag.sgml.doctype keyword.declaration.doctype
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+https://stackoverflow.com/a/28380690/4473405
+HTTP/1.1 500 Internal Server Error
+##^^^^^^ constant.language.protocol-version
+##       ^^^^^^^^^^^^^^^^^^^^^^^^^ markup.error
+##       ^^^ meta.http-status-code meta.number.integer.decimal constant.numeric.value
+##           ^^^^^^^^^^^^^^^^^^^^^ meta.http-response-status-text string.unquoted
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 51
+
+text1=text+default&text2=a%CF%89b&file1=a.txt&file2=a.html&file3=binary
+##^^^ variable.parameter
+##   ^ keyword.operator.querystring.equals
+##    ^^^^^^^^^^^^ string.unquoted.value
+##                ^ keyword.operator.querystring.and
+##                 ^^^^^ variable.parameter
+
+HTTP/1.1 302 Moved
+##^^^^^^ constant.language.protocol-version
+##       ^^^^^^^^^ markup.info
+##       ^^^ meta.http-status-code meta.number.integer.decimal constant.numeric.value
+##           ^^^^^ meta.http-response-status-text string.unquoted
+Content-Type: multipart/form-data; boundary=---------------------------735323031399963166993862150
+##            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.headers string.unquoted.http-header.value
+##                               ^ punctuation.separator.mapping.key-value
+##                                 ^^^^^^^^ variable.parameter
+##                                         ^ keyword.operator.assignment
+Content-Length: 834
+
+-----------------------------735323031399963166993862150
+##^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.body punctuation.separator.mapping
+Content-Disposition: form-data; name="text1"
+##^^^^^^^^^^^^^^^^^ keyword.other.http-header.key
+
+text default
+-----------------------------735323031399963166993862150
+Content-Disposition: form-data; name="text2"
+
+aωb
+-----------------------------735323031399963166993862150
+Content-Disposition: form-data; name="file1"; filename="a.txt"
+Content-Type: text/plain
+
+Content of a.txt.
+
+-----------------------------735323031399963166993862150
+Content-Disposition: form-data; name="file2"; filename="a.html"
+Content-Type: text/html
+
+<!DOCTYPE html><title>Content of a.html.</title>
+##              ^^^^^ entity.name.tag
+
+-----------------------------735323031399963166993862150
+Content-Disposition: form-data; name="file3"; filename="binary"
+Content-Type: application/octet-stream
+##            ^^^^^^^^^^^^^^^^^^^^^^^^ string.unquoted
+
+aωb
+## <- meta.body text.plain
+-----------------------------735323031399963166993862150--
+##^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ punctuation.separator.mapping
+
+HTTP/1.1 404 Not Found
+## ^^^^^ constant.language.protocol-version
+##       ^^^^^^^^^^^^^ markup.warning
+##       ^^^ meta.http-status-code meta.number.integer.decimal constant.numeric.value
+##           ^^^^^^^^^ meta.http-response-status-text string.unquoted
+Content-Type: text/plain; charset=utf-8
+## ^^^^^^^^^ meta.headers keyword.other.http-header.key
+##          ^ meta.headers punctuation.separator.key-value
+##            ^^^^^^^^^^^^^^^^^^^^^^^^^ string.unquoted.http-header.value
+##                      ^ punctuation.separator.mapping.key-value
+##                        ^^^^^^^ variable.parameter
+##                               ^ keyword.operator.assignment
+Connection: keep-alive
+## ^^^^^^^ meta.headers string.unquoted.http-header.value keyword.other.http-header.key
+##        ^ meta.headers string.unquoted.http-header.value punctuation.separator.key-value
+##          ^^^^^^^^^^ meta.headers string.unquoted.http-header.value
+
+Nothing to see here!
+## ^^^^^^^^^^^^^^^^^^ meta.body text.plain
+
+HTTP/1.1 200 OK
+## ^^^^^ constant.language.protocol-version
+##       ^^^^^^ markup.info
+##       ^^^ meta.http-status-code meta.number.integer.decimal constant.numeric.value
+##           ^^ meta.http-response-status-text string.unquoted
+Content-Type: text/css; charset=utf-8
+## ^^^^^^^^^ meta.headers keyword.other.http-header.key
+##          ^ meta.headers punctuation.separator.key-value
+##            ^^^^^^^^^^^^^^^^^^^^^^^ string.unquoted
+Connection: keep-alive
+## ^^^^^^^ meta.headers string.unquoted.http-header.value keyword.other.http-header.key
+##        ^ meta.headers string.unquoted.http-header.value punctuation.separator.key-value
+##          ^^^^^^^^^^ meta.headers string.unquoted.http-header.value
+
+a {}
+## <- meta.body source.css meta.selector entity.name.tag.html
+
+HTTP/1.1 200 OK
+## ^^^^^ constant.language.protocol-version
+##       ^^^^^^ markup.info
+##       ^^^ meta.http-status-code meta.number.integer.decimal constant.numeric.value
+##           ^^ meta.http-response-status-text string.unquoted
+No-Content-Type: testing123
+
+Plain text here
+## ^^^^^^^^^^^^^ meta.body text.plain
+
+HTTP/1.1 200 OK
+## ^^^^^ constant.language.protocol-version
+##       ^^^^^^ markup.info
+##       ^^^ meta.http-status-code meta.number.integer.decimal constant.numeric.value
+##           ^^ meta.http-response-status-text string.unquoted
+Content-Type: unknown;charset=utf-8
+##            ^^^^^^^^^^^^^^^^^^^^^ meta.headers string.unquoted.http-header.value
+##                   ^ string.unquoted.http-header.value punctuation.separator.mapping.key-value
+##                    ^^^^^^^ variable.parameter
+##                           ^ keyword.operator.assignment
+
+Plain text here
+## ^^^^^^^^^^^^^ meta.body text.plain
+
+HTTP/1.1 200 OK
+## ^^^^^ constant.language.protocol-version
+##       ^^^^^^ markup.info
+##       ^^^ meta.http-status-code meta.number.integer.decimal constant.numeric.value
+##           ^^ meta.http-response-status-text string.unquoted
+Content-Type: application/javascript
+##            ^^^^^^^^^^^^^^^^^^^^^^ meta.headers string.unquoted.http-header.value
+
+let x = 1;
+## ^^^^^^^^ meta.body source.js
+
+HTTP/2 200
+##^^^^ constant.language.protocol-version
+##     ^^^ markup.info meta.http-status-code meta.number.integer.decimal constant.numeric.value
+date: Fri, 30 Jul 2021 20:47:43 GMT
+##^^ meta.headers string.unquoted.http-header.value keyword.other.http-header.key
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+</head>
+## ^^^ meta.body text.html meta.tag.structure.any entity.name.tag.structure.any
+
+HTTP/2 200
+content-type: image/svg+xml; charset=UTF-8
+
+<svg width="400" height="400">
+  <g class="xaxis axis" transform="translate(30,370)">
+    <g class="tick" style="opacity: 1;" transform="translate(0,0)">
+      <line y2="-340" x2="0" />
+      <text dy=".71em" style="text-anchor: middle;" y="3" x="0">-20</text>
+    </g>
+    <g class="tick" style="opacity: 1;" transform="translate(43.589743589743584,0)">
+      <line y2="-340" x2="0" />
+      <text dy=".71em" style="text-anchor: middle;" y="3" x="0">-15</text>
+    </g>
+    <g class="tick" style="opacity: 1;" transform="translate(87.17948717948717,0)">
+      <line y2="-340" x2="0" />
+##     ^^^^ meta.body text.xml meta.tag entity.name.tag.localname
+      <text dy=".71em" style="text-anchor: middle;" y="3" x="0">-10</text>
+    </g>
+  </svg>

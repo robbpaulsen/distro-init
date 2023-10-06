@@ -1,0 +1,8 @@
+New in Elm Language Support 0.17.1 (January 19, 2017)
+
+- New: New build output format, with support for new inline build error
+  indicators (phantoms) introduced in Sublime Text 3 build 3118
+  (see: https://forum.sublimetext.com/t/dev-build-3118/21270).
+- Fixed: <kbd>F4</kbd>/<kbd>Shift-F4</kbd> navigation for build errors.
+- Fixed: Double-click build error heading to jump to location in editor.
+- New maintainer: Kevin Yank (@sentience)

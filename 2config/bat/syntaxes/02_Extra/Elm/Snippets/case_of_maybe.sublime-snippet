@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+case $1 of
+	Just $2 ->
+		$3
+	Nothing ->
+		$4
+]]>
+	</content>
+	<description>case … of (Maybe)</description>
+	<tabTrigger>cofm</tabTrigger>
+	<scope>source.elm</scope>
+</snippet>

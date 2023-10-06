@@ -1,0 +1,50 @@
+[
+  {
+    "id": "preferences",
+    "children": [{
+        "caption": "Package Settings",
+        "id": "package-settings",
+        "children": [{
+          "caption": "Fish",
+          "children": [
+            {
+              "caption": "Settings",
+              "command": "edit_settings",
+              "args": {
+                "base_file": "${packages}/fish/fish.sublime-settings",
+                "default": "{\n\t$0\n}\n"
+              }
+            }, {
+              "caption": "-"
+            }, {
+              "caption": "Readme",
+              "command": "open_file",
+              "args": {
+                "file": "${packages}/fish/README.md"
+              }
+            }, {
+              "caption": "Changelog",
+              "command": "open_file",
+              "args": {
+                "file": "${packages}/fish/CHANGELOG.md"
+              }
+            }, {
+              "caption": "-"
+            }, {
+              "caption": "Documentation",
+              "command": "open_url",
+              "args": {
+                "url": "https://github.com/Phidica/sublime-fish/wiki"
+              }
+            }, {
+              "caption": "Report a bug",
+              "command": "open_url",
+              "args": {
+                "url": "https://github.com/Phidica/sublime-fish/issues"
+              }
+            }
+          ]
+        }]
+    }]
+  }
+]

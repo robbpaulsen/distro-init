@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+struct $1
+	$0
+end
+]]></content>
+  <tabTrigger>struct</tabTrigger>
+  <scope>source.julia</scope>
+  <description>struct definition</description>
+</snippet>

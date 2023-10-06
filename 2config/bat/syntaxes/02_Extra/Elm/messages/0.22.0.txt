@@ -1,0 +1,13 @@
+New in Elm Language Support 0.22.0 (Jan 22, 2018)
+
+- New: Build option ‘Run - debug’ to run the project with the Elm debugger enabled. (Thanks, @stoivo!)
+
+- New: `build_error_color_scheme` setting to control build output color scheme. (Thanks, @stoivo!)
+
+- Improvement: Manual installation instructions in README. (Thanks, @stoivo, @guillett!)
+
+- Improvement: Allow Sublime Text to install Elm Language Support as a single .sublime-package file. (Thanks, @stoivo!)
+
+- Fix: Elm syntax highlighting in several panels. (Thanks, @stoivo!)
+
+- Fix: Obsolete reference to docs.json file. (Thanks, @stoivo!)

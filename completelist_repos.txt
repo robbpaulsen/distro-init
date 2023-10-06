@@ -1,5 +1,12 @@
 # My list of Repositories for Raspberry-Pi, personall Dell laptop and main Assus PC
 
+## Programming Languages
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -sSf | sh -s -- -y --profile default --no-modify-path --default-toolchain stable &&   # DO NOT MODIFY THIS ONE OneLiner
+wget https://go.dev/dl/go1.21.3.linux-amd64.tar.gz &&
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
+npm install --global yarn   # ONLY RUN THIS COMMAND AFTER YOU MAKE SURE YOU ALREADY HAVE `nvm` INSTALLED
+
+
 ## Raspberry-Pi
 git clone https://github.com/Botspot/pi-apps.git &&
 git clone https://github.com/jmcerrejon/PiKISS.git &&
@@ -10,7 +17,7 @@ git clone https://github.com/pivpn/pivpn.git &&
 git clone https://github.com/FD-/RPiPlay.git
 git clone https://github.com/kimocoder/wifite2.git
 git clone https://github.com/hakandundar34coding/system-monitoring-center.git
-wget -qO- https://raw.githubusercontent.com/actionschnitzel/PiGro-Aid-/installer/install.sh |bash &&
+wget -qO- https://raw.githubusercontent.com/actionschnitzel/PiGro-Aid-/installer/install.sh | bash &&
 
 ### Wifi Drivers all Realtek
 git clone https://github.com/morrownr/8814au.git
@@ -52,7 +59,7 @@ git clone --recursive https://github.com/fujiapple852/trippy.git &&
 git clone --recursive https://github.com/nil0x42/duplicut.git &&    # word list dedup and mangler
 git clone --recursive https://github.com/cytopia/linux-timemachine.git &&   # a linix version of apple's backup and restoration wizard
 git clone --recursive https://github.com/davatorium/rofi.git &&
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && # ~/.fzf/install --xdg --no-bash --no-fish --key-bindings --completion
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && # ~/.fzf/install --xdg --no-update-rc --no-bash --no-fish --key-bindings --completion
 git clone --recursive https://github.com/snovvcrash/DivideAndScan.git &&  # Very in depth netscanner
 
 ## Repos for reference on personal projects

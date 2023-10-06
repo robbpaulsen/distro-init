@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+type $1
+	= $2
+${3:	| $4}
+]]>
+	</content>
+	<description>type</description>
+	<tabTrigger>type</tabTrigger>
+	<scope>source.elm</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+import $1${2: as $3}${4: exposing (${5:..})}
+]]>
+	</content>
+	<description>import … as</description>
+	<tabTrigger>impas</tabTrigger>
+	<scope>source.elm</scope>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+type alias $1 =
+	{ $2 : $3
+${4:	, $5 : $6}
+	}
+]]>
+	</content>
+	<description>type alias (Record)</description>
+	<tabTrigger>typea</tabTrigger>
+	<scope>source.elm</scope>
+</snippet>

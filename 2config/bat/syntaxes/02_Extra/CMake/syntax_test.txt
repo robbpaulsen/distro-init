@@ -1,0 +1,377 @@
+# SYNTAX TEST "Packages/CMake/CMake.sublime-syntax"
+
+# This is a comment
+# ^^^^^^^^^^^^^^^^^ comment.line
+#      ^^^^^^^^^^^^ comment.line
+
+# <- source.cmake
+
+
+        # a comment on a non-zero column
+#         ^ comment.line
+
+if (NOT (${something} AND ${something_else}))
+#  ^ punctuation.section.parens.begin
+#       ^ punctuation.section.parens.begin
+#                                          ^ punctuation.section.parens.end
+#                                           ^ punctuation.section.parens.end
+
+endif()
+
+if (DEFINED ENV{DUMMY})
+#   ^ variable.parameter
+#           ^ - variable.parameter - keyword
+#              ^ - punctuation
+#                    ^ - punctuation
+# pass
+else()
+    message(FATAL_ERROR 'a')
+    #                   ^^^ - string
+    message(FATAL_ERROR "DUMMY is not defined. \n  ")
+    #                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted
+endif()
+if (DEFINED $ENV{DUMMY})
+#   ^ variable.parameter
+#           ^ punctuation.definition
+# pass
+else()
+    message(FATAL_ERROR "DUMMY is not defined. \n  ")
+endif()
+
+set(x "\! \@ \# \$ \% \& \* \( \) \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z")
+#      ^^ invalid.illegal.character.escape
+#         ^^ constant.character.escape
+#            ^^ constant.character.escape
+#               ^^ constant.character.escape
+#                  ^^ invalid.illegal.character.escape
+#                        ^^ invalid.illegal.character.escape
+#                           ^^ constant.character.escape
+#                              ^^ constant.character.escape
+#                                 ^^ invalid.illegal.character.escape
+#                                    ^^ invalid.illegal.character.escape
+#                                       ^^ invalid.illegal.character.escape
+#                                          ^^ invalid.illegal.character.escape
+#                                             ^^ invalid.illegal.character.escape
+#                                                ^^ invalid.illegal.character.escape
+#                                                                        ^^ constant.character.escape
+
+cmake_minimum_required(VERSION 3.0)
+#                     ^ punctuation.section.parens.begin
+#                                 ^ punctuation.section.parens.end
+#                      ^^^^^^^^^^^ meta.function-call.arguments
+#         ^ support.function
+
+set(some_var "Hello, world!")
+# ^ support.function
+#   ^ variable.other
+#            ^ string.quoted.double
+#  ^ punctuation.section.parens.begin
+#                           ^ punctuation.section.parens.end
+
+set(var_with_quotes "This is a string with \"embedded\" quotes.")
+
+set(another ${some_var})
+#                      ^ punctuation.section.parens.end
+
+set(blarg
+    # A comment inbetween
+#     ^ comment.line
+    foobar)
+
+message(STATUS "The some_var variable has the value \"${some_var}\"")
+#       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.arguments
+#       ^^^^^^ variable.parameter
+#              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double
+#                                                   ^^ constant.character.escape
+#                                                     ^ punctuation.definition.variable
+#                                                      ^ punctuation.section
+#                                                               ^ punctuation.section
+#                                                       ^^^^^^^^ meta.text-substitution
+#                                                                ^^ constant.character.escape
+
+target_link_libraries(mytarget PUBLIC
+        ${Boost_LIBRARIES}
+        ThisSpansMultipleLines
+        ButNoProblem
+        )
+
+set(asdf nested_vars_test some${var_inside_${anot${h}er_var}_and_moving_on}_even_further)
+#  ^ punctuation.section.parens.begin
+#                             ^ punctuation.definition.variable
+#                              ^ punctuation.section
+#                                          ^ punctuation.definition.variable
+#                                           ^ punctuation.section
+#                                                          ^ punctuation.section
+#                                                                         ^ punctuation.section
+
+set(some_list "one;two;thre\;e")
+#                 ^ punctuation.separator
+#                     ^ punctuation.separator
+#                          ^^ constant.character.escape
+
+if("${somevar}" STREQUAL "something else")
+#^ keyword.control
+
+elseif("${somevar}" STREQUAL whatever AND NOT ${another_var} VERSION_LESS 1.2.3)
+#^^^^^ keyword.control
+
+elseif  (STREQUALasdf sTREQUAL COMMAND ANDNOT AND NOT VERSION_GREATER TARGET)
+#^^^^^ keyword.control
+#        ^^^^^^^^^^^^ meta.string.unquoted
+#                     ^^^^^^^^ meta.string.unquoted
+#                              ^^^^^^^ variable.parameter
+#                                      ^^^^^^ - variable.parameter
+#                                             ^^^ keyword.operator
+#                                                 ^^^ keyword.operator
+
+endif   ()
+#^^^^ keyword.control
+
+target_include_directories(mytarget PUBLIC $sdf>)
+
+foreach(item ${items})
+    message(STATUS "The item is ${item}")
+    message(WARNING "asdf")
+    message(AUTHOR_WARNING "hello there")
+    message(FATAL_ERROR "i have the high ground")
+    message(DEPRECATION "it's treason then")
+endforeach()
+
+if (NOT "${the_var}" MATCHES "[A-Za-z]\\d+")
+# maybe add regex as an embedded syntax here
+endif()
+# <- meta.group.if.cmake meta.function-call.cmake keyword.control.endif.cmake
+
+if ($ENV{LD_LIBRARY_PATH} STREQUAL /usr/local/lib)
+#   ^ punctuation.definition.variable
+#    ^^^ keyword.operator.word
+#       ^ punctuation.section
+#                       ^ punctuation.section
+#                                  ^^^^^^^^^^^^^^ meta.string.unquoted
+endif()
+
+include(AddFileDependencies)
+include(CMakeParseArguments)
+
+  install(FILES
+    ${CMAKE_CURRENT_BINARY_DIR}/CMakeFiles/LLVMConfig
+    ${llvm_cmake_builddir}/LLVMConfigVersion
+    LLVM-Config
+#   ^ meta.string.unquoted
+    DESTINATION ${LLVM_INSTALL_PACKAGE_DIR}
+#   ^ variable.parameter
+    COMPONENT cmake-exports)
+#   ^ variable.parameter
+#             ^ meta.string.unquoted
+
+function(llvm_replace_compiler_option var old new)
+  # Replaces a compiler option or switch `old' in `var' by `new'.
+  # If `old' is not in `var', appends `new' to `var'.
+  # Example: llvm_replace_compiler_option(CMAKE_CXX_FLAGS_RELEASE "-O3" "-O2")
+  # If the option already is on the variable, don't add it:
+  if( "${${var}}" MATCHES "(^| )${new}($| )" )
+    set(n "")
+  else()
+    set(n "${new}")
+  endif()
+  if( "${${var}}" MATCHES "(^| )${old}($| )" )
+    string( REGEX REPLACE "(^| )${old}($| )" " ${n} " ${var} "${${var}}" )
+  else()
+    set( ${var} "${${var}} ${n}" )
+  endif()
+  set( ${var} "${${var}}" PARENT_SCOPE )
+endfunction(llvm_replace_compiler_option)
+
+# Generate LLVMConfig for the install tree.
+set(LLVM_CONFIG_CODE "
+# Compute the installation prefix from this LLVMConfig file location.
+get_filename_component(LLVM_INSTALL_PREFIX \"\${CMAKE_CURRENT_LIST_FILE}\" PATH)")
+# Construct the proper number of get_filename_component(... PATH)
+# calls to compute the installation prefix.
+string(REGEX REPLACE "/" ";" _count "${LLVM_INSTALL_PACKAGE_DIR}")
+foreach(p ${_count})
+#^^^^^^ keyword.control
+  set(LLVM_CONFIG_CODE "${LLVM_CONFIG_CODE}
+get_filename_component(LLVM_INSTALL_PREFIX \"\${LLVM_INSTALL_PREFIX}\" PATH)")
+endforeach(p)
+#^^^^^^^^^ keyword.control
+set(LLVM_CONFIG_INCLUDE_DIRS "\${LLVM_INSTALL_PREFIX}/include")
+set(LLVM_CONFIG_LIBRARY_DIRS "\${LLVM_INSTALL_PREFIX}/lib\${LLVM_LIBDIR_SUFFIX}")
+set(LLVM_CONFIG_CMAKE_DIR "\${LLVM_INSTALL_PREFIX}/${LLVM_INSTALL_PACKAGE_DIR}")
+#                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double
+#                          ^^ constant.character.escape
+#                                                  ^ punctuation.definition.variable
+#                                                   ^ punctuation.section
+#                                                                            ^ punctuation.section
+set(LLVM_CONFIG_BINARY_DIR "\${LLVM_INSTALL_PREFIX}")
+set(LLVM_CONFIG_TOOLS_BINARY_DIR "\${LLVM_INSTALL_PREFIX}/bin")
+set(LLVM_CONFIG_EXPORTS_FILE "\${LLVM_CMAKE_DIR}/LLVMExports")
+set(LLVM_CONFIG_EXPORTS "${LLVM_EXPORTS}")
+configure_file(
+  LLVMConfig.in
+  ${CMAKE_CURRENT_BINARY_DIR}/CMakeFiles/LLVMConfig
+  @ONLY)
+# ^^^^^ meta.string.unquoted
+
+target_include_directories(module PUBLIC $<CMAKE_COMPILER_ID>)
+# ^^^^^^^^^^^^^^^^^^^^^^^^ support.function
+#                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#                         ^ punctuation.section.parens.begin
+#                          ^^^^^^ meta.string.unquoted
+#                                 ^^^^^^ variable.parameter
+#                                        ^ punctuation.definition.variable
+#                                         ^ punctuation.section
+#                                          ^^^^^^^^^^^^^^^^^ meta.generator-expression
+#                                                           ^ punctuation.section
+#                                                            ^ punctuation.section.parens.end
+
+
+while(${var})
+#^^^^ keyword.control
+  myfunc(mytarget NAMED_ARG some_value)
+endwhile(${var})
+#^^^^^^^ keyword.control
+
+set(TGT_PATH $<TARGET_FILE:tgt1>)
+
+if(NOT (CMAKE_VERSION VERSION_LESS 3.0))  # CMake >= 3.0
+  # Build an interface library target:
+  add_library(module INTERFACE)
+  target_include_directories(module INTERFACE $<BUILD_INTERFACE:${PYBIND11_INCLUDE_DIR}>
+#                                               ^^^^^^^^^^^^^^^ variable
+#                                                              ^ punctuation.separator
+#                                                               ^ punctuation.definition.variable
+#                                                                ^ punctuation.section
+#                                                                 ^^^^^^^^^^^^^^^^^^^^ variable
+#                                                                                     ^^ punctuation.section
+                                              $<BUILD_INTERFACE:${PYTHON_INCLUDE_DIRS}>
+                                              $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
+  if(WIN32 OR CYGWIN)
+    target_link_libraries(module INTERFACE $<BUILD_INTERFACE:${PYTHON_LIBRARIES}>)
+  elseif(APPLE)
+    target_link_libraries(module INTERFACE "-undefined dynamic_lookup")
+  endif()
+  target_compile_options(module INTERFACE $<BUILD_INTERFACE:${PYBIND11_CPP_STANDARD}>)
+
+  add_library(pybind11::module #[[new style bracket comments!]] ALIAS module)
+#                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.block
+#                                                               ^^^^^ variable.parameter
+#                                                                     ^^^^^^ meta.string.unquoted
+#                                                                           ^ punctuation.section.parens.end
+
+endif()
+
+#[=[
+
+  the following [[ snippet of text ]] should do nothing
+
+    special
+
+              in                                 [==[ not even this one ]==]
+
+                        particular
+
+]=] # and this is where a regular line comment starts
+# ^ comment.block
+#   ^ comment.line
+
+add_executable(hel#lo main.cpp)
+#             ^^^^ meta.function-call.arguments
+#                 ^^^^^^^^^^^^^ comment.line
+    main.cpp)
+#   ^^^^^^^^ meta.function-call.arguments
+#           ^ punctuation.section.parens.end
+
+foreach(arg
+    NoSpace
+    Escaped\ Space
+#   ^^^^^^^^^^^^^^ meta.string.unquoted
+    This;Divides;Into;Five;Arguments
+#       ^ punctuation.separator
+#               ^ punctuation.separator
+#                    ^ punctuation.separator
+#                         ^ punctuation.separator
+    Escaped\;Semicolon
+#   ^^^^^^^^^^^^^^^^^^ meta.string.unquoted
+    )
+  message("${arg}")
+endforeach()
+
+add_custom_target(ClaraDeploy
+    COMMAND
+        ${CMAKE_COMMAND}
+            -D VERSION=${PROJECT_VERSION}
+#              ^^^^^^^^ meta.string.unquoted
+            -D SUBLIME_PLATFORM_EXT=${SUBLIME_PLATFORM_EXT}
+#              ^^^^^^^^^^^^^^^^^^^^^ meta.string.unquoted
+            -D ZIPFILE="${Clara_tar_output}"
+#              ^^^^^^^^ meta.string.unquoted
+            -P "${CMAKE_CURRENT_SOURCE_DIR}/Deploy"
+#              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double
+    DEPENDS
+        ClaraPackage
+    COMMENT
+        "Deploying Clara"
+    )
+
+set(bedtime_story [=[
+[1] Non eram ${nescius}, \Brute, \cum, \q\u\a\e \s\u\m\m\i\s\ \i\n\g\e\n\i\i\s
+exquisitaque doctrina "${philosophi}" Graeco sermone tractavissent, ea Latinis
+litteris mandaremus, fore ut hic noster labor in varias reprehensiones
+incurreret. [[ x ]] nam quibusdam, et iis quidem non admodum indoctis, totum hoc
+displicet philosophari. ]=])
+#^^^^^^^^^^^^^^^^^^^^^^^^^^ string.raw
+#                       ^^^ punctuation.definition.string.end
+#                          ^ punctuation.section.parens.end
+
+set_target_properties(gintonic PROPERTIES CXX_STANDARD 14)
+#  ^ meta.function-call support.function
+#                     ^ meta.string.unquoted
+#                              ^ variable.parameter
+#                                         ^ - variable.parameter
+#                                                      ^ meta.string.unquoted
+
+target_compile_options(${PROJECT_NAME} PUBLIC $<$<CXX_COMPILER_ID:MSVC>:/fp:fast>)
+# ^^^^^^^^^^^^^^^^^^^^ meta.function-call.cmake support.function.target_compile_options.cmake
+#                                      ^^^^^^ meta.function-call.arguments.cmake variable.parameter.PUBLIC.cmake
+#                                                                      ^ meta.function-call.arguments.cmake meta.generator-expression.cmake punctuation.separator.generator-expression.cmake
+#                                                                       ^^^^^^^^ meta.function-call.arguments.cmake meta.generator-expression.cmake
+#                                                                          ^ - invalid.illegal
+
+install(
+    EXPORT
+    # ^^^^ meta.function-call.arguments.cmake variable.parameter.EXPORT.cmake
+        HighFiveStaticTargets
+    FILE
+    # ^^ meta.function-call.arguments.cmake variable.parameter.FILE.cmake
+        HighFiveStaticTargets.cmake
+    DESTINATION
+    # ^^^^^^^^^ meta.function-call.arguments.cmake variable.parameter.DESTINATION.cmake
+        share/HighFive/CMake)
+
+foreach(iexample IN ${nexample})
+    #^^ meta.function-call.cmake keyword.control.foreach.cmake
+    #            ^^ meta.group.foreach.cmake meta.function-call.arguments.cmake variable.parameter.foreach.IN.cmake
+endforeach()
+# <- meta.group.foreach.cmake meta.function-call.cmake keyword.control.endforeach.cmake
+
+foreach(iexample RANGE ${nexample})
+    #^^ meta.function-call.cmake keyword.control.foreach.cmake
+    #            ^^^^^ meta.group.foreach.cmake meta.function-call.arguments.cmake variable.parameter.foreach.RANGE.cmake
+endforeach()
+# <- meta.group.foreach.cmake meta.function-call.cmake keyword.control.endforeach.cmake
+
+test_nested_conditions(Abc CONDITION GCC AND (arch STREQUAL "x") COMPILE_OPTIONS -fno)
+# ^^^^^^^^^^^^^^^^^^^^ meta.function-call.generic.cmake variable.function.generic
+#                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.arguments.generic
+#                     ^ punctuation.section.parens.begin
+#                          ^^^^^^^^^ variable.parameter.generic
+#                                        ^^^ keyword.operator
+#                                            ^ punctuation.section.parens.begin
+#                                                  ^^^^^^^^ variable.parameter.if.STREQUAL.cmake
+#                                                              ^ punctuation.section.parens.end
+#                                                                ^^^^^^^^^^^^^^^ variable.parameter.generic
+#                                                                                ^^^^ meta.string.unquoted
+#                                                                                    ^ punctuation.section.parens.end
+
+# <- - meta.function-call

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>class ${1:Class-name}${2: extends ${3:Ancestor}}
+  ${4:(${5:args}) -&gt;
+    ${6:return}}
+$7</string>
+	<key>name</key>
+	<string>Class</string>
+	<key>scope</key>
+	<string>source.livescript</string>
+	<key>tabTrigger</key>
+	<string>cla</string>
+	<key>uuid</key>
+	<string>2D4A1111-380A-4CF8-9111-345A36A0DAE7</string>
+</dict>
+</plist>

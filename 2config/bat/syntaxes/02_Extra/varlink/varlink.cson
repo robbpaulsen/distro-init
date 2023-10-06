@@ -1,0 +1,64 @@
+scopeName: 'source.varlink'
+name: 'varlink'
+fileTypes: [
+  'varlink'
+]
+foldingStartMarker: '('
+foldingStopMarker: ')'
+patterns: [
+  {
+    begin: '(^\\s+)?(?<=^|\\W)(?=#)(?!#{)'
+    beginCaptures:
+      '1':
+        name: 'punctuation.whitespace.comment.leading.varlink'
+    end: '(?!\\G)'
+    patterns: [
+      {
+        begin: '#'
+        beginCaptures:
+          '0':
+            name: 'punctuation.definition.comment.varlink'
+        end: '$'
+        name: 'comment.line.number-sign.varlink'
+      }
+    ]
+  }
+  {
+    begin: "(method)\\s+"
+    end: "(?=[(])"
+    name: "meta.method.declaration.varlink"
+    beginCaptures:
+      "1":
+        name: "keyword.method.varlink"
+    patterns: [
+      {
+        match: "\\b([A-Z][a-zA-Z0-9_]*)\\b"
+        captures:
+          "1":
+            name: "entity.name.function.varlink"
+      }
+    ]
+  }
+  {
+    match: '(?<=^|\\s)(interface|type|error)(?=\\s|$)'
+    name: 'keyword.other.varlink'
+  }
+  {
+    begin: ':'
+    end: '[(),]'
+    patterns: [
+      {
+        match: '\\b(string|bool|int|float|object)\\b'
+        name: 'storage.type.varlink'    
+      }
+      {
+        match: '(\\[\\]|\\[string\\]|\\?)'
+        name: 'storage.modifier.varlink'
+      }
+    ]
+  }
+  {
+    match: '\\b([A-Z][a-zA-Z0-9_]*)\\b'
+    name: 'entity.name.type.varlink'
+  }
+]

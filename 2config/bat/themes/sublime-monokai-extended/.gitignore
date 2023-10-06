@@ -1,0 +1,4 @@
+*.sublime-*
+*.cache
+tmp
+package-metadata.json

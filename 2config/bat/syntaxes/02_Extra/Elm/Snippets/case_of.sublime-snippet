@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+case $1 of
+	$2 ->
+		$3
+	${4:_} ->
+		$5
+]]>
+	</content>
+	<description>case … of</description>
+	<tabTrigger>cof</tabTrigger>
+	<scope>source.elm</scope>
+</snippet>

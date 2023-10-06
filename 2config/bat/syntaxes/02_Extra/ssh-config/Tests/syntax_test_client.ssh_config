@@ -1,0 +1,105 @@
+# SYNTAX TEST "Packages/SSH Config/SSH Config.sublime-syntax"
+
+Match Host targ?t_host Exec not_inside_network User sue
+# ^^^ keyword.control.conditional
+#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.statement.conditional
+#     ^^^^             keyword.other
+#          ^^^^^^^^^^^ entity.name.label.host-alias
+#              ^       keyword.operator.wildcard
+#                      ^^^^                    keyword.other
+#                           ^^^^^^^^^^^^^^^^^^ source.embedded.shell meta.function-call
+#                          ^                    - source.embedded.shell
+#                                             ^ - source.embedded.shell
+#                                              ^^^^     keyword.other
+#                                                   ^^^ string.unquoted
+    ProxyCommand ssh -W %h:%p proxy_server
+#<- - meta.statement
+    # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.block.match
+    # ^^^^^^^^^^                             keyword.other
+    #            ^^^^^^^^^^^^^^^^^^^^^^^^^   source.embedded.shell
+    #                   ^^                   constant.character.escape
+    #                      ^^                constant.character.escape
+    #                                      ^  - source.embedded.shell
+
+Match Host one,two
+# ^^^^^^^^^^^^^^^^ meta.block.match - meta.block.match meta.block.match
+# ^^^ keyword.control.conditional
+#     ^^^^^^^^^^^^ meta.statement.conditional
+#     ^^^^             keyword.other
+#          ^^^ entity.name.label.host-alias
+#             ^ punctuation.separator.sequence - entity
+#              ^^^ entity.name.label.host-alias
+    User bar
+    Port 22
+    #    ^^ constant.numeric
+
+Host tj
+    User 2022sratna
+    #    ^^^^^^^^^^ meta.mapping.value - constant.numeric
+
+Host server serverino !other-pat?ern
+# <- meta.block.host - meta.block.match
+# ^^                  keyword.declaration.host-alias
+#   ^                 - entity.name.label.host-alias
+#    ^^^^^^           entity.name.label.host-alias
+#          ^          - entity.name.label.host-alias
+#           ^^^^^^^^^ entity.name.label.host-alias
+#                    ^               - entity.name.label.host-alias
+#                     ^              keyword.operator.logical
+#                      ^^^^^^^^^^^^^ entity.name.label.host-alias
+    Hostname server.com
+    # ^^^^^^            keyword.declaration.host
+    #        ^^^^^^^^^^ string.unquoted.hostname
+    # This is meant to be a comment
+    # <- punctuation.definition.comment
+    # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.number-sign
+    User=will
+    # ^^      keyword.other
+    #   ^     keyword.operator.assignment
+    #    ^^^^ string.unquoted
+    ProxyCommand nc -x localhost:8888 %h %p
+    # ^^^^^^^^^^                             keyword.other
+    #            ^^^^^^^^^^^^^^^^^^^^^^^^^^  source.embedded.shell
+    #                                 ^^     constant.character.escape
+    #                                      ^ - source.embedded.shell
+    IdentityFile ~/.ssh/creds/%h.pem
+    # ^^^^^^^^^^                     keyword.other
+    #            ^^^^^^^^^^^^^^^^^^^ string.unquoted
+    #                         ^^     constant.character.escape
+
+Host *.splat?.com
+# ^^              keyword.declaration.host-alias
+#   ^             - entity.name.label.host-alias
+#    ^^^^^^^^^^^^ entity.name.label.host-alias
+#    ^            keyword.operator.wildcard
+#           ^     keyword.operator.wildcard
+    User tim
+    # ^^     keyword.other
+    #    ^^^ string.unquoted
+    Compression yes
+    CompressionLevel 7
+    # ^^^^^^^^^^^^^^ keyword.other - invalid.illegal
+
+# Comment
+# <- comment.line.number-sign punctuation.definition.comment
+#^^^^^^^^ comment.line.number-sign
+
+    # Comment
+#^^^ - comment
+    # <- comment.line.number-sign punctuation.definition.comment
+    #^^^^^^^^ comment.line.number-sign
+
+Host *
+# ^^              keyword.declaration.host-alias
+#    ^            keyword.operator.wildcard
+    IdentityFile ~/.ssh/id_rsa
+    Ciphers "aes128-ctr,aes192-ctr,aes256-ctr"
+    #       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double
+    #       ^                                  punctuation.definition.string.begin
+    #                  ^                       punctuation.separator.sequence
+    #                             ^            punctuation.separator.sequence
+    #                                        ^ punctuation.definition.string.end
+    UseKeychain yes
+    # ^^^^^^^^^     keyword.other
+    #           ^^^ constant.language.boolean
+    UseRoaming no

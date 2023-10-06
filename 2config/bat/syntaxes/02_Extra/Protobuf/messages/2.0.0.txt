@@ -1,0 +1,16 @@
+# v2.0.0 (2019-01-10)
+
+* Added a syntax for protobuffer serialized as text eg:
+
+```
+name: "player_1"
+health: 100
+weapon {
+  name: "big sword"
+  damage: 10
+}
+```
+
+* Added tests
+* Renamed a few scope to better match with https://www.sublimetext.com/docs/3/scope_naming.html
+* Please report issues at https://github.com/VcamX/protobuf-syntax-highlighting/issues

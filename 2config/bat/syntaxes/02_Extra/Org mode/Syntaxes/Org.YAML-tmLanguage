@@ -1,0 +1,210 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: orgmode
+scopeName: text.orgmode
+fileTypes: [org, tasks]
+uuid: e4fb86ca-d96b-4094-ac47-d14dbae2d088
+
+patterns:
+- comment: Outline headings
+  name: markup.heading.orgmode
+  contentName: entity.name.section.orgmode
+  begin: |
+    (?x)
+    ^(\*+)               # leading stars
+    \s*([A-Z_]{2,})?     # todo keywords
+    \s*(\[\#[A-Ca-c]\])? # priority
+    \s*(?=\s+[A-Za-z]+)  # expected heading text
+  end: '(?=\s*$\n?)'
+  beginCaptures:
+    '1': {name: punctuation.definition.heading.orgmode}
+    '2': {name: keyword.other.todo.orgmode}
+    '3': {name: constant.other.priority.orgmode}
+  patterns:
+  - include: '#heading-inline'
+- name: meta.separator.orgmode
+  match: '^-{5,}$'
+- name: meta.list.definition.orgmode
+  begin: '^\s*([-+]|\s+\*)\s+(.*?)\s+::'
+  end: '$'
+  beginCaptures:
+    '1': {name: keyword.operator.list.orgmode}
+    '2': {name: markup.bold.definition.orgmode}
+  patterns:
+  - include: '#inline'
+- name: meta.list.plain.orgmode
+  begin: '^\s*?([-+]|\s+\*|\d+[).])'
+  beginCaptures:
+    '1': {name: keyword.operator.list.orgmode}
+  end: '$'
+  patterns:
+  - include: '#list-inline'
+- name: markup.quote.orgmode
+  begin: '(?i)^#\+(BEGIN_(QUOTE|VERSE|CENTER))$'
+  beginCaptures:
+    '1': {name: keyword.control.block.orgmode}
+  end: '(?i)^#\+(END_\2)$'
+  endCaptures:
+    '1': {name: keyword.control.block.orgmode}
+- name: comment.line.number-sign.orgmode
+  match: '^#[^+].*$'
+- name: meta.drawer.properties.orgmode
+  begin: '^:(PROPERTIES):$'
+  end: '^:(END):$'
+  beginCaptures:
+    '1': {name: keyword.control.drawer.orgmode}
+  endCaptures:
+    '1': {name: keyword.control.drawer.orgmode}
+  patterns:
+  - include: '#properties'
+- name: meta.drawer.other.orgmode
+  begin: '^:(.+):$'
+  end: '^:(END):$'
+  beginCaptures:
+    '1': {name: keyword.control.drawer.orgmode}
+  endCaptures:
+    '1': {name: keyword.control.drawer.orgmode}
+- name: meta.block.latex.orgmode
+  begin: '(?i)#\+(BEGIN_LaTeX)$'
+  end: '(?i)#\+(END_LaTeX)$'
+  beginCaptures:
+    '1': {name: keyword.control.block.orgmode}
+  endCaptures:
+    '1': {name: keyword.control.block.orgmode}
+  patterns:
+  - include: text.tex.latex
+- name: meta.block.html.orgmode
+  begin: '(?i)#\+(BEGIN_HTML)$'
+  end: '(?i)#\+(END_HTML)$'
+  beginCaptures:
+    '1': {name: keyword.control.block.orgmode}
+  endCaptures:
+    '1': {name: keyword.control.block.orgmode}
+  patterns:
+  - include: text.html.basic
+- name: meta.block.source.python.orgmode
+  begin: '(?i)#\+(BEGIN_SRC)\s+(python)\s*(.*)$'
+  end: '(?i)#\+(END_SRC)$'
+  beginCaptures:
+    '1': {name: keyword.control.block.orgmode}
+    '2': {name: constant.other.language.orgmode}
+    '3': {name: string.other.header-args.orgmode}
+  endCaptures:
+    '1': {name: keyword.control.block.orgmode}
+  patterns:
+  - include: source.python
+- name: meta.block.source.ruby.orgmode
+  begin: '(?i)#\+(BEGIN_SRC)\s+(ruby)\s*(.*)$'
+  end: '(?i)#\+(END_SRC)$'
+  beginCaptures:
+    '1': {name: keyword.control.block.orgmode}
+    '2': {name: constant.other.language.orgmode}
+    '3': {name: string.other.header-args.orgmode}
+  endCaptures:
+    '1': {name: keyword.control.block.orgmode}
+  patterns:
+  - include: source.ruby
+- name: meta.block.source.lisp.orgmode
+  begin: '(?i)#\+(BEGIN_SRC)\s+((?:emacs-)?lisp)\s*(.*)$'
+  end: '(?i)#\+(END_SRC)$'
+  beginCaptures:
+    '1': {name: keyword.control.block.orgmode}
+    '2': {name: constant.other.language.orgmode}
+    '3': {name: string.other.header-args.orgmode}
+  endCaptures:
+    '1': {name: keyword.control.block.orgmode}
+  patterns:
+  - include: source.lisp
+- name: meta.block.source.shell.orgmode
+  begin: '(?i)#\+(BEGIN_SRC)\s+(sh)\s*(.*)$'
+  end: '(?i)#\+(END_SRC)$'
+  beginCaptures:
+    '1': {name: keyword.control.block.orgmode}
+    '2': {name: constant.other.language.orgmode}
+    '3': {name: string.other.header-args.orgmode}
+  endCaptures:
+    '1': {name: keyword.control.block.orgmode}
+  patterns:
+  - include: source.shell
+- name: meta.block.source.other.orgmode
+  contentName: markup.raw.block.orgmode
+  begin: '(?i)#\+(BEGIN_(SRC|EXAMPLE))(?:\s+([\w-]+)?\s*(.*))?$'
+  end: '(?i)#\+(END_\2)$'
+  beginCaptures:
+    '1': {name: keyword.control.block.orgmode}
+    '3': {name: constant.other.language.orgmode}
+    '4': {name: string.other.header-args.orgmode}
+  endCaptures:
+    '1': {name: keyword.control.block.orgmode}
+- name: meta.pragma.options.orgmode
+  begin: '#\+(OPTIONS):'
+  end: '$'
+  beginCaptures:
+    '1': {name: keyword.control.pragma.orgmode}
+  patterns:
+  - name: meta.option.orgmode
+    match: '([^\s]+):([^\s]+)'
+    captures:
+      '1': {name: variable.parameter.option.orgmode}
+      '2': {name: string.other.option.orgmode}
+- name: meta.pragma.call.orgmode
+  begin: '#\+(CALL):\s+[A-Za-z-]+(?:\[([^\]]*)\])?\(?'
+  end: '\)?([^)]*)$'
+  beginCaptures:
+    '1': {name: keyword.control.pragma.orgmode}
+    '2': {name: string.other.header-args.orgmode}
+  endCaptures:
+    '1': {name: string.other.header-args.orgmode}
+  patterns:
+  - name: meta.assignment.orgmode
+    match: '(\w+)='
+    captures:
+      '1': {name: variable.parameter.header-args.orgmode}
+- name: meta.pragma.orgmode
+  match: '^#\+([a-zA-Z_-]+): ?(.*)$'
+  captures:
+    '1': {name: keyword.control.pragma.orgmode}
+    '2': {name: string.unquoted.pragma.orgmode}
+- include: '#inline'
+repository:
+  inline:
+    patterns:
+    - name: markup.italic.orgmode
+      match: '(?<=^|[.,:;\s])/[^/]+/(?=$|[.,:;\s])'
+    - name: markup.bold.orgmode
+      match: '(?<=^|[.,:;\s])\*[^*]+\*(?=$|[.,:;\s])'
+    - name: markup.underline.orgmode
+      match: '(?<=^|[.,:;\s])_[^_]+_(?=$|[.,:;\s])'
+    - name: markup.raw.inline.orgmode
+      match: '(?<=^|[.,:;\s])([~=]).+?\1(?=$|[.,:;\s])'
+    - name: meta.link.orgmode
+      match: '\[(?:\[([^\]]*)\])?\[([^\]]*)\]\]'
+      captures:
+        '1': {name: markup.underline.link.orgmode}
+        '2': {name: string.other.link.orgmode}
+    - name: markup.underline.url.orgmode
+      match: '(?:http|ftp)s?:\/\/\S+'
+  heading-inline:
+    patterns:
+    - name: meta.keyword.orgmode
+      match: ':([^:]*)(?=:)'
+      captures:
+        '1': {name: string.quoted.keyword.orgmode}
+    - include: '#inline'
+  list-inline:
+    patterns:
+    - name: keyword.operator.checkbox.orgmode
+      match: '\[[ -X]\]'
+    - include: '#inline'
+  properties:
+    patterns:
+    - name: meta.property.orgmode
+      match: '^:([A-Za-z_]+):\s(.*)$'
+      captures:
+        '1': {name: keyword.control.property.orgmode}
+        '2': {name: string.unquoted.propval.orgmode}
+...
+
+# Local Variables:
+# mode: yaml
+# End:

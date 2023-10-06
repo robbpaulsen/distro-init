@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[{% if ${1:expr} %}
+	$2
+{% endif %}]]></content>
+	<tabTrigger>if</tabTrigger>
+	<scope>source.jinja, text.html.jinja</scope>
+	<description>if</description>
+</snippet>

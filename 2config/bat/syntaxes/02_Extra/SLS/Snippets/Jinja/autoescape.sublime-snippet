@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[{% autoescape ${1:false} %}
+	${2:$SELECTION}
+{% endautoescape %}]]></content>
+	<tabTrigger>autoescape</tabTrigger>
+	<scope>source.sls</scope>
+	<description>autoescape</description>
+</snippet>

@@ -1,0 +1,8 @@
+New in Elm Language Support 0.20.0 (June 10, 2017)
+
+- New: elm-format errors display in a pop-up panel at the bottom of the Sublime
+  Text window, which disappears again once you correct the issue and re-run
+  elm-format. (Thanks, @stoivo!)
+
+- Improvement: README.md lists snippets supported by this package. (Thanks,
+  @Bernardoow!)

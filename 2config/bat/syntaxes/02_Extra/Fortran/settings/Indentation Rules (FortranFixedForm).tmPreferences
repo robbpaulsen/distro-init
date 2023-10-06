@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key><string>Indentation Rules</string>
+	<key>scope</key><string>source.fixedform-fortran</string>
+	<key>settings</key>
+	<dict>
+		<key>increaseIndentPattern</key>
+		<string>(?xi)
+	    ^ \s* (do) \b
+	|   ^ .*  (then) \s*$
+	|   ^ \s* (else) \s*$
+		</string>
+
+		<key>decreaseIndentPattern</key>
+		<!-- At least 8 spaces required to decrease indent -->
+		<string>(?xi)
+	    ^ \s{8} \s* end .* $
+		</string>
+
+		<!-- Disable further indent if already indented by  characters -->
+		<key>disableIndentNextLinePattern</key>
+		<string>^\s{20}</string>
+		
+		<!-- <key>unIndentedLinePattern</key> -->
+
+		<key>indentSquareBrackets</key>
+		<false/>
+
+
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+for $1
+	$0
+end
+]]></content>
+  <tabTrigger>for</tabTrigger>
+  <scope>source.julia</scope>
+  <description>for loop</description>
+</snippet>

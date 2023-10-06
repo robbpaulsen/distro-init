@@ -1,0 +1,248 @@
+<!-- visit https://macromates.com/manual/en/language_grammars for details on naming/scopes -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Dogrun</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9ea3c0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#545c8c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#7cbe8c</string>
+			</dict>
+		</dict>
+        <!-- unquoted strings in yaml -->
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+            <string>string.unquoted.plain.out.yaml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9ea3c0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Contants</string>
+			<key>scope</key>
+			<string>constant.numeric, constant.language, constant.character</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#73c1a9</string>
+			</dict>
+		</dict>
+        <!-- constant.other: for example formatting verbs used in printf %d, %f -->
+		<dict>
+			<key>name</key>
+			<string>Constant other</string>
+			<key>scope</key>
+			<string>constant.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b871b8</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Keywords</string>
+			<key>scope</key>
+			<string>keyword.control, keyword.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#929be5</string>
+			</dict>
+		</dict>
+        <!-- keyword.operator: for example logical || && -->
+		<dict>
+			<key>name</key>
+			<string>Keyword operator</string>
+			<key>scope</key>
+			<string>keyword.operator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9ea3c0</string>
+			</dict>
+		</dict>
+        <!-- storage.type: for example the type and func keywords in Go --> 
+		<dict>
+			<key>name</key>
+			<string>Storage type</string>
+			<key>scope</key>
+			<string>storage.type.keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ac8b83</string>
+			</dict>
+		</dict>
+        <!-- storage.type.keyword.map: the map keyword in Go --> 
+		<dict>
+			<key>name</key>
+			<string>Storage type map</string>
+			<key>scope</key>
+			<string>storage.type.keyword.map</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a8a384</string>
+			</dict>
+		</dict>
+        <!-- entity.name.tag: for example the key in a yaml object--> 
+		<dict>
+			<key>name</key>
+			<string>Entity names</string>
+			<key>scope</key>
+			<string>entity.name.function, entity.name.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#929be5</string>
+			</dict>
+		</dict>
+        <!-- name of type in a type declaration in go -->
+		<dict>
+			<key>name</key>
+			<string>Entity names</string>
+			<key>scope</key>
+			<string>entity.name.type.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a8a384</string>
+			</dict>
+		</dict>
+        <!-- meta.property.yaml: for example the anchor name in yaml-->
+		<dict>
+			<key>name</key>
+			<string>Meta</string>
+			<key>scope</key>
+			<string>meta.property.yaml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b871b8</string>
+			</dict>
+		</dict>
+        <!-- anchor alias in yaml like *foo refering to anchor &foo -->
+		<dict>
+			<key>name</key>
+			<string>Meta</string>
+			<key>scope</key>
+            <string>keyword.control.flow.alias.yaml, punctuation.definition.alias.yaml, variable.other.alias.yaml, invalid.illegal.character.anchor.yaml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a8a384</string>
+			</dict>
+		</dict>
+        <!-- support.type and class: for example type in a Go struct definition or types in a make(map[int]int) or the error type --> 
+		<dict>
+			<key>name</key>
+			<string>Support</string>
+			<key>scope</key>
+			<string>support</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a8a384</string>
+			</dict>
+		</dict>
+        <!-- support.function: for example len(), make() in Go--> 
+		<dict>
+			<key>name</key>
+			<string>Support function</string>
+			<key>scope</key>
+			<string>support.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ac8b83</string>
+			</dict>
+		</dict>
+        <!-- variable.function: for example slice.Sort where Sort is yellow -->
+		<dict>
+			<key>name</key>
+			<string>Variable function</string>
+			<key>scope</key>
+			<string>variable.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a8a384</string>
+			</dict>
+		</dict>
+        <!-- function parameter, its usages inside the function, package names in Go -->
+		<dict>
+			<key>name</key>
+			<string>Variable other and parameter go</string>
+			<key>scope</key>
+			<string>variable.parameter.go, variable.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9ea3c0</string>
+			</dict>
+		</dict>
+        <!-- markup.raw: for example `echo foo`, constant.other.language-name.markdown: for example the language name following a code block like ```sh  -->
+		<dict>
+			<key>name</key>
+			<string>Markup.raw, constant.other.language-name.markdown</string>
+			<key>scope</key>
+			<string>markup.raw, constant.other.language-name.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9ea3c0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Headings</string>
+			<key>scope</key>
+			<string>markup.heading</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a8a384</string>
+			</dict>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>D8D5E82E-3D5B-46B5-B38E-8C841C21347D</string>
+	<key>colorSpaceName</key>
+	<string>sRGB</string>
+	<key>semanticClass</key>
+	<string>theme.dogrun</string>
+</dict>
+</plist>

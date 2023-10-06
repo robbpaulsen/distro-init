@@ -1,0 +1,78 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: Comma Separated Values
+file_extensions:
+  - csv
+  - tsv
+scope: text.csv
+variables:
+  field_separator: (?:[,;\t])
+  record_separator: (?:$\n?)
+contexts:
+  prototype:
+    - match: (?={{record_separator}})
+      pop: true
+  fields:
+    - match: ''
+      push:
+        - field_or_record_separator
+        - field4
+        - field_or_record_separator
+        - field3
+        - field_or_record_separator
+        - field2
+        - field_or_record_separator
+        - field1
+  main:
+    - meta_include_prototype: false
+    - match: '^'
+      set: fields
+
+  field_or_record_separator:
+    - meta_include_prototype: false
+    - match: '{{record_separator}}'
+      scope: punctuation.terminator.record.csv
+      pop: true
+    - match: '{{field_separator}}'
+      scope: punctuation.separator.sequence.csv
+      pop: true
+
+  field_contents:
+    - match: '"'
+      scope: punctuation.definition.string.begin.csv
+      push: double_quoted_string
+
+    - match: (?={{field_separator}}|{{record_separator}})
+      pop: true
+
+  double_quoted_string:
+    - meta_include_prototype: false
+    - meta_scope: string.quoted.double.csv
+    - match: '""'
+      scope: constant.character.escape.csv
+    - match: '"'
+      scope: punctuation.definition.string.end.csv
+      pop: true
+
+  field1:
+    - match: ''
+      set:
+        - meta_content_scope: meta.field-1.csv support.type
+        - include: field_contents
+  field2:
+    - match: ''
+      set:
+        - meta_content_scope: meta.field-2.csv support.function
+        - include: field_contents
+  field3:
+    - match: ''
+      set:
+        - meta_content_scope: meta.field-3.csv constant.numeric
+        - include: field_contents
+  field4:
+    - match: ''
+      set:
+        - meta_content_scope: meta.field-4.csv keyword.operator
+        - include: field_contents
+

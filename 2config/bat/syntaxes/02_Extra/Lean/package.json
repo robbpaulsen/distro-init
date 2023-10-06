@@ -1,0 +1,474 @@
+{
+	"name": "lean",
+	"displayName": "lean",
+	"description": "An extension for VS Code which provides support for the Lean language.",
+	"version": "0.16.27",
+	"publisher": "jroesch",
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leanprover/vscode-lean.git"
+	},
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Lean",
+			"properties": {
+				"lean.executablePath": {
+					"type": "string",
+					"default": "lean",
+					"markdownDescription": "Path to the Lean executable to use. **DO NOT CHANGE** from the default `lean` unless you know what you're doing!"
+				},
+				"lean.leanpkgPath": {
+					"type": "string",
+					"default": "leanpkg",
+					"markdownDescription": "Path to the leanpkg executable to use. **DO NOT CHANGE** from the default `leanpkg` unless you know what you're doing!"
+				},
+				"lean.memoryLimit": {
+					"type": "number",
+					"default": 4096,
+					"markdownDescription": "Set a memory limit (in megabytes) for the Lean server."
+				},
+				"lean.timeLimit": {
+					"type": "number",
+					"default": 100000,
+					"markdownDescription": "Set a deterministic timeout (it is approximately the maximum number of memory allocations in thousands) for the Lean server."
+				},
+				"lean.extraOptions": {
+					"type": "array",
+					"default": [],
+					"markdownDescription": "Extra command-line options for the Lean server.",
+					"items": {
+						"type": "string",
+						"description": "a single command-line argument"
+					}
+				},
+				"lean.progressMessages": {
+					"type": "boolean",
+					"default": false,
+					"markdownDescription": "Show error messages where Lean is still checking."
+				},
+				"lean.roiModeDefault": {
+					"type": "string",
+					"default": "visible",
+					"markdownDescription": "Set the default region of interest mode (nothing, visible, lines, linesAndAbove, open, or project) for the Lean extension."
+				},
+				"lean.input.enabled": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "Enable Lean input mode."
+				},
+				"lean.input.customTranslations": {
+					"type": "object",
+					"items": {
+						"type": "string",
+						"description": "Unicode character to translate to"
+					},
+					"default": {},
+					"markdownDescription": "Add additional input Unicode translations. Example: `{\"foo\": \"☺\"}` will correct `\\foo` to `☺`."
+				},
+				"lean.input.languages": {
+					"type": "array",
+					"default": [
+						"lean"
+					],
+					"markdownDescription": "Enable Lean Unicode input in other file types.",
+					"items": {
+						"type": "string",
+						"description": "the name of a language, e.g. 'lean', 'markdown'"
+					}
+				},
+				"lean.input.leader": {
+					"type": "string",
+					"default": "\\",
+					"markdownDescription": "Leader key to trigger input mode."
+				},
+				"lean.input.eagerReplacementEnabled": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "Enable eager replacement of abbreviations that uniquely identify a symbol."
+				},
+				"lean.infoViewAllErrorsOnLine": {
+					"type": "boolean",
+					"default": false,
+					"markdownDescription": "Info view: show all errors on the current line, instead of just the ones on the right of the cursor."
+				},
+				"lean.infoViewAutoOpen": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "Info view: open info view when Lean extension is activated."
+				},
+				"lean.infoViewAutoOpenShowGoal": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "Info view: auto open shows goal and messages for the current line (instead of all messages for the whole file)"
+				},
+				"lean.infoViewStyle": {
+					"type": "string",
+					"default": "",
+					"markdownDescription": "Add an additional CSS snippet to the info view."
+				},
+				"lean.infoViewTacticStateFilters": {
+					"type": "array",
+					"default": [
+						{
+							"regex": "^_",
+							"match": false,
+							"flags": ""
+						},
+						{
+							"name": "goals only",
+							"regex": "^(⊢|\\d+ goals|case|$)",
+							"match": true,
+							"flags": ""
+						}
+					],
+					"markdownDescription": "An array of objects containing regular expression strings that can be used to filter (positively or negatively) the tactic state in the info view. Set to an empty array `[]` to hide the filter select dropdown.\n \n Each object must contain the following keys: 'regex': string, 'match': boolean, 'flags': string.\n 'regex' is a properly-escaped regex string,\n 'match' = true (false) means blocks in the tactic state matching 'regex' will be included (excluded) in the info view, \n 'flags' are additional flags passed to the JavaScript `RegExp` constructor.\n The 'name' key is optional and may contain a string that is displayed in the dropdown instead of the full regex details.",
+					"items": {
+						"type": "object",
+						"description": "an object with required properties 'regex': string, 'match': boolean, and 'flags': string, and optional property 'name': string",
+						"properties": {
+							"name": {
+								"type": "string",
+								"description": "name displayed in the dropdown"
+							},
+							"regex": {
+								"type": "string",
+								"description": "a properly-escaped regex string, e.g. '^_' matches any string beginning with an underscore"
+							},
+							"match": {
+								"type": "boolean",
+								"description": "whether tactic state lines matching the value of 'regex' should be included (true) or excluded (false)"
+							},
+							"flags": {
+								"type": "string",
+								"description": "additional flags passed to the RegExp constructor, e.g. 'i' for ignore case"
+							}
+						},
+						"required": [
+							"regex",
+							"match",
+							"flags"
+						]
+					}
+				},
+				"lean.infoViewFilterIndex": {
+					"type": "number",
+					"default": -1,
+					"markdownDescription": "Index of the filter applied to the tactic state (in the array infoViewTacticStateFilters). An index of -1 means no filter is applied."
+				},
+				"lean.typeInStatusBar": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "Show the type of term under the cursor in the status bar."
+				},
+				"lean.typesInCompletionList": {
+					"type": "boolean",
+					"default": false,
+					"markdownDescription": "Display types of all items in the list of completions. By default, only the type of the highlighted item is shown."
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "lean.restartServer",
+				"category": "Lean",
+				"title": "Restart",
+				"description": "Restart the Language Server."
+			},
+			{
+				"command": "lean.pasteTacticSuggestion",
+				"category": "Lean",
+				"title": "Paste Tactic Suggestion",
+				"description": "Pastes a suggestion provided by a tactic (e.g. from squeeze_simp)"
+			},
+			{
+				"command": "lean.input.convert",
+				"category": "Lean",
+				"title": "Input: Convert Current Abbreviation",
+				"description": "Converts the current abbreviation (e.g. \\lam)."
+			},
+			{
+				"command": "lean.displayGoal",
+				"category": "Lean",
+				"title": "Info View: Display Goal",
+				"description": "Display the goal and any messages at the current position in the info view.",
+				"icon": {
+					"dark": "./media/display-goal-dark.svg",
+					"light": "./media/display-goal-light.svg"
+				}
+			},
+			{
+				"command": "lean.displayList",
+				"category": "Lean",
+				"title": "Info View: Toggle \"All Messages\"",
+				"description": "Toggles the \"All Messages\" widget in the info view."
+			},
+			{
+				"command": "lean.openDocView",
+				"category": "Lean",
+				"title": "Open Documentation View",
+				"description": "Open documentation panel"
+			},
+			{
+				"command": "lean.infoView.copyToComment",
+				"category": "Lean",
+				"title": "Info View: Copy Contents to Comment",
+				"description": "Copy the contents of the currently active tactic state widget to a new comment on the previous line.",
+				"icon": {
+					"dark": "./media/copy-to-comment-dark.svg",
+					"light": "./media/copy-to-comment-light.svg"
+				}
+			},
+			{
+				"command": "lean.infoView.toggleStickyPosition",
+				"category": "Lean",
+				"title": "Info View: Toggle Pin",
+				"description": "Create or remove a tactic state widget pinned to show the goal at the current position.",
+				"icon": {
+					"dark": "./media/toggle-sticky-position-dark.svg",
+					"light": "./media/toggle-sticky-position-light.svg"
+				}
+			},
+			{
+				"command": "lean.infoView.toggleUpdating",
+				"category": "Lean",
+				"title": "Info View: Toggle Updating",
+				"description": "Pause / Continue live updating of the main tactic state widget."
+			},
+			{
+				"command": "lean.roiMode.select",
+				"category": "Lean",
+				"title": "Select Region-of-interest",
+				"description": "Select files to be checked by the Lean server."
+			},
+			{
+				"command": "lean.roiMode.nothing",
+				"category": "Lean",
+				"title": "Check Nothing",
+				"description": "Disable automatic checking of Lean code."
+			},
+			{
+				"command": "lean.roiMode.visibleFiles",
+				"category": "Lean",
+				"title": "Check Visible Files",
+				"description": "Automatically check all files that are visible."
+			},
+			{
+				"command": "lean.roiMode.linesAndAbove",
+				"category": "Lean",
+				"title": "Check visible lines and above",
+				"description": "Automatically check all visible lines and lines above them."
+			},
+			{
+				"command": "lean.roiMode.openFiles",
+				"category": "Lean",
+				"title": "Check Open Files",
+				"description": "Automatically check all opened files."
+			},
+			{
+				"command": "lean.roiMode.projectFiles",
+				"category": "Lean",
+				"title": "Check Project Files",
+				"description": "Automatically check all files in the workspace."
+			},
+			{
+				"command": "lean.batchExecute",
+				"category": "Lean",
+				"title": "Batch Execute File",
+				"description": "Execute the current file using Lean."
+			}
+		],
+		"languages": [
+			{
+				"id": "lean",
+				"aliases": [
+					"Lean",
+					"lean"
+				],
+				"extensions": [
+					".lean"
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "leanmarkdown",
+				"aliases": [],
+				"extensions": [
+					".leanmarkdown"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "lean",
+				"scopeName": "source.lean",
+				"path": "./syntaxes/lean.json"
+			},
+			{
+				"language": "leanmarkdown",
+				"scopeName": "source.lean.markdown",
+				"path": "./syntaxes/lean-markdown.json"
+			},
+			{
+				"scopeName": "markdown.lean.codeblock",
+				"path": "./syntaxes/codeblock.json",
+				"injectTo": [
+					"text.html.markdown"
+				],
+				"embeddedLanguages": {
+					"meta.embedded.block.lean": "lean"
+				}
+			}
+		],
+		"keybindings": [
+			{
+				"command": "lean.displayGoal",
+				"key": "ctrl+shift+enter",
+				"mac": "cmd+shift+enter",
+				"when": "editorTextFocus && editorLangId == lean"
+			},
+			{
+				"command": "lean.displayList",
+				"key": "ctrl+shift+alt+enter",
+				"mac": "cmd+shift+alt+enter",
+				"when": "editorTextFocus && editorLangId == lean"
+			},
+			{
+				"command": "lean.input.convert",
+				"key": "tab",
+				"mac": "tab",
+				"when": "editorTextFocus && editorLangId == lean && lean.input.isActive"
+			},
+			{
+				"command": "lean.batchExecute",
+				"key": "ctrl+shift+r",
+				"mac": "cmd+shift+r",
+				"when": "editorTextFocus && editorLangId == lean"
+			},
+			{
+				"command": "lean.pasteTacticSuggestion",
+				"key": "alt+v",
+				"mac": "alt+v",
+				"when": "editorTextFocus && editorLangId == lean"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "lean.displayGoal",
+					"when": "editorLangId == lean"
+				},
+				{
+					"command": "lean.input.convert",
+					"when": "editorLangId == lean && lean.input.isActive"
+				},
+				{
+					"command": "lean.batchExecute",
+					"when": "editorLangId == lean"
+				},
+				{
+					"command": "lean.infoView.copyToComment",
+					"when": "editorLangId == lean"
+				},
+				{
+					"command": "lean.infoView.toggleStickyPosition",
+					"when": "editorLangId == lean"
+				},
+				{
+					"command": "lean.infoView.toggleUpdating",
+					"when": "editorLangId == lean || infoViewFocused"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "lean.displayGoal",
+					"when": "editorLangId == lean",
+					"group": "navigation@2"
+				}
+			]
+		},
+		"configurationDefaults": {
+			"[lean]": {
+				"editor.tabSize": 2
+			}
+		}
+	},
+	"activationEvents": [
+		"onLanguage:lean",
+		"onLanguage:markdown",
+		"onCommand:lean.restartSever",
+		"onCommand:lean.infoDocument.toggleMode",
+		"onCommand:lean.roiMode.select",
+		"onCommand:lean.roiMode.nothing",
+		"onCommand:lean.roiMode.cursor",
+		"onCommand:lean.roiMode.visibleFiles",
+		"onCommand:lean.roiMode.openFiles",
+		"onCommand:lean.roiMode.projectFiles"
+	],
+	"main": "./out/extension",
+	"scripts": {
+		"vscode:prepublish": "webpack --env.production",
+		"compile": "webpack --env.development",
+		"watch": "webpack --env.development --watch --info-verbosity verbose",
+		"lint": "eslint -c ./.eslintrc.js ./src/**/*.ts ./infoview/**/*.tsx",
+		"package": "vsce package"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"carrier": "0.3.0",
+		"cheerio": "^1.0.0-rc.3",
+		"express": "^4.17.1",
+		"hasbin": "^1.2.3",
+		"katex": "^0.12.0",
+		"lean-client-js-core": "^1.5.0",
+		"lean-client-js-node": "^1.5.0",
+		"load-json-file": "6.2.0",
+		"mobx": "5.15.7",
+		"react-katex": "^2.0.2",
+		"semver": "^7.3.2",
+		"username": "^5.1.0"
+	},
+	"devDependencies": {
+		"@popperjs/core": "^2.4.4",
+		"@types/cheerio": "^0.22.18",
+		"@types/express": "^4.17.6",
+		"@types/load-json-file": "^5.1.0",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.13.12",
+		"@types/react": "^16.9.41",
+		"@types/react-dom": "^16.9.8",
+		"@types/semver": "^7.3.1",
+		"@types/username": "^3.0.0",
+		"@types/vscode": "^1.38.0",
+		"@typescript-eslint/eslint-plugin": "^3.5.0",
+		"@typescript-eslint/parser": "^3.5.0",
+		"css-loader": "^3.6.0",
+		"eslint": "^7.4.0",
+		"ovsx": "0.1.0-next.72b2e9d",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-popper": "^2.2.3",
+		"style-loader": "^1.1.3",
+		"svg-loader": "0.0.2",
+		"ts-loader": "^6.2.1",
+		"typescript": "^3.9.6",
+		"url-loader": "^4.1.0",
+		"vsce": "^1.79.3",
+		"webpack": "^4.41.6",
+		"webpack-cli": "^3.3.12"
+	},
+	"icon": "images/lean_logo.png",
+	"license": "Apache-2.0",
+	"__metadata": {
+		"id": "e5e5c0e2-0fb3-4f00-9c79-5b15f9ff8430",
+		"publisherDisplayName": "jroesch",
+		"publisherId": "7875b14e-7883-4853-ac79-bfe9296fab82"
+	}
+}

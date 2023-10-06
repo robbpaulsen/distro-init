@@ -1,0 +1,9 @@
+New in Elm Language Support 0.21.0 (Nov 5, 2017)
+
+- Improvement: Elm language syntax files are now implemented using
+  Sublime Text's new .sublime-syntax format, and supports Goto Symbol properly
+  (listing each function only once, instead of including the type annotations).
+  (Thanks, @stoivo!)
+
+- New: ‘debug’ snippet that makes using `Debug.log` to output values to the
+  console very convenient. (Thanks, @Bernardoow!)

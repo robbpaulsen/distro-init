@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+function $1($2)
+	$0
+end
+]]></content>
+  <tabTrigger>fun</tabTrigger>
+  <scope>source.julia</scope>
+  <description>function definition</description>
+</snippet>

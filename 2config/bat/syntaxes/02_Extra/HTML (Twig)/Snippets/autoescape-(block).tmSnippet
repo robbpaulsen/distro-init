@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>{% autoescape %}
+	$0
+{% endautoescape %}</string>
+    <key>name</key>
+    <string>autoescape (block)</string>
+    <key>scope</key>
+    <string>text.html.twig</string>
+    <key>tabTrigger</key>
+    <string>escape.</string>
+    <key>uuid</key>
+    <string>7F4DD115-8AA4-4304-88F7-9FBC2DCE0982</string>
+</dict>
+</plist>

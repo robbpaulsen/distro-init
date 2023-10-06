@@ -1,0 +1,109 @@
+# SYNTAX TEST "ProtobufText.sublime-syntax"
+
+name: "player_1"
+# <- variable.other.member.prototxt
+#   ^ punctuation.separator.key-value.prototxt
+#     ^ string.quoted.double.prototxt punctuation.definition.string.begin.prototxt
+#      ^^^^^^^^ string.quoted.double.prototxt
+health: 100.0
+# <- variable.other.member.prototxt
+#     ^ punctuation.separator.key-value.prototxt
+#       ^^^^^ constant.numeric.float.prototxt
+health: 100f
+#       ^^^^ constant.numeric.float.prototxt
+#          ^ punctuation.definition.numeric.float.prototxt
+health: 1e+2
+#       ^^^^ constant.numeric.float.prototxt
+xp: 4200   # normal digit
+#   ^^^^ constant.numeric.integer.prototxt
+#            ^^^^^^^^^^^^ comment.line.prototxt
+xp: 04200  # octal
+#   ^^^^^ constant.numeric.octal.prototxt
+#   ^ punctuation.definition.numeric.octal.prototxt
+xp: 0xFFFF # hex
+#   ^^^^^^ constant.numeric.hex.prototxt
+#   ^^ punctuation.definition.numeric.hex.prototxt
+xp: -24
+#   ^^^ constant.numeric.integer.prototxt
+xp: +24
+#   ^^^ constant.numeric.integer.prototxt
+xp: 0
+#   ^ constant.numeric.integer.prototxt
+xp: +Inf
+#   ^^^^ constant.language.prototxt
+xp: NaN
+#   ^^^ constant.language.prototxt
+
+stats {
+# <- variable.other.member.prototxt
+#     ^ meta.message.prototxt punctuation.definition.dictionary.begin.prototxt
+  key: "STR"
+  value {
+    id: "STR"
+    max_value: 100
+    # <- meta.message.prototxt meta.message.prototxt variable.other.member.prototxt
+  }
+# ^ meta.message.prototxt meta.message.prototxt punctuation.definition.dictionary.end.prototxt
+}
+# <- meta.message.prototxt punctuation.definition.dictionary.end.prototxt
+
+stats <
+# <- variable.other.member.prototxt
+#     ^ meta.message.prototxt punctuation.definition.dictionary.begin.prototxt
+  key: "INT"
+  value <
+    # <- variable.other.member.prototxt
+    #   ^ meta.message.prototxt punctuation.definition.dictionary.begin.prototxt
+    id: "INT"
+    max_value: 20
+  >
+# ^ punctuation.definition.dictionary.end.prototxt
+>
+# <- meta.message.prototxt punctuation.definition.dictionary.end.prototxt
+
+buffs: [BURNING, POISONED]
+# <- variable.other.member.prototxt
+#    ^ punctuation.separator.key-value.prototxt
+#      ^ punctuation.definition.array.begin.prototxt
+#       ^^^^^^^ constant.numeric.enum.prototxt
+#                ^^^^^^^^ constant.numeric.enum.prototxt
+#                        ^ punctuation.definition.array.end.prototxt
+avatar: "aaabbb\nccc\c"
+#       ^^^^^^^^^^^^^^^ string.quoted.double.prototxt
+#              ^^ constant.character.escape.prototxt
+#                   ^^ invalid.illegal
+        "dddddddd"
+#       ^^^^^^^^^^ string.quoted.double.prototxt
+
+escaped_chars: "\x12  \" \' \u124"
+#               ^^^^ constant.character.escape.prototxt
+#                     ^^ constant.character.escape.prototxt
+#                        ^^ constant.character.escape.prototxt
+#                           ^^^^^ constant.character.escape.prototxt
+
+name: "Conan", name: "The barbar"
+#            ^ punctuation.separator.prototxt
+#              ^^^^ variable.other.member.prototxt
+alive: true
+
+[extension.field]: 20
+# <- punctuation.definition.field_name.begin.prototxt
+#^^^^^^^^^ variable.other.namespace.prototxt
+#         ^ punctuation.accessor.prototxt
+#          ^^^^^ variable.other.member.prototxt
+#               ^ punctuation.definition.field_name.end.prototxt
+#                ^ punctuation.separator.key-value.prototxt
+#                  ^^ constant.numeric.integer.prototxt
+
+[extension.field_message] {
+# <- punctuation.definition.field_name.begin.prototxt
+#^^^^^^^^^ variable.other.namespace.prototxt
+#         ^ punctuation.accessor.prototxt
+#          ^^^^^^^^^^^^^ variable.other.member.prototxt
+#                       ^ punctuation.definition.field_name.end.prototxt
+#                         ^ meta.message.prototxt punctuation.definition.dictionary.begin.prototxt
+
+  value: 20
+#        ^^ constant.numeric.integer.prototxt
+}
+# <- meta.message.prototxt punctuation.definition.dictionary.end.prototxt

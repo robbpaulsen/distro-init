@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+module $1 exposing (${2:..})
+]]>
+	</content>
+	<description>module</description>
+	<tabTrigger>mod</tabTrigger>
+	<scope>source.elm</scope>
+</snippet>

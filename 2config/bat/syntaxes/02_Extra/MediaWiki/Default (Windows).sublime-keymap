@@ -1,0 +1,68 @@
+[
+    { "keys": ["alt+f1"], "command": "mediawiker_edit_panel" },
+    { "keys": ["alt+f2"], "command": "mediawiker_show_toc" },
+    { "keys": ["alt+f3"], "command": "mediawiker_open_page" },
+    { "keys": ["alt+f5"], "command": "mediawiker_open_page_in_browser" },
+    { "keys": ["alt+f6"], "command": "mediawiker_set_active_site" },
+    { "keys": ["alt+f7"], "command": "mediawiker_post_page" },
+    { "keys": ["alt+f10"], "command": "mediawiker_page_list" },
+    { "keys": ["alt+f11"], "command": "show_overlay", "args": {"overlay": "command_palette", "text":"Mediawiker"} },
+    {
+        "keys": ["ctrl+b"], "command": "insert_snippet", "args": {"name": "Packages/Mediawiker/snippets/mw_bold.sublime-snippet"},
+        "context": [{"key": "setting.mediawiker_is_here", "operand": true}]
+    },
+    {
+        "keys": ["ctrl+i"], "command": "insert_snippet", "args": {"name": "Packages/Mediawiker/snippets/mw_italic.sublime-snippet"},
+        "context": [{"key": "setting.mediawiker_is_here", "operand": true}]
+    },
+    {
+        "keys": ["ctrl+alt+2"], "command": "insert_snippet", "args": {"name": "Packages/Mediawiker/snippets/mw_h2.sublime-snippet"},
+        "context": [{"key": "setting.mediawiker_is_here", "operand": true}]
+    },
+    {
+        "keys": ["ctrl+alt+3"], "command": "insert_snippet", "args": {"name": "Packages/Mediawiker/snippets/mw_h3.sublime-snippet"},
+        "context": [{"key": "setting.mediawiker_is_here", "operand": true}]
+    },
+    {
+        "keys": ["ctrl+alt+4"], "command": "insert_snippet", "args": {"name": "Packages/Mediawiker/snippets/mw_h4.sublime-snippet"},
+        "context": [{"key": "setting.mediawiker_is_here", "operand": true}]
+    },
+    {
+        "keys": ["ctrl+alt+5"], "command": "insert_snippet", "args": {"name": "Packages/Mediawiker/snippets/mw_h5.sublime-snippet"},
+        "context": [{"key": "setting.mediawiker_is_here", "operand": true}]
+    },
+    {
+        "keys": ["f5"], "command": "mediawiker_reopen_page", "context": [{"key": "setting.mediawiker_is_here", "operand": true}]
+    },
+    {
+        "keys": ["ctrl+s"], "command": "mediawiker_post_page", "context": [
+            {"key": "setting.mediawiker_is_here", "operand": true},
+            {"key": "setting.mediawiker_wiki_instead_editor", "operand": true}
+        ]
+    },
+    {
+        "keys": ["ctrl+alt+k"], "command": "insert_snippet", "args": {"name": "Packages/Mediawiker/snippets/mw_kbd.sublime-snippet"},
+        "context": [{"key": "setting.mediawiker_is_here", "operand": true}]
+    },
+    { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "${TM_CURRENT_LINE/^(([*#]+)(\\s?)).*/\n$2$3/}"}, "context":
+        [
+            { "key": "setting.mediawiker_is_here", "operand": true},
+            { "key": "selector", "operator": "equal", "operand": "text.html.mediawiki", "match_all": true },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "^[*#]+\\s*\\S.*", "match_all": true },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false }
+        ]
+    },
+    { "keys": ["enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}, "context":
+        [
+            { "key": "setting.mediawiker_is_here", "operand": true},
+            { "key": "selector", "operator": "equal", "operand": "text.html.mediawiki", "match_all": true },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "^[*#]+\\s*$", "match_all": true },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false }
+        ]
+    },
+    {
+        "keys": ["ctrl+shift+["], "command": "mediawiker_page", "args": {"action": "mediawiker_colapse", "action_params": {"type": "fold"}}, "context": [
+            {"key": "setting.mediawiker_is_here", "operand": true}
+        ]
+    }
+]

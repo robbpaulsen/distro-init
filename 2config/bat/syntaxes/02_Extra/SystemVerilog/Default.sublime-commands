@@ -1,0 +1,63 @@
+[
+    {
+        "caption": "Verilog: Show Signal/Variable Type",
+        "command": "verilog_type"
+    },
+    {
+        "caption": "Verilog: Instantiate Module",
+        "command": "verilog_module_inst"
+    },
+    {
+        "caption": "Verilog: Alignment",
+        "command": "verilog_align"
+    },
+    {
+        "caption": "Verilog: Reindent",
+        "command": "verilog_align",
+        "args" : {"cmd": "reindent"}
+    },
+    {
+        "caption": "Verilog: Toggle .*",
+        "command": "verilog_toggle_dot_star"
+    },
+    {
+        "caption": "Verilog: GoTo Driver",
+        "command": "verilog_goto_driver"
+    },
+    {
+        "caption": "Verilog: GoTo Declaration",
+        "command": "verilog_goto_declaration"
+    },
+    {
+        "caption": "Verilog: Insert FSM template",
+        "command": "verilog_insert_fsm_template"
+    },
+    {
+        "caption": "Verilog: Show Module Hierarchy",
+        "command": "verilog_show_hierarchy"
+    },
+    {
+        "caption": "Verilog: Show Navigation Bar",
+        "command": "verilog_show_navbar"
+    },
+    {
+        "caption": "Verilog: Find Instance",
+        "command": "verilog_find_instance"
+    },
+    {
+        "caption": "Verilog: Find Unused Signals",
+        "command": "verilog_linting", "args" : {"unused": "True"}
+    },
+    {
+        "caption": "Verilog: Linting",
+        "command": "verilog_linting", "args" : {"unused": "True", "undeclared": "True"}
+    },
+    {
+        "caption": "Verilog: Show/Hide NavBar",
+        "command": "verilog_toggle_navbar", "args" : {"cmd": "toggle"}
+    },
+    {
+        "caption": "Verilog: Lock/Unlock NavBar",
+        "command": "verilog_toggle_lock_navbar"
+    }
+]

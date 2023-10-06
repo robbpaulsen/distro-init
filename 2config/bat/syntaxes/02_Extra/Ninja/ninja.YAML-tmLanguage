@@ -1,0 +1,57 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: Ninja
+scopeName: source.ninja
+fileTypes: [ninja]
+uuid: e837e9ed-6ad9-4103-b705-50503a86fc83
+
+patterns:
+- comment: Comment line.
+  name: comment.line.number-sign.ninja
+  match: (#).*$\n?
+  captures:
+    '1': {name: punctuation.definition.comment.ninja}
+
+- comment: Rule keyword and keywords for a rule.
+  begin: ^(rule)\b
+  beginCaptures:
+    '1': {name: keyword.other.ninja}
+  end: ^(?=\S)
+  patterns:
+  - include: $self
+  - name: keyword.other.ninja
+    match: \b(?:command|deps|depfile|description|generator|pool|restat|rspfile|rspfile_content)\b
+
+- comment: Pool keyword and keywords for a pool.
+  begin: ^(pool)\b
+  beginCaptures:
+    '1': {name: keyword.other.ninja}
+  end: ^(?=\S)
+  patterns:
+  - include: $self
+  - name: keyword.other.ninja
+    match: \b(?:depth)\b
+
+- comment: Other Keywords.
+  name: keyword.other.ninja
+  match: ^(?:build|rule|default|include|subninja)\b
+
+- comment: Operators for variable assignment (=), rule definition (:), implicit (|)
+    and order only (||) dependencies.
+  name: keyword.operator.ninja
+  match: (?:[=:]|\|{1,2})(?=\s)
+
+- comment: Line wrap.
+  name: keyword.operator.ninja
+  match: \$$
+
+- comment: Dollar literal.
+  name: keyword.operator.ninja
+  match: \$\$
+
+- comment: Simple variables, e.g. $var.
+  name: variable.other.ninja
+  match: \$[[:alnum:]_-]+
+
+- comment: Variables, e.g. ${some.var.name}.
+  name: variable.other.ninja
+  match: \${[[:alnum:]_.-]+}

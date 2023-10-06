@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>{% plural {$1:count} %}
+	$0</string>
+    <key>name</key>
+    <string>plural</string>
+    <key>scope</key>
+    <string>text.html.twig</string>
+    <key>tabTrigger</key>
+    <string>plural</string>
+    <key>uuid</key>
+    <string>59773805-D821-4937-BADD-BE3067E1107E</string>
+</dict>
+</plist>

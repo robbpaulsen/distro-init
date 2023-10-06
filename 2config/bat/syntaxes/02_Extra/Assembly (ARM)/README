@@ -1,0 +1,7 @@
+This is a TextMate and Sublime bundle which provides very basic language syntax for some
+ARM assembly. It includes the adding of symbol detection for labels, seperation of mnemonic types, allowing case insensitivity, and including some less common syntax (this syntax highlighting was designed to be used at the University of Manchester for the ARM teaching there and also was designed based off solarized dark themes - but should work fine on any).
+
+This was originally forked from drd's fork of foxostro's x86 Assembly bundle, which,
+in turn was forked from amorrow's PIC Assembly syntax.
+
+This bundle is in the public domain.

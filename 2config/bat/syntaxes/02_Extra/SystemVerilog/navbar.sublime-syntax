@@ -1,0 +1,148 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Navigational Bar SV
+scope: text.hierarchy-systemverilog
+hidden: true
+
+contexts:
+  main:
+    - match: ^\s*(᠎)(\w+)\s*(?=\(|\[)
+      captures:
+        1: meta.annotation.marker.hierarchy-systemverilog
+        2: entity.name.hierarchy-systemverilog
+      push:
+        - match: \)
+          pop: true
+        - include: numbers
+        - match: \((\w+)
+          captures:
+            1: storage.name.type.hierarchy-systemverilog
+    - match: ^\s+(\w+)(?:\s*\((function|task)\))
+      captures:
+        1: entity.name.method.hierarchy-systemverilog
+        2: storage.name.method.hierarchy-systemverilog
+    - match: ^\s*(\w+)\s*(?=\(|\[)
+      captures:
+        1: entity.name.hierarchy-systemverilog
+      push:
+        - match: \)
+          pop: true
+        - include: numbers
+        - match: \((\w+)
+          captures:
+            1: storage.name.type.userdefined.hierarchy-systemverilog
+    - match: ^\s+(\*)
+      captures:
+        1: keyword.operator.list.hierarchy-systemverilog
+      push:
+        - meta_scope: meta.simple-list.hierarchy-systemverilog
+        - match: \n
+          pop: true
+        - match: (input|output|inout)
+          scope: support.type.hierarchy-systemverilog
+        - match: \b(logic|bit|int|event|string|real|signed|unsigned)\b
+          scope: storage.name.type.std.list.hierarchy-systemverilog
+        - match: (?:(\w+)(::))?(\w+)\s+(\w+)
+          captures:
+            1: support.type.scope.systemverilog
+            2: keyword.operator.scope.systemverilog
+            3: storage.name.type.userdefined.list.hierarchy-systemverilog
+            4: source.name.hierarchy-systemverilog
+        - match: (?:(\w+)\.)?(\w+)\s+(\w+)
+          captures:
+            1: storage.name.type.userdefined.list.hierarchy-systemverilog
+            2: support.modport.scope.systemverilog
+            3: source.name.hierarchy-systemverilog
+        - match: \b[A-Z_][A-Z0-9_]*\b
+          scope: constant.other.systemverilog
+        - include: numbers
+        - include: operators
+    - match: '^\s*(Members|Methods|Ports|Signals|Instances|Modports)'
+      captures:
+        1: keyword.hierarchy-systemverilog
+    - match: '^(\w+)'
+      captures:
+        1: keyword.top-level.hierarchy-systemverilog
+      push:
+        - match: \n
+          pop: true
+        - include: strings
+        - include: numbers
+        - include: operators
+        - match: type
+          scope: keyword.hierarchy-systemverilog
+        - match: logic|bit|int|event|string|real|signed|unsigned
+          scope: storage.name.params.hierarchy-systemverilog
+        - match: (\w+)\s+\w+
+          captures:
+            1: storage.name.params.userdefined.hierarchy-systemverilog
+    - match: '^  (\w+)'
+      captures:
+        1: storage.name.base-type.hierarchy-systemverilog
+      push:
+        - meta_scope: meta.extends.hierarchy-systemverilog
+        - match: ^--
+          pop: true
+        - match: ^\s+(-) (\w+)
+          captures:
+            1: keyword.operator.hierarchy-systemverilog
+            2: storage.name.sub-base-type.hierarchy-systemverilog
+        - include: strings
+        - include: numbers
+        - include: operators
+    - match: ^[=]+
+      scope: comment.line.hierarchy-systemverilog
+  strings:
+    - match: '"'
+      captures:
+        0: punctuation.definition.string.begin.systemverilog
+      push:
+        - meta_scope: string.quoted.double.systemverilog
+        - match: '"'
+          captures:
+            0: punctuation.definition.string.end.systemverilog
+          pop: true
+        - match: \\.
+          scope: constant.character.escape.systemverilog
+        - match: |
+            (?x)%
+            (-?\d+)?                     # minimum field width
+            [bBcCdDeEfFgGhHoOpPsSuUxXzZ]   # conversion type
+          scope: constant.other.placeholder.systemverilog
+        - match: |
+            (?x)%
+            (-?\d+)?     # minimum field width
+            (\.-?\d+)?   # precision
+            [eEfFgG]     # conversion type
+          scope: constant.other.placeholder.float.systemverilog
+        - match: '%[lLmMtTvV%]'
+          scope: constant.other.placeholder.systemverilog
+        - match: "%"
+          scope: invalid.illegal.placeholder.systemverilog
+  numbers:
+    - match: '(\b\d+)?''(s?[bB]\s*[0-1xXzZ?][0-1_xXzZ?]*|s?[oO]\s*[0-7xXzZ?][0-7_xXzZ?]*|s?[dD]\s*[0-9xXzZ?][0-9_xXzZ?]*|s?[hH]\s*[0-9a-fA-FxXzZ?][0-9a-fA-F_xXzZ?]*)((e|E)(\+|-)?[0-9]+)?(?!''|\w)'
+      scope: constant.numeric.systemverilog
+    - match: "'[01xXzZ]"
+      scope: constant.numeric.bit.systemverilog
+    - match: '\b((\d[\d_]*)(e|E)(\+|-)?[0-9]+)\b'
+      scope: constant.numeric.exp.systemverilog
+    - match: '\b(\d[\d_]*)\b'
+      scope: constant.numeric.decimal.systemverilog
+    - match: \b(\d+(fs|ps|ns|us|ms|s)?)\b
+      scope: constant.numeric.time.systemverilog
+  operators:
+    - match: (==|===|!=|!==|<=|>=|<|>)
+      scope: keyword.operator.comparison.systemverilog
+    - match: (\-|\+|\*|\/|<<|>>|%)
+      scope: keyword.operator.arithmetic.systemverilog
+    - match: (!|&&|\|\|)
+      scope: keyword.operator.logical.systemverilog
+    - match: '(&|\||\^|~)'
+      scope: keyword.operator.bitwise.systemverilog
+    - match: '(\{|})'
+      scope: keyword.operator.other.systemverilog
+    - match: '(\?|:)'
+      scope: keyword.operator.ternary.systemverilog
+    - match: (#)
+      scope: keyword.operator.other.systemverilog

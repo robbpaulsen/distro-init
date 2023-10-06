@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+case $1 of
+	Ok $2 ->
+		$3
+	Error ${4:error} ->
+		$5
+]]>
+	</content>
+	<description>case … of (Result)</description>
+	<tabTrigger>cofr</tabTrigger>
+	<scope>source.elm</scope>
+</snippet>

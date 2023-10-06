@@ -1,0 +1,7 @@
+*.pyc
+*.cache
+update
+todo.txt
+contracts/*
+tag
+deploy

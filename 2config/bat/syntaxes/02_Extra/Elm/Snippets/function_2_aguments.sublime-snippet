@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+${1:fn}: ${3:Int} -> ${4:Int} -> ${2:Int}
+${1:fn} ${5:a} ${6:a} =
+	${7:-- body}
+]]></content>
+	<description>Function (a -> b -> c)</description>
+	<tabTrigger>fn2</tabTrigger>
+	<scope>source.elm</scope>
+</snippet>

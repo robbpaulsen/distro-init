@@ -1,0 +1,57 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [{
+            "id": "SublimeREPL",
+            "caption": "SublimeREPL",
+            "mnemonic": "R",
+            "children":
+            [
+                {
+                    "caption": "Elm",
+                    "id": "repl_elm",
+                    "command": "repl_open", "args":
+                    {
+                        "type": "subprocess",
+                        "encoding": "utf8",
+                        "cmd": ["elm-repl"],
+                        "cwd": "$file_path",
+                        "syntax": "Packages/Elm Language Support/Syntaxes/Elm.sublime-syntax",
+                        "external_id": "elm",
+                        "extend_env":
+                        {
+                            "osx": {"PATH": "{PATH}:/usr/local/bin"},
+                            "linux": {"PATH": "{PATH}:/usr/local/bin:{HOME}/.cabal/bin"},
+                            "windows": {}
+                        }
+                    }
+                }
+            ]
+        }]
+    },
+    {
+        "id": "preferences",
+        "children":
+        [{
+            "id": "package-settings",
+            "children":
+            [
+                {
+                    "caption": "Elm Language Support",
+                    "children":
+                    [
+                        {
+                            "caption": "Settings",
+                            "command": "edit_settings",
+                            "args": {
+                                "base_file": "${packages}/Elm Language Support/Settings/Elm Language Support.sublime-settings",
+                                "default": "// Settings in here override those in \"Elm Language Support/Settings/Elm Language Support.sublime-settings\",\n\n{\n\t$0\n}\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }]
+    }
+]

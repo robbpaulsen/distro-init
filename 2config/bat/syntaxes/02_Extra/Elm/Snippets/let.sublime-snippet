@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+let
+	$1 =
+		$2
+in
+		$3
+]]>
+	</content>
+	<description>let … in …</description>
+	<tabTrigger>let</tabTrigger>
+	<scope>source.elm</scope>
+</snippet>
