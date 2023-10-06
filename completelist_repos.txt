@@ -1,41 +1,70 @@
+# My list of Repositories for Raspberry-Pi, personall Dell laptop and main Assus PC
+
+## Raspberry-Pi
 git clone https://github.com/Botspot/pi-apps.git &&
 git clone https://github.com/jmcerrejon/PiKISS.git &&
-git clone https://github.com/sayanarijit/xplr.git &&
 git clone https://github.com/thibmaek/awesome-raspberry-pi.git &&
 git clone https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials.git &&
 git clone https://github.com/RaspAP/raspap-webgui.git &&
-git clone https://github.com/archlinux/archinstall.git &&
 git clone https://github.com/pivpn/pivpn.git &&
 git clone https://github.com/FD-/RPiPlay.git
-git clone https://github.com/microsoft/IoT-For-Beginners.git
-git clone https://github.com/classy-giraffe/easy-arch.git
-git clone https://github.com/sudorook/archlinux.git
-git clone https://github.com/archlinux/archinstall.git
 git clone https://github.com/kimocoder/wifite2.git
 git clone https://github.com/hakandundar34coding/system-monitoring-center.git
-git clone https://github.com/kimocoder/realtek_rtwifi.git
-git clone https://github.com/classy-giraffe/easy-arch.git
-git clone https://github.com/classy-giraffe/RemoteSSH.git
-git clone https://github.com/microsoft/IoT-For-Beginners.git
-git clone https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials.git
-git clone https://github.com/pivpn/pivpn.git
-git clone https://github.com/classy-giraffe/easy-arch.git
-git clone https://github.com/hakandundar34coding/system-monitoring-center.git
+wget -qO- https://raw.githubusercontent.com/actionschnitzel/PiGro-Aid-/installer/install.sh |bash &&
+
+### Wifi Drivers all Realtek
 git clone https://github.com/morrownr/8814au.git
 git clone https://github.com/morrownr/8821au-20210708.git
 git clone https://github.com/morrownr/Monitor_Mode.git
-git clone https://github.com/morrownr/USB-WiFi.git
+git clone https://github.com/kimocoder/realtek_rtwifi.git
+git clone https://github.com/morrownr/USB-WiFi.git    # Contrinution Repo for wifi research on Realtek drivers,
+                                                      # Please contribute to `@morrownr` if you can to continue
+                                                      # and extend this chips functionality on linux systems.
+
+
+## Bash scripts and OneLiner's to automate or ease of a system adminstration
 git clone https://github.com/trickest/scripts.git &&
 git clone https://github.com/arturoherrero/command-line-one-liners.git &&
 git clone https://github.com/D4Vinci/One-Lin3r.git &&
 git clone https://github.com/onceupon/Bash-Oneliner.git
 
 
+## Rust utilities and daily use
+git clone https://github.com/sayanarijit/xplr.git &&
+git clone --recursive https://github.com/kornelski/cargo-deb.git &&
+git clone --recursive https://github.com/nabijaczleweli/cargo-update.git &&
+git clone --recursive https://github.com/lukas-reineke/cbfmt.git &&
+git clone --recursive https://github.com/shmuelamar/cracken.git &&
+git clone --recursive https://github.com/bootandy/dust.git &&
+git clone --recursive https://github.com/sharkdp/fd.git &&
+git clone --recursive https://github.com/sharkdp/bat.git &&
+git clone --recursive https://github.com/epi052/feroxbuster.git &&
+git clone --recursive https://github.com/pemistahl/grex.git &&
+git clone --recursive https://github.com/RustScan/RustScan.git &&
+git clone --recursive https://github.com/lsd-rs/lsd.git &&
+git clone --recursive https://github.com/rust-lang/mdBook.git &&
+git clone --recursive https://github.com/svenstaro/miniserve.git &&
+git clone --recursive https://github.com/BurntSushi/ripgrep.git &&
+git clone --recursive https://github.com/AmineZouitine/rmt.rs.git &&
+git clone --recursive https://github.com/fujiapple852/trippy.git &&
+
+## Other miscellanious tools
+git clone --recursive https://github.com/nil0x42/duplicut.git &&    # word list dedup and mangler
+git clone --recursive https://github.com/cytopia/linux-timemachine.git &&   # a linix version of apple's backup and restoration wizard
+git clone --recursive https://github.com/davatorium/rofi.git &&
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && # ~/.fzf/install --xdg --no-bash --no-fish --key-bindings --completion
+git clone --recursive https://github.com/snovvcrash/DivideAndScan.git &&  # Very in depth netscanner
+
+## Repos for reference on personal projects
+git clone https://github.com/microsoft/IoT-For-Beginners.git
+git clone https://github.com/sudorook/archlinux.git
+git clone https://github.com/archlinux/archinstall.git
+git clone https://github.com/classy-giraffe/easy-arch.git
+git clone https://github.com/classy-giraffe/RemoteSSH.git
 
 ---
 Para android:
 
 https://github.com/kimocoder/monitorer.git
 ---
-wget -qO- https://raw.githubusercontent.com/actionschnitzel/PiGro-Aid-/installer/install.sh |bash &&
 

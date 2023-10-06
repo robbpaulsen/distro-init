@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=johnny
+Encoding=UTF-8
+Exec=johnny
+Icon=kali-johnny
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=05-02-offline-attacks;05-password-attacks;
+X-Kali-Package=johnny
+StartupWMClass=johnny
+X-XFCE-Source=file:///usr/share/applications/kali-johnny.desktop

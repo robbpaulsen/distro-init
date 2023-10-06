@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=0trace
+Encoding=UTF-8
+Exec=/usr/share/kali-menu/exec-in-shell "0trace.sh"
+Icon=kali-0trace
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-08-route-analysis;
+X-Kali-Package=0trace
+X-XFCE-Source=file:///usr/share/applications/kali-0trace.desktop
