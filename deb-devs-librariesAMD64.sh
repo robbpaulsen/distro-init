@@ -33,4 +33,6 @@ sudo apt-get install --assume-yes pv bc gcc g++ llvm-dev clang bc build-essentia
 	libxcb-randr0-dev libstrtup-notification0-dev libgdk-pixbuf-2.0-dev \
 	libgdk-pixbuf-xlib-2.0-dev libglib2.0-dev libglibmm-2.68-dev \
 	libpango1.0-dev libpangocairo-1.0-0 libcairo2-dev glibc-source glib-networking \
-	glib-networking-common glib-networking-services glibc-doc checkinstall
+	glib-networking-common glib-networking-services glibc-doc checkinstall \
+	ninja-build gperf ccache dfu-util device-tree-compiler python3-setuptools python3-tk \
+	python3-wheel xz-utils file gcc-multilib g++-multilib libsdl2-dev libmagic1
