@@ -26,11 +26,11 @@ sudo apt-get install --assume-yes pv bc gcc g++ llvm-dev clang bc build-essentia
 	libcurl4-openssl-dev llibssh-dev libssl-dev pkgconf python3-pip \
 	python3-dev python3-virtualenv libcairo2-dev libgirepository1.0-dev libbluetooth-dev \
 	libdbus-1-dev python3-cairo-dev meson patchelf libgmp3-dev gengetopt \
-	libpcap-dev flex byacc libjson-c-dev libunistring-dev libjudy-dev libxcb1-dev \
-	libxcb-glx0-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xinput-dev libxcb-util0-dev \
-	libxcb-image0-dev libxcb-cursor-dev libxkbcommon-dev libxkbcommon-x11-dev \
+	libpcap-dev flex byacc libjson-c-dev libunistring-dev libjudy-dev libxcb1-dev libxcb-keysyms1-dev \
+	xcb libxcb-glx0-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xinput-dev libxcb-util-dev \
+	libxcb-image0-dev libxcb-shape0-dev libxcb-cursor-dev libxkbcommon-dev libxkbcommon-x11-dev \
 	libxkbcommon-tools libxcb-imdkit-dev libxcb-ewmh-dev libxcb-icccm4-dev \
 	libxcb-randr0-dev libstrtup-notification0-dev libgdk-pixbuf-2.0-dev \
 	libgdk-pixbuf-xlib-2.0-dev libglib2.0-dev libglibmm-2.68-dev \
 	libpango1.0-dev libpangocairo-1.0-0 libcairo2-dev glibc-source glib-networking \
-	glib-networking-common glib-networking-services glibc-doc
+	glib-networking-common glib-networking-services glibc-doc checkinstall
