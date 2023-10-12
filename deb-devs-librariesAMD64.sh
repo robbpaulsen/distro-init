@@ -27,7 +27,8 @@ sudo apt-get install --assume-yes pv bc gcc g++ llvm-dev clang bc build-essentia
 	python3-dev python3-virtualenv libcairo2-dev libgirepository1.0-dev libbluetooth-dev \
 	libdbus-1-dev python3-cairo-dev meson patchelf libgmp3-dev gengetopt \
 	libpcap-dev flex byacc libjson-c-dev libunistring-dev libjudy-dev libxcb1-dev libxcb-keysyms1-dev \
-	xcb libxcb-glx0-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xinput-dev libxcb-util-dev \
+	xcb libev4 libmpdclient2 libxcb-composite0 libxcb-xrm0 libxcb-xtest0 libxcb-glx0-dev \
+	libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xinput-dev libxcb-util-dev \
 	libxcb-image0-dev libxcb-shape0-dev libxcb-cursor-dev libxkbcommon-dev libxkbcommon-x11-dev \
 	libxkbcommon-tools libxcb-imdkit-dev libxcb-ewmh-dev libxcb-icccm4-dev \
 	libxcb-randr0-dev libstrtup-notification0-dev libgdk-pixbuf-2.0-dev \
