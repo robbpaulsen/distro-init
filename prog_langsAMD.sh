@@ -1,10 +1,9 @@
 #!/bin/bash
-#!/bin/bash
 #set -e
 ##################################################################################################################
-# Author 	: Robbpaulsen
-# Website   : https://github.com/robbpaulsen
-# Email     : pemmetest.087@gmail.com
+# Author:	Robbpaulsen
+# Website:	https://github.com/robbpaulsen
+# Email:	pemmetest.087@gmail.com
 ##################################################################################################################
 #
 # Script for a more unattended, headless setup and configurationg for the basic things on any new linux installation.
@@ -21,27 +20,18 @@
 #tput setaf 8 = light blue
 ##################################################################################################################
 #
-# Rust and Cargo unattended installation
-cd &&
-	clear
+# NVM, NPM and Node installtion
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -sSf | sh -s -- -y --profile default --no-modify-path --default-toolchain stable &&
-	source '$HOME/.cargo/env' &&
+clear
 
-	# Golang unattended installation
-	cd &&
-	wget https://go.dev/dl/go1.21.3.linux-amd64.tar.gz &&
-	sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.2* &&
-	export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
-/bin/rm -rf go1.21.* &&
-	cd &&
+# NVM headless installation
 
-	# NVM headless installation
-	wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
-	nvm install --lts &&
-	nvm use --lts &&
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
+    source $HOME/.config/zsh/.zshrc &&
+    nvm install --lts &&
+    nvm use --lts &&
+    sleep 3 &&
 
-	# Yarn installation with npm
-	npm install --global yarn
+# Yarn installation with npm
+
+npm install --global yarn
