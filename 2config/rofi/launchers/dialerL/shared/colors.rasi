@@ -1,0 +1,10 @@
+/**
+ *
+ * Author : ozymandias.1987@protonmail.com
+ * Github : @robbpaulsen
+ *
+ **/
+
+/* Import color-scheme from `colors` directory */
+
+@import "~/.config/rofi/colors/onedark.rasi"

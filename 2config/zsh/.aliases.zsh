@@ -1,3 +1,15 @@
+#!/usr/bin/env zsh
+
+# Faster System Wide Searching
+alias fdh='sudo $HOME/.cargo/bin/fd --search-path $HOME -u -H 2>& /dev/null'
+alias fdr='sudo $HOME/.cargo/bin/fd --search-path / -u -H 2>& /dev/null'
+
+# faster sorting
+alias sort='sort --parallel=6 -S 6G'
+
+# open files with their respective program
+alias open='xdg-open'
+
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 alias ~="cd ~"
@@ -5,17 +17,14 @@ alias dotfiles='cd $DOTFILES_PATH'
 
 # Git
 alias gaa="git add -A"
-alias gc='$DOTLY_PATH/bin/dot git commit'
 alias gca="git add --all && git commit --amend --no-edit"
 alias gco="git checkout"
-alias gd='$DOTLY_PATH/bin/dot git pretty-diff'
 alias gs="git status -sb"
 alias gf="git fetch --all -p"
 alias gps="git push"
 alias gpsf="git push --force"
 alias gpl="git pull --rebase --autostash"
 alias gb="git branch"
-alias gl='$DOTLY_PATH/bin/dot git pretty-log'
 
 # Utils
 alias k='kill -9'
@@ -31,7 +40,8 @@ alias l='lsd -1'
 alias l.="lsd -A | grep -E '^\.'"
 #
 # fix obvious typo's
-alias cd..='cd ..'
+alias cd..='cd ../'
+alias cd.='cd ../'
 alias pdw='pwd'
 alias suod="sudo"
 alias sduo="sudo"
@@ -42,6 +52,14 @@ alias istall="install"
 alias isntall="install"
 alias isnstall='install'
 alias istal="install"
+alias nistal='install'
+alias nistall='install'
+alias intal='install'
+alias intall='install'
+alias fdn='dnf'
+alias dfn='dnf'
+alias nfd='dnf'
+alias nf='dnf'
 alias atp="apt"
 alias pudate="update"
 alias udpte="update"
@@ -94,7 +112,7 @@ alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 #
 # ## kill commands
 # # quickly kill conkies
-# alias kc='killall conky'
+alias kc='killall conky'
 # # quickly kill polybar
 alias kp='killall polybar'
 # # quickly kill picom
@@ -104,20 +122,17 @@ alias kpi='killall picom'
 alias hw="hwinfo --short"
 
 # # Cleanup orphaned packages
-alias cleanse="sudo apt-get autoremove -y && sudo apt-get clean -y && sudo apt autoclean"
+alias acleanse="sudo apt-get autoremove -y && sudo apt-get clean -y && sudo apt autoclean"
+alias dcleanse='sudo dnf autoremove'
 
 # # clear
 alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
-#
-# # search content with ripgrep
-#alias rg="rg --sort"
-#
+
 # # get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 #
 alias nash="nvim ~/.bashrc"
 alias nzsh="nvim ~/.zshrc"
-#
 
 # #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
@@ -129,7 +144,7 @@ alias sr="sudo reboot"
 
 #give the list of all installed desktops - xsessions desktops
 alias xd="ls /usr/share/xsessions"
-#
+
 
 # preview images
 alias icat="kitty +kitten icat"
@@ -145,13 +160,25 @@ alias mkdir='mkdir -pv'
 
 # Git
 alias clone='git clone'
+alias greset='git reset --hard'
+alias gup='git pull'
+
+# Cargo & Rust
+alias cupd='cargo update'
+alias cclean='cargo clean'
+alias cinst='cargo install'
+alias csearch='cargo search --limit 50'
 
 # top 10 processes eating cpu
 alias topcpu="/bin/ps -eo pcpu,pid,user,args | sort -k 1 -r | head -10"
 
 # reload bash/zsh conf
 alias rebash='source ~/.bashrc'
-alias rezsh='source ~/.zshrc'
+alias rezsh='source ~/.config/zsh/.zshrc'
+alias nzprof='nvim ~/.config/zsh/.zprofile'
+alias nzrc='nvim ~/.config/zsh/.zshrc'
+alias nalias='nvim ~/.config/zsh/.aliases.zsh'
+alias nkitty='nvim $HOME/.config/kitty/kitty.conf'
 
 # Wifi pentesting
 alias sysstats='sudo systemctl status wpa_supplicant.service NetworkManager.service | grep "Active"'
@@ -169,5 +196,18 @@ alias rm="rmt"
 # zoxide
 alias z='zoxide'
 
-# dotdrop dotfiles Manager
-alias dotdrop='$HOME/Projects/kali-dotfiles/dotdrop.sh --cfg=$HOME/Projects/kali-dotfiles/config.yaml'
+# dnf
+alias dsearch='dnf search'
+alias dinfo='dnf info'
+alias dcheck='dnf check-update'
+alias dupdate='sudo dnf update'
+alias repolsa='dnf repolist all'
+alias repolsdis='dnf repolist all | grep disabled'
+alias dnfglista='sudo dnf grouplist --hidden'
+
+# check command examples and manuals on Cheat.sh
+alias huatperm="stat -c '%A %a %n'"
+
+# Downlad th ebest audio and video with `yt-dlp`
+alias ydlmp4='yt-dlp -f "bestvideo&#91;ext=mp4]+bestaudio&#91;ext=m4a]/best&#91;ext=mp4]/best"'
+alias ydlmkv='yt-dlp -f "bestvideo&#91;ext=mkv]+bestaudio&#91;ext=mka]/best&#91;ext=mkv]/best"'

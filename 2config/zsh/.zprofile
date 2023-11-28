@@ -4,8 +4,6 @@
 # ------------------------------------------------------------------------------
 # Path - The higher it is, the more priority it has
 # ------------------------------------------------------------------------------
-
-export XDG_CONFIG_DIRS="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export LANG="en_US.UTF-8"
@@ -25,9 +23,29 @@ export PATH=$PATH:"/usr/local/go/bin"
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+export PATH=$PATH:/var/lib/flatpak/exports/share
+export PATH=$PATH:/home/heimdal/.local/share/flatpak/exports/share
+export PATH=$PATH:$HOME/.cargo/bin
+export ZDOTDIR="$HOME/.config/zsh"
+export PATH=$PATH:$HOME/Documents/.password-cracking/tools/hash-cracker/scripts/extensions/hashcat-utils/bin
+export PATH=$PATH:$HOME/Documents/.password-cracking/tools/mdxfind/binaries
+export HISTCONTROL=ignoredups:erasedups
+export GH_EDITOR=nvim
+export GIT_EDITOR=nvim
+export GH_BROWSER=firefox
+export GH_CONFIG_DIR="$HOME/.config/gh"
+export GIT_CONFIG_GLOBAL="$HOME/.config/git/.gitconfig"
+export GIT_CONFIG="$HOME/.config/git/.gitconfig"
+export GITHUB_USERNAME="robbpaulsen"
+export PATH=$PATH:$HOME/Downloads/git-repos/DataSurgeon
+#export PATH=$PLUGIN_PATH:$HOME/Downloads/git-repos/DataSurgeon
 
-# set PATH so it includes user"s private bin if it exists
-if [ -d "$HOME/bin" ] ; then
+
+fpath+='($HOME/.config/zsh/completions)'
+
+# prepend ~/.local/bin and ~/bin to $PATH unless it is already there
+if ! [[ "$PATH" =~ "$HOME/bin" ]]
+then
     PATH="$HOME/bin:$PATH"
 fi
 
@@ -35,6 +53,7 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+export PATH
 
 if [ -f "$HOME/.aliases.zsh" ] ; then
   . "$HOME/.aliases.zsh"
@@ -52,15 +71,7 @@ if [ -f "$HOME/.cargo/env" ] ; then
     . "$HOME/.cargo/env"
 fi
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-# fzf
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
-
-# pipx
+#pipx
 eval "$(register-python-argcomplete pipx)"
 
 # zoxide

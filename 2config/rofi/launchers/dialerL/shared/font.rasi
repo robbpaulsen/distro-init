@@ -1,0 +1,10 @@
+/**
+ *
+ * Author : ozymandias.1987@protonmail.com
+ * Github : @robbpaulsen
+ *
+ **/
+
+* {
+    font: "JetBrains Mono Nerd Font 10";
+}
