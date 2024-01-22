@@ -27,11 +27,20 @@ clear
 # NVM headless installation
 
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
-    source $HOME/.config/zsh/.zshrc &&
-    nvm install --lts &&
-    nvm use --lts &&
-    sleep 3 &&
+	source $HOME/.zshrc &&
+	nvm install --lts &&
+	nvm use --lts &&
+	sleep 3 &&
 
-# Yarn installation with npm
+	# Yarn installation with npm
+	sudo npm install --global yarn &&
+	sleep 2
 
-npm install --global yarn
+# Rustup and cargo installation
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable &&
+	source $HOME/.cargo/en &&
+	sleep 2
+
+# Go installer
+wget https://git.io/go-installer.sh && bash go-installer.sh
