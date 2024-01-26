@@ -12,3 +12,6 @@ bindkey '^[[6~' end-of-buffer-or-history          # page down
 bindkey '^[[H' beginning-of-line                  # home
 bindkey '^[[F' end-of-line                        # end
 bindkey '^[[Z' undo                               # shift + tab undo last action
+
+# apps auto keybindings files
+source /usr/share/fzf/shell/key-bindings.zsh

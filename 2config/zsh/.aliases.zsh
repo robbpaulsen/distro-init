@@ -1,4 +1,23 @@
-#!/usr/bin/env zsh
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+alias ~="cd ~"
+
+# cd
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias 1='cd ../'
+alias 2='cd ../../'
+alias 3='cd ../../../'
+alias 4='cd ../../../../'
+
+# mdcat
+alias mdcat='mdcat --paginate'
+alias cat='mdcat'
+
+# Screenkey tool to cast keyboard input in realtime
+#alias screenkey='screenkey -p fixed -g $(slop -n -f '%g')'
 
 # Faster System Wide Searching
 alias fdh='sudo $HOME/.cargo/bin/fd --search-path $HOME -u -H 2>& /dev/null'
@@ -33,12 +52,6 @@ alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
 
-alias ls='lsd'
-alias la='lsd -a'
-alias ll='lsd -alFh'
-alias l='lsd -1'
-alias l.="lsd -A | grep -E '^\.'"
-#
 # fix obvious typo's
 alias cd..='cd ../'
 alias cd.='cd ../'
@@ -143,7 +156,7 @@ alias safereboot="sudo shutdown now"
 alias sr="sudo reboot"
 
 #give the list of all installed desktops - xsessions desktops
-alias xd="ls /usr/share/xsessions"
+alias xd="lsd /usr/share/xsessions"
 
 
 # preview images
@@ -153,8 +166,8 @@ alias icat="kitty +kitten icat"
 alias ls='lsd'
 alias l='lsd -1'
 alias la='lsd -a'
-alias ll='lsd -ahl'
-
+alias ll='lsd -alFh'
+alias l.="'lsd -A | grep -E '^\.'"
 # directory
 alias mkdir='mkdir -pv'
 
@@ -174,10 +187,10 @@ alias topcpu="/bin/ps -eo pcpu,pid,user,args | sort -k 1 -r | head -10"
 
 # reload bash/zsh conf
 alias rebash='source ~/.bashrc'
-alias rezsh='source ~/.config/zsh/.zshrc'
-alias nzprof='nvim ~/.config/zsh/.zprofile'
-alias nzrc='nvim ~/.config/zsh/.zshrc'
-alias nalias='nvim ~/.config/zsh/.aliases.zsh'
+alias rezsh='source ~/.zshrc'
+alias nzprof='nvim ~/.zprofile'
+alias nzrc='nvim ~/.zshrc'
+alias nalias='nvim ~/.aliases.zsh'
 alias nkitty='nvim $HOME/.config/kitty/kitty.conf'
 
 # Wifi pentesting
@@ -186,24 +199,24 @@ alias checkmon='iw dev | grep type | cut -d " " -f 2'
 alias checkrfkill='sudo rfkill list all'
 alias unblockwlan='sudo rfkill unblock wlan'
 
-# cargo
-alias krgo-init="cargo clean && cargo update"
-alias krgo="cargo update --all-features --path=."
-alias krgo2deb="cargo-deb --verbose --strip --compress-type xz --package"
+# rmt
 alias rmt="rmt -i --verbose"
-alias rm="rmt"
 
 # zoxide
-alias z='zoxide'
+alias z=__zoxide_z
+alias zi=__zoxide_zi
 
 # dnf
+alias dquery='dnf list --all'
+alias dinstall='sudo dnf install'
 alias dsearch='dnf search'
 alias dinfo='dnf info'
 alias dcheck='dnf check-update'
-alias dupdate='sudo dnf update'
-alias repolsa='dnf repolist all'
-alias repolsdis='dnf repolist all | grep disabled'
-alias dnfglista='sudo dnf grouplist --hidden'
+alias dupdate='sudo dnf --assumeyes update'
+alias list_repos='dnf repolist all'
+alias list_repos_off='dnf repolist all | grep disabled'
+alias list_repos_on='dnf repolist all | grep enabled'
+alias group_list_all='sudo dnf grouplist --hidden'
 
 # check command examples and manuals on Cheat.sh
 alias huatperm="stat -c '%A %a %n'"

@@ -1,952 +1,952 @@
-2024-01-17T09:24:04Z	ins1gn1a/Hexcat
-2024-01-17T09:23:51Z	albfan/miraclecast
-2024-01-17T09:10:00Z	bee-san/pyWhat
-2024-01-17T07:01:04Z	bnjbvr/cargo-machete
-2024-01-17T05:54:11Z	pombadev/cargo-updater
-2024-01-17T05:23:12Z	nabijaczleweli/cargo-update
-2024-01-17T05:22:38Z	PaulDance/cargo-liner
-2024-01-17T05:16:49Z	Canop/broot
-2024-01-14T08:52:48Z	ekzhang/bore
-2024-01-14T08:52:32Z	charmbracelet/vhs
-2024-01-14T08:46:56Z	qeeqbox/social-analyzer
-2024-01-14T06:37:55Z	uriel1998/quite-intriguing
-2024-01-14T06:36:52Z	sheepla/fzpac
-2024-01-14T06:36:11Z	BartSte/fzf-help
-2024-01-14T06:35:45Z	MLFlexer/mal
-2024-01-14T06:29:44Z	eylles/wal-choose
-2024-01-13T09:30:35Z	Lissy93/portainer-templates
-2024-01-12T06:48:26Z	evilsocket/medusa
-2024-01-12T06:42:58Z	ex0dus-0x/awesome-rust-security
-2024-01-12T06:42:18Z	TaKO8Ki/awesome-alternatives-in-rust
-2024-01-12T01:56:05Z	cyclone-github/regx
-2024-01-11T06:36:08Z	SDWebImage/SDWebImage
-2024-01-10T04:02:27Z	sharkdp/fd
-2024-01-10T04:02:19Z	MohamedElashri/fd-zsh
-2024-01-10T03:27:50Z	hillaryychan/ulauncher-fzf
-2024-01-10T01:26:10Z	rust-unofficial/awesome-rust
-2024-01-10T01:25:21Z	atuinsh/atuin
-2024-01-10T01:23:14Z	microsoft/windows-rs
-2024-01-10T01:18:33Z	JamesTurland/JimsGarage
-2024-01-10T01:16:19Z	G33kzD3n/Catalogue
-2024-01-10T01:14:16Z	tmux-plugins/tpm
-2024-01-10T01:13:34Z	ansible/ansible-examples
-2024-01-10T01:08:42Z	GhostWriters/DockSTARTer
-2024-01-10T01:00:56Z	cyclone-github/wordlist
-2024-01-10T00:54:42Z	ipinfo/cli
-2024-01-09T04:10:32Z	oldratlee/useful-scripts
-2024-01-09T04:09:11Z	Gogh-Co/Gogh
-2024-01-09T04:08:41Z	learnbyexample/cli_text_processing_coreutils
-2024-01-09T04:07:54Z	sstadick/hck
-2024-01-09T04:07:45Z	birchb1024/frangipanni
-2024-01-09T04:06:52Z	learnbyexample/Command-line-text-processing
-2024-01-09T03:44:27Z	cheat/cheat
-2024-01-09T03:44:15Z	chmln/sd
-2024-01-09T03:44:15Z	jqlang/jq
-2024-01-09T03:43:56Z	theryangeary/choose
-2024-01-09T03:35:05Z	sharkdp/hexyl
-2024-01-09T03:34:59Z	sharkdp/lscolors
-2024-01-09T03:34:51Z	sharkdp/binocle
-2024-01-09T03:34:41Z	sharkdp/pastel
-2024-01-08T19:56:10Z	philipperemy/name-dataset
-2024-01-08T15:37:23Z	zsh-users/zsh-syntax-highlighting
-2024-01-08T15:24:17Z	trapd00r/zsh-syntax-highlighting-filetypes
-2024-01-08T15:09:37Z	trapd00r/LS_COLORS
-2024-01-08T15:08:15Z	ascii-boxes/boxes
-2024-01-08T15:06:32Z	dracula/bashtop
-2024-01-08T15:06:30Z	Grimmstar/Grimmstar-Bashtop-Theme
-2024-01-08T15:01:16Z	rose-pine/i3
-2024-01-08T15:00:17Z	rose-pine/rofi
-2024-01-08T15:00:08Z	rose-pine/polybar
-2024-01-08T15:00:03Z	rose-pine/alacritty
-2024-01-08T14:59:32Z	rose-pine/firefox
-2024-01-08T14:53:54Z	rose-pine/btop
-2024-01-08T14:53:39Z	iambeingtracked/btop-everforest
-2024-01-08T14:53:31Z	catppuccin/btop
-2024-01-08T14:53:26Z	jidro/bashtop-themes
-2024-01-08T14:53:20Z	moktavizen/material-btop
-2024-01-08T07:07:53Z	ekkinox/yai
-2024-01-08T05:23:35Z	pmarrapese/iot
-2024-01-08T05:18:29Z	vzhn/bstreamer
-2024-01-08T05:13:41Z	intx82/a9-v720
-2024-01-07T20:52:21Z	OpenEMS/openems
-2024-01-07T04:59:22Z	d4rckh/iptk
-2024-01-07T04:58:14Z	wavestone-cdt/wavecrack
-2024-01-07T04:58:01Z	tp7309/TTPassGen
-2024-01-07T04:57:46Z	SySS-Research/hashcathelper
-2024-01-07T04:57:26Z	dizcza/docker-hashcat
-2024-01-07T04:57:15Z	nesfit/fitcrack
-2024-01-07T04:41:07Z	Orange-Cyberdefense/graphcat
-2024-01-07T03:19:11Z	HashPals/Search-That-Hash
-2024-01-06T16:58:32Z	hmaverickadams/breach-parse
-2024-01-06T16:57:25Z	reconweird/breach-parse
-2024-01-06T05:25:17Z	Fechin/reference
-2024-01-06T04:50:22Z	MichaelDim02/Narthex
-2024-01-02T17:38:15Z	prasanthrangan/hyprdots
-2024-01-02T15:25:18Z	simplex-chat/simplex-chat
-2024-01-02T06:23:49Z	KRTirtho/spotube
-2024-01-02T06:23:45Z	powenn/spotube
-2024-01-02T05:26:54Z	movie-web/movie-web
-2024-01-01T23:50:32Z	bionicbone/433mhz_Rolling_Code
-2024-01-01T09:20:46Z	junegunn/tmux-fzf-url
-2024-01-01T09:20:37Z	DanielFGray/fzf-scripts
-2024-01-01T09:20:09Z	3hhh/fzfuncs
-2024-01-01T09:20:01Z	amaya382/zsh-fzf-widgets
-2024-01-01T09:19:55Z	rayiik/Fzf-bash-ide-resource
-2024-01-01T09:19:37Z	zaproxy/browser-extension
-2024-01-01T08:26:03Z	horsicq/Detect-It-Easy
-2024-01-01T04:29:06Z	charmbracelet/bubbletea
-2024-01-01T04:28:28Z	muesli/termenv
-2024-01-01T04:27:53Z	mgunyho/tere
-2024-01-01T04:26:52Z	p-gen/smenu
-2024-01-01T04:24:04Z	pterm/pterm
-2024-01-01T04:21:11Z	sxyazi/yazi
-2024-01-01T04:18:08Z	akavel/up
-2024-01-01T04:17:26Z	wtfutil/wtf
-2024-01-01T04:17:10Z	muesli/duf
-2023-12-31T07:56:41Z	sensepost/shinai-fi
-2023-12-31T07:54:52Z	sensepost/dwn
-2023-12-31T07:38:38Z	JakeWnuk/Rules
-2023-12-31T07:36:57Z	hashcat/hashcat-utils
-2023-12-31T07:36:46Z	philsmd/7z2hashcat
-2023-12-31T07:34:54Z	semeion/handshake-cracker
-2023-12-31T07:34:24Z	sensepost/common-substr
-2023-12-31T03:02:50Z	SpacehuhnTech/DeauthDetector
-2023-12-31T03:02:46Z	SpacehuhnTech/WiFiDuck
-2023-12-31T03:02:42Z	SpacehuhnTech/esp8266_deauther
-2023-12-31T03:02:14Z	SpacehuhnTech/Huhnitor
-2023-12-30T12:02:36Z	gphoenix14/Stealth-Gmail-C2-2024-Ready
-2023-12-30T10:33:37Z	Acceis/leakScraper
-2023-12-30T10:33:26Z	stryku/okon
-2023-12-30T05:00:19Z	tliron/install-gnome-themes
-2023-12-30T05:00:10Z	oivas000/GNOME-THEME-CLONER
-2023-12-30T04:57:49Z	ALEX11BR/ThemeChanger
-2023-12-30T04:57:29Z	plexydesk/plexydesk
-2023-12-30T04:55:15Z	imarkoff/Marble-shell-theme
-2023-12-30T04:50:32Z	themix-project/themix-gui
-2023-12-30T04:50:02Z	anmoljagetia/Flatabulous
-2023-12-29T20:27:49Z	alankrantas/microbit-micropython-cookbook
-2023-12-29T20:26:35Z	pizayanz/pxt-linebeacon
-2023-12-29T07:04:53Z	katlol/awesome-flipperzero-pack
-2023-12-29T05:04:13Z	OWASP/owasp-mastg
-2023-12-29T05:03:38Z	k4m4/movies-for-hackers
-2023-12-29T05:03:30Z	carlospolop/hacktricks
-2023-12-29T05:03:13Z	ngn13/ezcat
-2023-12-29T05:03:00Z	kefranabg/readme-md-generator
-2023-12-29T05:02:07Z	brianvoe/gofakeit
-2023-12-29T05:01:51Z	bchavez/Bogus
-2023-12-29T00:13:04Z	tobozo/ESP32-BLECollector
-2023-12-29T00:11:14Z	cocoahuke/coBlue
-2023-12-29T00:07:36Z	darkhz/bluetuith
-2023-12-29T00:06:53Z	seemoo-lab/internalblue
-2023-12-28T23:43:02Z	myhomeiot/DahuaVTO
-2023-12-28T23:42:53Z	S0Ulle33/asleep_scanner
-2023-12-28T23:41:55Z	jorhelp/Ingram
-2023-12-28T23:39:29Z	mcw0/DahuaConsole
-2023-12-28T23:38:52Z	bp2008/DahuaLoginBypass
-2023-12-28T19:04:23Z	rootrilla/rfid-flipper-firmware
-2023-12-23T13:11:02Z	safing/portmaster
-2023-12-23T13:04:34Z	ChrisTitusTech/winutil
-2023-12-23T06:46:45Z	beigeworm/Posh-LAN
-2023-12-23T06:46:23Z	beigeworm/Powershell-Tools-and-Toys
-2023-12-19T20:25:23Z	rudiratlos/hotspot
-2023-12-19T02:18:36Z	owtf/owtf
-2023-12-18T09:42:39Z	Znerox/wifimap
-2023-12-18T09:42:24Z	e-m3din4/wigle-wifi
-2023-12-18T09:19:57Z	designer2k2/warpi
-2023-12-18T09:19:10Z	JosephHewitt/wardriver_rev3
-2023-12-16T22:20:12Z	DarkenCode/yara-rules
-2023-12-16T22:20:10Z	Neo23x0/signature-base
-2023-12-16T22:20:08Z	bartblaze/Yara-rules
-2023-12-16T22:20:07Z	VirusTotal/yara
-2023-12-16T22:20:02Z	Yara-Rules/rules
-2023-12-16T22:19:56Z	sophos/yaraml_rules
-2023-12-16T22:19:54Z	malpedia/signator-rules
-2023-12-16T22:19:53Z	h3x2b/yara-rules
-2023-12-16T22:19:51Z	chronicle/GCTI
-2023-12-16T22:19:48Z	mandiant/red_team_tool_countermeasures
-2023-12-16T22:19:45Z	elastic/protections-artifacts
-2023-12-16T22:19:26Z	kevoreilly/CAPEv2
-2023-12-16T22:19:12Z	codewatchorg/Burp-Yara-Rules
-2023-12-16T22:19:10Z	deadbits/yara-rules
-2023-12-16T22:19:05Z	AlienVault-Labs/AlienVaultLabs
-2023-12-16T22:18:52Z	InQuest/awesome-yara
-2023-12-13T10:16:39Z	TheR1D/shell_gpt
-2023-12-13T10:10:26Z	victornpb/undiscord
-2023-12-13T10:10:01Z	fregante/GhostText
-2023-12-13T10:06:58Z	browserpass/browserpass-extension
-2023-12-13T10:05:35Z	toggl/track-extension
-2023-12-13T10:05:00Z	ninoseki/mitaka
-2023-12-13T10:04:36Z	mandatoryprogrammer/CursedChrome
-2023-12-13T10:03:19Z	Ibit-to/google-unlocked
-2023-12-13T10:02:50Z	AutomaApp/automa
-2023-12-13T10:02:06Z	gildas-lormeau/SingleFile
-2023-12-05T05:12:14Z	Gallopsled/pwntools
-2023-12-05T05:12:05Z	expandpi/wallpapers
-2023-12-05T05:12:01Z	mxrch/penglab
-2023-12-05T05:06:27Z	expandpi/pwntools-tutorial
-2023-12-05T02:36:38Z	Athena-OS/athena-base-docker
-2023-12-05T02:36:27Z	Athena-OS/bspwm
-2023-12-04T11:03:37Z	Keyitdev/sddm-astronaut-theme
-2023-12-04T11:03:35Z	Rokin05/sddm-themes
-2023-12-04T11:03:34Z	3ximus/abstractdark-sddm-theme
-2023-12-04T11:03:32Z	rototrash/tokyo-night-sddm
-2023-12-04T11:03:30Z	3ximus/aerial-sddm-theme
-2023-12-04T11:03:26Z	EricKotato/sddm-slice
-2023-12-04T11:00:44Z	killman/SlimThemes
-2023-12-04T11:00:12Z	minos-org/slim-theme-minos-login
-2023-12-04T10:59:42Z	AnotherKamila/slim-theme-arch-glow
-2023-12-02T18:16:27Z	liamg/grace
-2023-12-01T09:30:29Z	vdjagilev/nmap-formatter
-2023-12-01T09:29:49Z	Beyarz/Portforge
-2023-12-01T09:29:25Z	stanford-esrg/lzr
-2023-12-01T09:18:06Z	snovvcrash/DivideAndScan
-2023-12-01T06:34:20Z	jmetzger/2020-linux-advanced-networking
-2023-12-01T06:12:57Z	securisec/chepy
-2023-11-30T11:03:08Z	m3n0sd0n4ld/uDork
-2023-11-30T11:01:49Z	m3n0sd0n4ld/GooFuzz
-2023-11-30T03:04:59Z	virtualabs/btlejack
-2023-11-29T11:53:56Z	hickory-dns/hickory-dns
-2023-11-29T11:52:22Z	bitquark/dnspop
-2023-11-29T11:52:06Z	vortexau/dnsvalidator
-2023-11-29T11:49:51Z	yarrick/iodine
-2023-11-29T11:46:25Z	hackclub/dns
-2023-11-29T11:43:01Z	v1s1t0r1sh3r3/airgeddon
-2023-11-29T07:39:32Z	novaspirit/Alpine_xfce4_noVNC
-2023-11-29T07:29:20Z	CristianEduardMihai/alexa-wol
-2023-11-29T07:29:14Z	nirui/sshwifty
-2023-11-29T06:40:54Z	dj95/zjstatus
-2023-11-29T06:40:42Z	imsnif/monocle
-2023-11-29T06:40:13Z	karimould/zellij-forgot
-2023-11-28T16:40:58Z	honeynet/droidbot
-2023-11-28T14:49:53Z	rpmsphere/x86_64
-2023-11-28T14:49:47Z	rpmsphere/source
-2023-11-28T03:43:36Z	mandiant/Ghidrathon
-2023-11-28T03:37:18Z	seachicken/gh-poi
-2023-11-28T03:15:37Z	extrawurst/gitui
-2023-11-28T02:41:13Z	slimtoolkit/slim
-2023-11-28T02:24:28Z	crycode-de/http-server-upload
-2023-11-27T10:17:45Z	coqui-ai/TTS
-2023-11-27T10:17:14Z	rany2/edge-tts
-2023-11-27T10:16:54Z	alexrudall/ruby-openai
-2023-11-27T05:23:36Z	ronaldstoner/AppleJuice-ESP32
-2023-11-26T08:42:31Z	aceberg/WatchYourLAN
-2023-11-26T07:09:04Z	pi-hosted/pi-hosted
-2023-11-26T07:08:46Z	wimpysworld/deb-get
-2023-11-26T05:18:54Z	PeterDaveHello/tor-socks-proxy
-2023-11-26T05:09:18Z	awesome-selfhosted/awesome-selfhosted
-2023-11-26T03:57:20Z	gchq/CyberChef
-2023-11-26T03:52:15Z	mpepping/docker-cyberchef
-2023-11-24T05:48:22Z	Rishang/torrent-search
-2023-11-23T12:14:20Z	esphome/esphome-devices
-2023-11-23T12:14:03Z	RoganDawes/esphome-devices
-2023-11-23T12:05:04Z	RoganDawes/esphome
-2023-11-23T12:04:53Z	RoganDawes/P4wnP1_aloa
-2023-11-23T11:57:54Z	RoganDawes/LOGITacker
-2023-11-23T11:41:04Z	TheSmashy/Pi-Bash
-2023-11-20T07:49:32Z	ResearchandDestroy/DorXNG
-2023-11-20T06:26:07Z	dylanaraps/pure-bash-bible
-2023-11-19T08:47:24Z	onceupon/Bash-Oneliner
-2023-11-19T08:43:05Z	kvz/bash3boilerplate
-2023-11-19T08:41:37Z	Aleph-works/pure-bash-bible
-2023-11-18T04:27:45Z	AvenCores/HZF-ORION-Bomber
-2023-11-18T04:16:16Z	slorixsh/Spotify-Follower-Sender
-2023-11-17T21:55:09Z	SaeidJavadi/Advanced-WhatsApp-Sender
-2023-11-11T11:22:59Z	sdmg15/Best-websites-a-programmer-should-visit
-2023-11-09T07:05:14Z	assetnote/kiterunner
-2023-11-09T03:36:40Z	Xenov-X/PoSH_Teams_Message_Theif
-2023-11-09T03:36:21Z	Xenov-X/UhOh365
-2023-11-07T22:29:43Z	Tuhinshubhra/ExtAnalysis
-2023-11-07T22:29:27Z	danny0838/content-farm-terminator
-2023-11-07T22:21:52Z	deathau/markdownload
-2023-11-07T22:09:32Z	LasCC/HackTools
-2023-11-07T22:09:17Z	alyssaxuu/screenity
-2023-11-07T21:57:22Z	streetturtle/awesome-wm-widgets
-2023-11-07T21:56:43Z	0x48piraj/incarcero
-2023-11-07T21:37:10Z	0x48piraj/gz-bomb
-2023-11-07T21:36:47Z	0x48piraj/wrong8007
-2023-11-07T21:26:45Z	zombieFox/nightTab
-2023-11-07T20:22:27Z	dnakov/little-rat
-2023-11-07T20:22:12Z	iamadamdev/bypass-paywalls-chrome
-2023-11-07T20:22:02Z	dessant/buster
-2023-11-07T20:21:33Z	dutiyesh/chrome-extension-cli
-2023-10-28T12:00:52Z	orhun/cargo-hack
-2023-10-28T11:57:59Z	orhun/runst
-2023-10-28T11:57:30Z	Toqozz/wired-notify
-2023-10-28T11:56:16Z	orhun/felix
-2023-10-28T11:37:04Z	orhun/kmon
-2023-10-27T12:01:58Z	dylanaraps/paleta
-2023-10-27T12:00:53Z	dylanaraps/pywal
-2023-10-27T12:00:40Z	dylanaraps/torque
-2023-10-27T11:59:34Z	dylanaraps/pure-sh-bible
-2023-10-27T11:45:54Z	gcla/termshark
-2023-10-27T11:45:47Z	dylanaraps/fff
-2023-10-27T11:12:51Z	Builditluc/wiki-tui
-2023-10-26T12:53:50Z	gusbemacbe/suru-plus
-2023-10-26T12:51:08Z	congard/nvidia-system-monitor-qt
-2023-10-26T12:40:28Z	blrsn/zentile
-2023-10-26T12:36:47Z	ctlos/skel
-2023-10-26T12:21:54Z	nsz32/docklike-plugin
-2023-10-26T12:19:19Z	gtkhash/gtkhash
-2023-10-26T12:17:26Z	addy-dclxvi/xfwm4-theme-collections
-2023-10-26T12:16:33Z	rozniak/xfce-winxp-tc
-2023-10-26T10:26:05Z	ctlos/ctlosiso
-2023-10-26T10:25:56Z	Perl/perl5
-2023-10-26T10:20:28Z	vikdevelop/SaveDesktop
-2023-10-26T10:19:22Z	denesb/xfce4-i3-workspaces-plugin
-2023-10-25T11:50:51Z	riverloopsec/killerbee
-2023-10-25T08:39:56Z	kmaasrud/awesome-obsidian
-2023-10-24T17:08:21Z	caronc/apprise-api
-2023-10-24T16:56:18Z	nikhilh-20/ELFEN
-2023-10-23T08:15:03Z	careyjames/dns-scout
-2023-10-23T05:38:33Z	marvinkreis/rofi-file-browser-extended
-2023-10-23T05:37:43Z	jluttine/rofi-power-menu
-2023-10-23T05:37:37Z	davatorium/rofi-scripts
-2023-10-23T05:17:05Z	P3rf/rofi-network-manager
-2023-10-23T05:16:48Z	zbaylin/rofi-wifi-menu
-2023-10-23T05:15:57Z	newmanls/rofi-themes-collection
-2023-10-23T02:43:08Z	s77rt/hashcat.launcher
-2023-10-23T02:42:26Z	odedshimon/BruteShark
-2023-10-23T02:36:10Z	TarunYenni/FCracker
-2023-10-23T02:24:39Z	ScriptSathi/HashKitty
-2023-10-23T02:24:14Z	Are-s-h/GovCracker
-2023-10-23T02:23:29Z	grugnoymeme/flipperzero-CLI-wifi-cracker
-2023-10-23T02:23:13Z	ZerBea/hcxkeys
-2023-10-17T08:50:18Z	remigermain/advanced-cli
-2023-10-17T06:29:37Z	codingo/VHostScan
-2023-10-17T06:29:22Z	brightio/penelope
-2023-10-17T06:29:08Z	ronin-rb/ronin
-2023-10-17T06:23:28Z	ffffffff0x/f8x
-2023-10-17T06:22:13Z	RickdeJager/stegseek
-2023-10-16T07:59:30Z	EC-DIGIT-CSIRC/sysdiagnose
-2023-10-16T07:58:36Z	sensepost/ntcrack
-2023-10-16T07:58:18Z	sensepost/impersonate
-2023-10-16T07:57:38Z	sensepost/kwetza
-2023-10-16T07:57:02Z	sensepost/hostapd-mana
-2023-10-16T07:56:46Z	sensepost/godoh
-2023-10-16T07:56:26Z	juba0x00/Rummage
-2023-10-16T07:55:16Z	Ekultek/WhatBreach
-2023-10-16T07:55:04Z	EC-DIGIT-CSIRC/ForensicVM
-2023-10-16T06:07:46Z	aidenlx/obsidian-icon-shortcodes
-2023-10-16T06:07:14Z	oslabs-beta/obsidian-8.0-demo
-2023-10-16T06:07:04Z	open-source-labs/obsidian-developer-tool
-2023-10-16T02:12:35Z	JanLikar/cargo-clone
-2023-10-16T00:04:10Z	cli/gh-webhook
-2023-10-16T00:00:15Z	zap-zsh/zap
-2023-10-15T23:29:23Z	twelvelabs/gh-repo-config
-2023-10-15T23:28:51Z	hashue/gh-fuzzyclone
-2023-10-15T23:27:39Z	HaywardMorihara/gh-tidy
-2023-10-15T23:25:08Z	gennaro-tedesco/gh-s
-2023-10-15T23:23:54Z	gennaro-tedesco/gh-f
-2023-10-15T21:12:58Z	keshavbhatt/whatsie
-2023-10-15T17:58:08Z	KillianLucas/open-interpreter
-2023-10-15T17:38:46Z	tonikelope/megabasterd
-2023-10-15T17:38:33Z	lencx/app
-2023-10-15T17:35:47Z	f/awesome-chatgpt-prompts
-2023-10-15T17:18:40Z	lencx/nofwl
-2023-10-15T17:17:45Z	siyuan-note/siyuan
-2023-10-15T17:15:58Z	dair-ai/Prompt-Engineering-Guide
-2023-10-15T17:14:04Z	mouredev/Hello-Python
-2023-10-15T17:08:21Z	KoromeloDev/MindMate
-2023-10-15T11:20:22Z	redcode-labs/YAS
-2023-10-15T11:18:42Z	redcode-labs/RedHash
-2023-10-14T01:13:06Z	Xenov-X/BashDB
-2023-10-14T01:11:41Z	adon90/BreachCompilation
-2023-10-13T23:26:27Z	filiparag/wikiman
-2023-10-13T23:26:19Z	SiriusScan/Sirius
-2023-10-13T23:22:38Z	HaveIBeenPwned/PwnedPasswordsDownloader
-2023-10-12T21:33:46Z	r4ulcl/talks
-2023-10-12T16:24:05Z	Matheus-Garbelini/sweyntooth_bluetooth_low_energy_attacks
-2023-10-12T16:23:51Z	Matheus-Garbelini/esp32_bluetooth_classic_sniffer
-2023-10-12T16:17:11Z	nicslabdev/NRF52840-Beacon_Scanner
-2023-10-12T16:16:59Z	kshoji/microbit-beacon-finder
-2023-10-12T16:16:50Z	openblockcc/openblock-desktop
-2023-10-12T16:16:42Z	microbit-foundation/microbit-blue
-2023-10-12T16:16:36Z	thegecko/microbit-web-bluetooth
-2023-10-12T16:16:27Z	seemoo-lab/openhaystack
-2023-10-12T16:16:14Z	contact-discovery/rt_phone_numbers
-2023-10-12T16:15:48Z	nominetresearch/microbit-networking-book
-2023-10-12T16:15:29Z	dakota-mewt/mewt
-2023-10-12T16:15:19Z	Telefonica/Airdrop-Crazy
-2023-10-12T12:36:49Z	jasperan/whatsapp-osint
-2023-10-12T01:20:06Z	google/GiftStick
-2023-10-12T01:11:34Z	gaulliath/operative-framework
-2023-10-06T20:18:56Z	emanuele-em/proxelar
-2023-10-06T19:12:04Z	sharkdp/hyperfine
-2023-10-06T14:01:45Z	Prototyyppi/RemoteHub
-2023-10-06T14:01:11Z	alunux/usbip-service-discovery
-2023-10-06T14:01:05Z	m-antonov/USBIPManager
-2023-10-06T14:00:54Z	jiegec/usbip
-2023-10-06T14:00:41Z	Williangalvani/BlueOS-UsbIp
-2023-10-06T13:44:27Z	dorssel/usbipd-win
-2023-10-06T13:44:14Z	shadowbq/usbip-python3
-2023-10-06T13:39:52Z	george-hopkins/usbip-windows
-2023-10-06T10:14:25Z	sachaos/viddy
-2023-10-06T09:17:22Z	jlevy/the-art-of-command-line
-2023-10-06T08:28:22Z	sharkdp/vivid
-2023-10-06T06:38:21Z	pacstall/pacstall
-2023-10-06T03:21:11Z	ObcbO/getproxy
-2023-10-06T03:19:04Z	K3V1991/ADBKit
-2023-10-06T03:18:30Z	daddyparodz/adminexploit
-2023-10-06T03:18:16Z	canarddu38/DUCKSPLOIT
-2023-10-06T03:12:37Z	MenkeTechnologies/zpwr
-2023-10-06T03:12:15Z	K3V1991/ADB-and-FastbootPlusPlus
-2023-10-06T03:10:13Z	rhysd/hgrep
-2023-10-06T03:09:09Z	embark-theme/bashtop
-2023-10-06T03:09:07Z	embark-theme/firefox-old
-2023-10-06T03:08:59Z	ArmandPhilippot/coldark-bat
-2023-10-04T04:53:01Z	huytd/nvim-forest-all-nighter
-2023-10-04T04:51:36Z	dotcs/xkcd-cli
-2023-10-04T04:51:03Z	RaulSanchezzt/auto-bspwm
-2023-10-04T04:50:34Z	yorkox0/autoBspwm.sh
-2023-10-04T04:50:25Z	yorkox0/autoBspwm
-2023-10-04T04:49:08Z	NTBBloodbath/doom-one.nvim
-2023-10-04T04:48:40Z	m8mble/nord-kitty
-2023-10-04T04:48:32Z	TIAcode/GPTKitten
-2023-10-04T04:46:56Z	dflock/kitty-save-session
-2023-10-04T04:46:51Z	davidmathers/tokyo-night-kitty-theme
-2023-10-04T04:39:31Z	JoeKarlsson/iot-kitty-litter-box-frontend
-2023-10-04T04:35:35Z	JoeKarlsson/iot-kitty-litter-box
-2023-10-04T04:33:04Z	dexpota/kitty-themes
-2023-10-04T04:32:39Z	fretboardfreak/kitty-theme-changer
-2023-10-04T04:30:55Z	ronald0x00/dotfiles
-2023-10-04T04:30:47Z	PrettyCoffee/yet-another-generic-startpage
-2023-10-04T04:28:59Z	bgrnwd/everforest-kitty
-2023-10-04T04:27:46Z	dracula/kitty
-2023-10-04T04:27:29Z	pineapplegiant/spaceduck
-2023-10-04T04:27:15Z	pineapplegiant/spaceduck-terminal
-2023-10-04T04:23:14Z	Rigellute/rigel
-2023-10-04T04:22:38Z	mrjones2014/smart-splits.nvim
-2023-10-04T04:20:30Z	joouha/euporie
-2023-10-04T04:07:09Z	jdssl/colorize
-2023-10-04T03:58:20Z	k0nserv/kitty-icon
-2023-10-03T23:50:13Z	xfce-mirror/xfce4-terminal
-2023-10-03T11:24:13Z	bitbrute/evillimiter
-2023-10-03T11:23:54Z	wiire-a/pixiewps
-2023-10-03T11:22:43Z	Fadi002/unshackle
-2023-10-03T11:21:54Z	tiagorlampert/CHAOS
-2023-10-03T11:21:27Z	AzeemIdrisi/PhoneSploit-Pro
-2023-10-03T11:20:26Z	OlivierLaflamme/Cheatsheet-God
-2023-10-03T11:19:23Z	MatrixTM/MHDDoS
-2023-10-03T11:18:21Z	sighook/pixload
-2023-10-03T10:42:36Z	FD-/usb-toolbox
-2023-10-03T10:22:57Z	cyclone-github/challenge
-2023-10-03T10:20:45Z	The-Art-of-Hacking/h4cker
-2023-10-03T10:20:15Z	Ciphey/Ciphey
-2023-10-03T10:19:45Z	Hacker0x01/hacker101
-2023-10-03T10:19:31Z	secdev/awesome-scapy
-2023-10-03T10:19:18Z	Samsung/cotopaxi
-2023-10-03T10:18:42Z	frawau/aioblescan
-2023-10-03T10:18:14Z	AMOSSYS/Fragscapy
-2023-10-03T10:17:57Z	HalilDeniz/DNSWatch
-2023-10-03T10:17:15Z	4n4nk3/HikPwn
-2023-10-03T10:16:59Z	SuperFola/DoNotSend
-2023-10-03T10:16:30Z	mnemonic-no/ScapySMS
-2023-10-03T10:15:57Z	sahilmgandhi/IotShark
-2023-10-03T10:15:30Z	drsh4rky/hacking-with-python
-2023-10-03T10:14:51Z	usama-365/hackipy
-2023-10-03T10:14:09Z	Zaeem20/Predator
-2023-10-03T10:13:26Z	nxenon/xegtor
-2023-10-03T10:11:33Z	ajackal/cherrywasp
-2023-10-03T10:10:29Z	pivpn/pivpn
-2023-10-03T09:42:33Z	microsoft/IoT-For-Beginners
-2023-10-03T09:41:49Z	FD-/RPiPlay
-2023-10-03T09:39:00Z	mikeroyal/Self-Hosting-Guide
-2023-10-03T09:32:15Z	saladandonionrings/leaky
-2023-10-03T09:30:38Z	saladandonionrings/NextGen-Spoofer
-2023-10-03T09:28:40Z	rambasnet/NetworkSecurity
-2023-10-03T09:27:02Z	Nisitay/pyp0f
-2023-10-03T07:02:41Z	Drew-Alleman/ccrack
-2023-10-03T07:02:24Z	brannondorsey/wifi-cracking
-2023-10-03T07:01:41Z	Drew-Alleman/zipCracker
-2023-10-03T05:55:33Z	Drew-Alleman/dystopia
-2023-10-03T04:41:36Z	r1cksec/thoth
-2023-10-03T03:55:17Z	zyedidia/eget
-2023-10-02T08:13:52Z	ramimac/breach-list-database
-2023-10-02T08:12:34Z	zxsecurity/steamer
-2023-10-02T08:12:14Z	xakepnz/BLUELAY
-2023-10-02T08:07:50Z	FreeZeroDays/breach-rip
-2023-10-02T07:59:34Z	andrew-vii/hookshot
-2023-10-02T07:57:49Z	sensepost/Frack
-2023-10-02T04:16:36Z	arthurnunesc/fedora-scripts
-2023-10-02T04:16:33Z	fcchn4/ansible-fedora
-2023-10-02T04:16:28Z	David-Else/developer-workstation-setup-script
-2023-10-02T04:16:19Z	felbinger/PostInstall_Fedora
-2023-10-02T04:15:20Z	snwh/fedora-post-install
-2023-10-02T04:15:04Z	Cyclenerd/postinstall
-2023-10-02T04:14:34Z	virtual-meme-machine/fedora-desktop
-2023-10-02T04:14:02Z	hmthien050209/fedora-post-install-script
-2023-10-02T04:13:45Z	smittix/fedorable
-2023-10-01T22:03:50Z	Aloxaf/fzf-tab
-2023-10-01T16:27:50Z	manishprivet/dynamic-gnome-wallpapers
-2023-10-01T16:27:32Z	nvim-neorg/neorg
-2023-10-01T15:20:55Z	juergh/rpi-install
-2023-10-01T15:20:35Z	kerolloz/transparent
-2023-10-01T15:20:11Z	Andrew-Brad/Colonizer
-2023-10-01T15:19:53Z	procamora/fedora_pentesting
-2023-10-01T14:58:30Z	osmosis-labs/osmosis-installer
-2023-10-01T14:57:15Z	kerolloz/go-installer
-2023-10-01T14:53:57Z	SteavenGamerYT/os-install-scripts
-2023-10-01T14:47:32Z	kerolloz/installify
-2023-10-01T14:36:46Z	Imperial-Slug/Linux-Post-install-Helper
-2023-09-19T14:36:56Z	bbcmicrobit/micropython
-2023-09-19T14:35:57Z	alcir/microbit-ble
-2023-09-19T13:14:20Z	hackgnar/ble_ctf
-2023-09-19T13:14:13Z	pentesteracademy/blemystique
-2023-09-19T13:13:57Z	lancaster-university/microbit
-2023-09-19T13:13:49Z	mikeryan/crackle
-2023-09-19T09:45:29Z	deadc0de6/dotdrop
-2023-09-19T00:38:03Z	thombashi/gh-upgrade
-2023-09-19T00:37:51Z	joeyespo/grip
-2023-09-19T00:37:18Z	sindresorhus/github-markdown-css
-2023-09-19T00:37:04Z	yusukebe/gh-markdown-preview
-2023-09-19T00:36:08Z	jparise/gh-cat
-2023-09-19T00:35:33Z	gabe565/gh-profile
-2023-09-19T00:34:31Z	LangLangBart/gh-find-code
-2023-09-19T00:33:52Z	securesauce/gh-alerts
-2023-09-19T00:31:04Z	mislav/gh-cp
-2023-09-19T00:29:06Z	github/gh-net
-2023-09-18T22:52:05Z	Genymobile/scrcpy
-2023-09-18T22:51:10Z	kornelski/cargo-deb
-2023-09-18T00:32:23Z	rossmacarthur/sheldon
-2023-09-18T00:31:58Z	RichiH/vcsh
-2023-09-18T00:04:33Z	trevatk/Wifi-Cracker
-2023-09-17T23:07:55Z	PabloLec/pyWhat
-2023-09-17T23:07:20Z	PabloLec/cast-sh
-2023-09-17T23:04:21Z	PabloLec/livelog
-2023-09-17T22:57:15Z	flaggx1/cracktrack
-2023-09-17T22:03:31Z	thinkst/canaryfy
-2023-09-17T13:27:45Z	carvilsi/flipper0-wifi-map
-2023-09-17T13:27:14Z	carvilsi/esp32-wifi-map
-2023-09-17T13:26:04Z	carvilsi/systemd-usb-monitor-example
-2023-09-17T13:25:20Z	carvilsi/canaryfy
-2023-09-17T13:22:34Z	sliceratwork/flipper-zero-tutorials
-2023-09-17T10:09:24Z	linuxserver/Heimdall-Apps
-2023-09-10T15:30:33Z	malectricasoftware/rainbownator
-2023-09-09T05:28:05Z	cqcore/OSINT-Browser-Extensions
-2023-09-01T05:34:28Z	ECTO-1A/AppleJuice
-2023-09-01T05:29:48Z	stryker-project/app
-2023-09-01T05:23:34Z	Aircoookie/WLED
-2023-09-01T05:22:27Z	Chan5k/ArchOps
-2023-08-30T07:25:22Z	noctuid/tdrop
-2023-08-30T03:05:57Z	LemonBoy/bar
-2023-08-28T07:40:23Z	lencx/ChatGPT
-2023-08-23T01:08:54Z	tasooshi/pentesting-bootstrap
-2023-08-23T01:06:33Z	tasooshi/torboost
-2023-08-21T11:33:23Z	S3cur3Th1sSh1t/OffensiveVBA
-2023-08-21T11:29:31Z	S3cur3Th1sSh1t/WinPwn
-2023-08-21T10:47:48Z	ryanmrestivo/windows-tools-portable
-2023-08-21T10:45:43Z	PlagueHO/LabBuilder
-2023-08-21T10:44:46Z	AutomatedLab/AutomatedLab
-2023-08-21T10:42:52Z	outflanknl/Invoke-ADLabDeployer
-2023-08-10T22:47:00Z	sp00ks-git/o365recon
-2023-08-09T08:48:47Z	harelsegev/prefetch-hash-cracker
-2023-08-09T08:47:20Z	redcode-labs/AirStrike
-2023-08-09T08:47:12Z	redcode-labs/talks
-2023-08-09T00:36:28Z	ColumPaget/Hashrat
-2023-08-08T14:58:57Z	Orange-Cyberdefense/arsenal
-2023-08-07T23:59:57Z	migraine-sudo/BTLE-R
-2023-08-07T23:59:45Z	SchoolOfFreelancing/SMS-Harvester
-2023-08-07T22:49:44Z	cho45/hackrf-sweep-webusb
-2023-08-07T22:18:25Z	realraum/hackrf-dvb-t
-2023-08-07T22:18:08Z	MKme/MasterFrequencyList
-2023-08-07T22:16:49Z	JiaoXianjun/BTLE
-2023-08-07T22:16:04Z	ainfosec/FISSURE
-2023-08-07T22:15:45Z	Oros42/IMSI-catcher
-2023-08-07T22:15:31Z	pothosware/SoapyHackRF
-2023-08-07T22:15:00Z	cjcliffe/CubicSDR
-2023-08-07T22:14:31Z	Commander-Crash/HackRF-stuff
-2023-08-07T22:13:35Z	neib/HackRF_Transfer-GUI
-2023-08-07T22:13:22Z	ghostop14/sparrow-wifi
-2023-08-07T22:13:07Z	jhonnybonny/LTE_HACKRF
-2023-08-07T22:11:24Z	kaedenbrinkman/hackrf
-2023-08-07T22:06:28Z	serkankas/HackRF_Tutorial
-2023-08-07T22:05:37Z	fl1ckje/HackRF-tools
-2023-08-07T22:04:40Z	mikeryan/ice9-bluetooth-sniffer
-2023-08-07T22:04:30Z	fsphil/hacktv
-2023-08-07T22:02:06Z	ashok5141/Zigbee_Security
-2023-08-07T22:01:59Z	gqrx-sdr/gqrx
-2023-08-07T22:01:53Z	JvanKatwijk/qt-dab
-2023-08-07T22:01:22Z	mcore1976/cc1101-tool
-2023-08-07T22:00:45Z	sharebrained/portapack-hackrf
-2023-08-07T21:59:42Z	joecupano/SIGpi
-2023-08-07T21:59:06Z	lyusupov/SoftRF
-2023-08-07T21:58:38Z	jvde-github/AIS-catcher
-2023-08-07T21:57:57Z	f4exb/sdrangel
-2023-08-07T10:35:30Z	xwmx/nb
-2023-08-07T10:35:19Z	swsnr/mdcat
-2023-08-07T02:48:49Z	redtide/picom-conf
-2023-08-06T12:50:58Z	SequoiaSan/FlipperZero-Wifi-ESP8266-Deauther-Module
-2023-08-06T05:19:45Z	bitcrackcyber/rurasort
-2023-08-06T05:19:35Z	cyclone-github/hashgen
-2023-08-06T05:19:19Z	cyclone-github/writeups
-2023-08-05T12:54:25Z	eried/Research
-2023-08-05T12:53:57Z	IvRogoz/Tempest_SDR
-2023-08-05T06:12:47Z	evilpete/flipper_toolbox
-2023-08-05T04:43:08Z	BatchDrake/suscan
-2023-08-05T04:43:04Z	BatchDrake/sigutils
-2023-08-05T03:41:55Z	BatchDrake/SigDigger
-2023-08-05T03:37:29Z	JiaoXianjun/LTE-Cell-Scanner
-2023-08-05T03:37:25Z	PentHertz/Modmobmap
-2023-08-02T02:52:50Z	schollz/find3
-2023-08-02T01:26:57Z	morrownr/8821au-20210708
-2023-07-31T07:43:27Z	s0md3v/Hash-Buster
-2023-07-31T07:43:20Z	incredibleindishell/good-read
-2023-07-31T01:32:29Z	danieldurnea/FBI-tools
-2023-07-31T01:30:48Z	We5ter/Scanners-Box
-2023-07-31T01:30:41Z	flipkart-incubator/Astra
-2023-07-31T01:30:32Z	hisxo/gitGraber
-2023-07-31T01:28:17Z	carvilsi/canaryusb
-2023-07-30T23:47:33Z	nsonaniya2010/SubDomainizer
-2023-07-30T04:52:37Z	Rocksiz/wifi_pkmid
-2023-07-30T04:52:07Z	mufeedali/ramsh
-2023-07-30T04:14:17Z	cramik/read-pmkid
-2023-07-30T04:03:24Z	psrodrigues/hostapd_pmkid
-2023-07-30T04:03:17Z	n0mi1k/pmkidcracker
-2023-07-30T03:17:55Z	cablethief/hostap_pmkidding
-2023-07-30T02:47:32Z	Gurpreet06/Wifi-Crack
-2023-07-30T02:46:34Z	RealEnder/dwpa
-2023-07-30T02:45:27Z	MA24th/WiFiHunter
-2023-07-30T02:44:09Z	XORMANCER/WHITECAT
-2023-07-30T02:41:03Z	G4lile0/ESP32-WiFi-Hash-Monster
-2023-07-29T05:49:27Z	optimus10ro/Flipper_Zero-BadUsb
-2023-07-28T07:50:17Z	GMMan/flipperzero-vb-migrate
-2023-07-28T07:49:00Z	Milk-Cool/fz-em4100-generator
-2023-07-28T07:48:33Z	instantiator/flipper-zero-experimental-apps
-2023-07-28T07:48:10Z	ranchordo/flipperzero-cli-bridge
-2023-07-28T07:47:35Z	nmrr/flipperzero-rfidbeacon
-2023-07-28T07:45:14Z	0xchocolate/flipperzero-esp-flasher
-2023-07-28T01:34:32Z	Efeisot/polybar-nordic-bspwm
-2023-07-28T01:32:28Z	thespation/dpux_bspwm
-2023-07-25T20:30:27Z	mehedirm6244/Miserable_Xfce
-2023-07-25T16:18:03Z	krlvm/PowerTunnel
-2023-07-25T16:17:57Z	witchdocsec/SUnami
-2023-07-24T06:50:41Z	UberGuidoZ/Flipper
-2023-07-24T06:49:41Z	FluxionNetwork/fluxion
-2023-07-23T18:45:45Z	jopohl/urh
-2023-07-23T18:45:16Z	pavsa/hackrf-spectrum-analyzer
-2023-07-23T06:12:24Z	fOmey/ESP32Marauder
-2023-07-23T06:12:09Z	RocketGod-git/HackRF-Treasure-Chest
-2023-07-23T06:11:42Z	projectdiscovery/awesome-search-queries
-2023-07-22T16:33:29Z	djsime1/awesome-flipperzero
-2023-07-22T16:32:55Z	DXVVAY/xvirus-firmware
-2023-07-22T16:32:34Z	DXVVAY/Flipper
-2023-07-21T10:09:36Z	Telefonica/discovery-connectedhomeip
-2023-07-21T10:09:17Z	Telefonica/SDK-SMS-Stack
-2023-07-21T10:08:33Z	Telefonica/HomePWN
-2023-07-21T10:01:28Z	Telefonica/HiddenNetworks-Python
-2023-07-20T08:08:24Z	erikdubois/Aureola
-2023-07-20T08:07:52Z	D4Vinci/One-Lin3r
-2023-07-16T00:32:10Z	xajkep/wordlists
-2023-07-11T13:07:21Z	eried/flipperzero-mayhem
-2023-07-11T12:12:39Z	portapack-mayhem/mayhem-firmware
-2023-07-11T09:04:19Z	UPC/ravada
-2023-07-11T08:46:49Z	kvmtool/kvmtool
-2023-07-11T08:45:34Z	htrefil/rkvm
-2023-07-10T17:47:38Z	eisengrind/docker-altv-server
-2023-07-10T17:47:26Z	powenn/AltServer-Linux-PyScript
-2023-07-10T17:46:22Z	powenn/AltServer-LinuxGUI
-2023-07-10T03:20:31Z	tobiabocchi/flipperzero-bruteforce
-2023-07-10T03:16:56Z	GeekMustHave/HackRF
-2023-07-10T03:10:27Z	mentebinaria/retoolkit
-2023-07-09T20:14:12Z	sliceratwork/flipperzero-gate-bruteforce
-2023-07-09T20:02:18Z	sliceratwork/portapack-mayhem
-2023-07-09T20:00:35Z	sliceratwork/Drone-Hacking-Tool
-2023-07-09T19:57:41Z	RocketGod-git/flipper-sub-to-hackrf-portapack-c16-converter
-2023-07-09T02:35:21Z	HEX0DAYS/FlipperZero-PWNDTOOLS
-2023-07-09T02:32:39Z	FroggMaster/ESP32-Wi-Fi-Penetration-Tool
-2023-07-08T07:41:38Z	nkc3g4/wtg-assistant
-2023-07-08T07:40:58Z	MelbourneDeveloper/Device.Net
-2023-07-08T07:40:52Z	thinkst/canarytools-python
-2023-07-08T07:40:44Z	thinkst/canary-utils
-2023-07-08T07:38:57Z	cherry-embedded/CherryUSB
-2023-07-08T07:38:12Z	jsamr/bootiso
-2023-07-08T07:36:32Z	USBGuard/usbguard
-2023-07-08T07:35:27Z	libimobiledevice/usbmuxd
-2023-07-08T07:35:09Z	thinkst/canarytokens-docker
-2023-07-08T07:35:01Z	thinkst/canarytokens
-2023-07-08T07:11:26Z	pyusb/pyusb
-2023-07-08T06:13:23Z	echasnovski/mini.nvim
-2023-07-08T06:12:53Z	kimocoder/sparrow-wifi
-2023-07-08T06:12:38Z	kimocoder/urh
-2023-07-08T06:12:27Z	kimocoder/sweyntooth_bluetooth_low_energy_attacks
-2023-07-08T06:07:41Z	Athena-OS/athena-cyber-hub
-2023-07-07T09:37:34Z	netdiscover-scanner/netdiscover
-2023-07-07T07:33:08Z	ndejong/ouilookup
-2023-07-07T07:31:52Z	gcarq/arp-spoof
-2023-07-07T07:31:42Z	fksvs/inject
-2023-07-07T07:31:01Z	luijait/GONET-Scanner
-2023-07-07T07:30:19Z	elmoiv/elmocut
-2023-07-07T07:28:35Z	v-byte-cpu/sx
-2023-07-07T07:04:09Z	bkbilly/mqtt-network-scanner
-2023-07-07T07:03:59Z	Akbhobhiya/IAS-Project
-2023-07-07T07:03:42Z	formatBCE/ESP32_BLE_presense
-2023-07-07T07:03:35Z	formatBCE/Format-BLE-Tracker
-2023-07-07T07:03:29Z	HeimdallMidgard/ESP-32-BLE-Scanner
-2023-07-07T07:03:20Z	andrewjfreyer/monitor
-2023-07-07T07:02:04Z	machine1337/gmailc2
-2023-07-07T07:01:48Z	faucetsdn/poseidon
-2023-07-07T07:01:30Z	stratosphereips/StratosphereLinuxIPS
-2023-07-07T07:00:32Z	networkit/networkit
-2023-07-07T06:59:18Z	OWASP/Nettacker
-2023-07-04T14:56:23Z	rizwansoaib/whatsapp-monitor
-2023-06-30T23:36:52Z	Rishang/gnome-theme-installer
-2023-06-30T23:35:21Z	UdeshyaDhungana/xfce4-theme-switcher
-2023-06-30T23:34:49Z	C2N14/AutomaThemely
-2023-06-30T23:32:10Z	liamsgotgenes/xfce4-theme-switcher
-2023-06-30T23:30:51Z	inatagan/haze-you
-2023-06-30T23:10:38Z	inatagan/eva-01
-2023-06-30T23:04:22Z	flyingcakes85/eos-clone-i3-theme
-2023-06-29T11:03:17Z	ESPboy-edu/ESPboy_Sub1GHzInspector
-2023-06-29T06:00:38Z	danielmiessler/SecLists
-2023-06-29T06:00:31Z	swisskyrepo/PayloadsAllTheThings
-2023-06-29T05:09:19Z	sqall01/LSMS
-2023-06-29T03:10:02Z	rfquack/RFQuack
-2023-06-29T02:21:10Z	qarmin/czkawka
-2023-06-27T08:52:59Z	babarot/enhancd
-2023-06-24T12:44:04Z	koenvervloesem/humble-explorer
-2023-06-24T06:52:06Z	LSatan/SmartRC-CC1101-Driver-Lib
-2023-06-24T06:42:31Z	yt-dlp/yt-dlp
-2023-06-23T18:31:36Z	openwall/johnny
-2023-06-22T05:40:16Z	gusgorman402/RFmoggy
-2023-06-22T05:39:57Z	dmdhrumilmistry/GooglePhish
-2023-06-16T17:53:24Z	MichaelDim02/x
-2023-06-16T17:53:13Z	MichaelDim02/UnixUtils
-2023-06-16T07:43:16Z	nyxgeek/imgdevil
-2023-06-16T07:43:06Z	nyxgeek/username-lists
-2023-06-16T07:42:55Z	psycho-prince/BruteHash
-2023-06-16T07:40:03Z	NicholasDrexler/4-Character-Password-Cracker
-2023-06-16T07:38:59Z	MrGITit/Wordlist-Zombie
-2023-06-16T07:38:38Z	rootripper/P0lyn0m1c0n
-2023-06-16T07:38:02Z	Mateusz-Peplinski/Password-Missile
-2023-06-16T07:37:20Z	rarecoil/hashes.org-list
-2023-06-16T07:28:46Z	mdsulaiman7870/bulkscanner
-2023-06-16T07:27:23Z	unclesp1d3r/HashSlinger
-2023-06-16T07:12:28Z	cyclone-github/mdxfind
-2023-06-16T01:00:53Z	Thomas-George-T/HackerRank-The-Linux-Shell-Challenges-Solutions
-2023-06-16T00:56:45Z	ysf/anewer
-2023-06-16T00:54:59Z	mattwright324/hashID
-2023-06-16T00:54:43Z	thelinuxuser-choice/AnonCracker
-2023-06-16T00:51:34Z	buhanec/spookyhash
-2023-06-16T00:50:51Z	Adkali/Hashget
-2023-06-16T00:48:10Z	sensepost/hash-cracker
-2023-06-16T00:45:09Z	Ekultek/Dagon
-2023-06-16T00:43:50Z	gcastellov/rust-ripper-wasm
-2023-06-16T00:43:33Z	AnonymousAt3/hashbreak
-2023-06-16T00:43:02Z	xfox64x/Hashcat-Stuffs
-2023-06-16T00:42:48Z	nyxgeek/dumpsniffer
-2023-06-16T00:42:33Z	nyxgeek/nyxgeek-rules
-2023-06-16T00:41:06Z	jRimbault/yadf
-2023-06-16T00:40:29Z	rurban/smhasher
-2023-06-16T00:38:45Z	tasooshi/brutas
-2023-06-16T00:37:03Z	hegusung/WebHashcat
-2023-06-16T00:35:25Z	RUB-SysSec/OMEN
-2023-06-16T00:33:19Z	Cynosureprime/rling
-2023-06-16T00:32:35Z	0xVavaldi/ruleprocessorY
-2023-06-16T00:32:04Z	n0kovo/awesome-password-cracking
-2023-06-16T00:28:40Z	r3nt0n/bopscrk
-2023-06-16T00:27:28Z	someshkar/colabcat
-2023-06-16T00:27:07Z	brannondorsey/naive-hashcat
-2023-06-15T07:30:07Z	JhonnyLusonode/public-apis
-2023-06-13T19:56:20Z	paulpierre/informer
-2023-06-13T19:54:45Z	Forichok/TelegramOnlineSpy
-2023-06-13T19:52:19Z	ItIsMeCall911/Course-Piracy-Index
-2023-06-10T08:46:33Z	redcode-labs/RedSand
-2023-06-10T08:30:22Z	n3tshark/uzname-wordlists
-2023-06-10T08:23:48Z	Orange-Cyberdefense/GOAD
-2023-06-10T07:42:52Z	NightCS/nightlypwn
-2023-06-10T07:39:48Z	saimoomedits/eww-widgets
-2023-06-10T07:39:21Z	rxyhn/tokyo
-2023-06-10T07:38:15Z	niraj998/Rofi-Scripts
-2023-06-10T07:37:44Z	gh0stzk/dotfiles
-2023-06-10T06:28:51Z	initstring/passphrase-wordlist
-2023-06-10T06:28:39Z	cyclone-github/rules
-2023-06-10T06:27:40Z	n0kovo/hashcat-rules-collection
-2023-06-10T06:27:09Z	Unic0rn28/hashcat-rules
-2023-06-10T06:25:13Z	sp00ks-git/hat
-2023-06-10T01:35:15Z	t3l3machus/reverse-shell-generator
-2023-06-10T01:33:42Z	t3l3machus/hoaxshell
-2023-06-10T01:32:40Z	t3l3machus/psudohash
-2023-06-10T01:29:57Z	t3l3machus/eviltree
-2023-06-09T04:07:50Z	romkatv/powerlevel10k
-2023-06-09T04:07:43Z	Jintin/aliasme
-2023-06-09T04:04:47Z	nvbn/thefuck
-2023-06-07T08:06:39Z	maurosoria/dirsearch
-2023-06-06T07:54:05Z	GhettoGeek/EMAGNET
-2023-05-27T04:44:42Z	zellij-org/zellij
-2023-05-26T05:56:24Z	kimocoder/wifite2
-2023-05-26T05:42:52Z	first20hours/google-10000-english
-2023-05-26T03:35:53Z	hashcat/kwprocessor
-2023-05-26T03:13:47Z	VirusTotal/vt-cli
-2023-05-25T06:50:33Z	mrjackwills/havn
-2023-05-24T05:06:16Z	takito1812/web-hacking-playground
-2023-05-24T05:05:16Z	BLACK-SCORP10/Email-Vulnerablity-Checker
-2023-05-24T05:04:23Z	trinitor/CVE-Vulnerability-Information-Downloader
-2023-05-24T04:59:50Z	projectdiscovery/katana
-2023-05-24T04:55:33Z	praetorian-inc/fingerprintx
-2023-05-24T04:54:19Z	seekr-osint/seekr
-2023-05-24T04:53:01Z	thecyberneh/scriptkiddi3
-2023-05-24T04:51:54Z	aleixrodriala/wa-tunnel
-2023-05-24T04:41:23Z	XDeadHackerX/The_spy_job
-2023-05-24T04:38:15Z	OffcierCia/non-typical-OSINT-guide
-2023-05-24T04:36:34Z	Esc4iCEscEsc/skanuvaty
-2023-05-24T04:36:06Z	Lucksi/Mr.Holmes
-2023-05-24T04:35:33Z	AzizKpln/Moriarty-Project
-2023-05-24T04:34:48Z	blacklanternsecurity/bbot
-2023-05-24T04:31:40Z	3nock/SpiderSuite
-2023-05-23T08:41:32Z	yakuza8/peniot
-2023-05-23T08:41:06Z	Charmve/BLE-Security-Attack-Defence
-2023-05-23T08:40:47Z	engn33r/awesome-bluetooth-security
-2023-05-23T08:38:12Z	fO-000/bluing
-2023-05-23T08:28:01Z	kevincar/bless
-2023-05-23T08:27:55Z	hbldh/bleak
-2023-05-23T08:07:43Z	adafruit/Adafruit_CircuitPython_BLE
-2023-05-21T05:52:47Z	Samyak2/toipe
-2023-05-21T05:52:37Z	quantumsheep/sshs
-2023-05-21T05:52:20Z	robherley/snips.sh
-2023-05-21T05:49:42Z	PabloLec/RecoverPy
-2023-05-21T05:49:37Z	max-niederman/ttyper
-2023-05-21T05:49:34Z	blacknon/hwatch
-2023-05-21T05:49:30Z	Biont/sway-launcher-desktop
-2023-05-21T05:42:43Z	pirxthepilot/wtfis
-2023-05-21T05:42:27Z	wssheldon/osintui
-2023-05-21T05:41:55Z	kraanzu/termtyper
-2023-05-21T05:40:12Z	ms-jpq/sad
-2023-05-21T05:38:28Z	bvaisvil/zenith
-2023-05-21T05:37:28Z	ClementTsang/bottom
-2023-05-21T04:54:46Z	Aviral14/Skiddie
-2023-05-21T04:39:45Z	Drew-Alleman/autodeauth
-2023-05-21T04:24:54Z	six2dez/keyhacks
-2023-05-21T04:24:32Z	six2dez/Enum_For_All
-2023-05-21T04:24:24Z	six2dez/Hashcat-Cheatsheet
-2023-05-21T02:27:59Z	six2dez/OneListForAll
-2023-05-21T02:10:25Z	command-line-interface-pages/cli-pages
-2023-05-21T02:06:30Z	rstacruz/cheatsheets
-2023-05-19T16:57:27Z	joke2k/faker
-2023-05-07T01:30:07Z	JakeWnuk/rulecat
-2023-05-05T10:22:23Z	MagnetForensics/dumpit-linux
-2023-04-29T02:13:24Z	JakeWnuk/maskcat
-2023-04-29T02:07:03Z	ShawnDEvans/panalyzer
-2023-04-24T04:09:39Z	dominikwilkowski/cfonts
-2023-04-24T04:07:58Z	pemistahl/grex
-2023-04-23T16:46:56Z	GyulyVGC/sniffnet
-2023-04-23T09:26:03Z	phra/rustbuster
-2023-04-23T09:25:49Z	jerlendds/osintbuddy
-2023-04-23T09:25:43Z	kitsec-labs/kitsec-core
-2023-04-23T08:48:38Z	Drew-Alleman/DataSurgeon
-2023-04-23T04:53:50Z	sharsil/mailcat
-2023-04-22T15:30:27Z	devangshekhawat/Fedora-39-Post-Install-Guide
-2023-04-14T01:48:34Z	sts10/tidy
-2023-04-14T01:48:18Z	shmuelamar/cracken
-2023-04-14T01:45:31Z	LandGrey/pydictor
-2023-04-14T01:44:20Z	sc0tfree/mentalist
-2023-04-14T01:44:02Z	trickest/wordlists
-2023-04-14T00:47:54Z	glitchedgitz/cook
-2023-04-13T01:49:36Z	D3Ext/WEF
-2023-04-13T01:49:08Z	koutto/pi-pwnbox-rogueap
-2023-04-13T01:48:56Z	RaspAP/raspap-webgui
-2023-04-13T01:48:49Z	BornToBeRoot/NETworkManager
-2023-04-10T17:28:14Z	Mpdreamz/shellprogressbar
-2023-04-09T14:52:08Z	rothgar/awesome-tuis
-2023-04-08T11:49:39Z	six2dez/reconftw
-2023-04-08T11:40:10Z	akr3ch/BugBountyBooks
-2023-04-08T11:39:12Z	akr3ch/wicker-gui
-2023-04-07T08:41:56Z	efchatz/WPAxFuzz
-2023-04-07T08:41:45Z	alipay/Owfuzz
-2023-04-07T08:41:38Z	Owfuzz/Owfuzz
-2023-04-07T03:02:15Z	idobarel/wifight
-2023-04-05T15:41:57Z	Illusionghost/hexsms
-2023-04-03T00:18:02Z	nil0x42/duplicut
-2023-04-02T22:40:40Z	dievus/PowerShellForPentesters
-2023-04-02T22:40:26Z	dievus/Oh365UserFinder
-2023-04-02T22:40:25Z	dievus/geeMailUserFinder
-2023-04-02T22:40:23Z	dievus/Firefox-Dumper
-2023-04-02T20:12:04Z	ZerBea/hcxdumptool
-2023-04-02T20:11:55Z	ivanovborislav/rtl8821au
-2023-04-02T19:51:24Z	morrownr/8814au
-2023-04-02T09:04:26Z	skills/secure-code-game
-2023-04-02T09:04:18Z	sil3ntH4ck3r/WebVulnLab
-2023-03-26T10:42:07Z	charmbracelet/gum
-2023-03-26T10:36:54Z	Josue87/EmailFinder
-2023-03-23T09:47:51Z	edoardottt/awesome-hacker-search-engines
-2023-03-19T07:30:51Z	fiskhest/sxhkd-helper-menu
-2023-03-19T07:30:45Z	maledorak/dmenu-hotkeys
-2023-03-10T05:03:29Z	jmcerrejon/PiKISS
-2023-03-07T02:05:00Z	Exodia-OS/exodia-acer-predator-ISO
-2023-03-07T02:04:55Z	Exodia-OS/exodia-wireless-ISO
-2023-03-04T07:06:24Z	egara/buttermanager
-2023-03-04T07:06:20Z	digint/btrbk
-2023-03-03T14:44:37Z	cjnaz/routermonitor
-2023-03-02T21:16:09Z	cifertech/2.4-GHz-band-Scanner
-2023-03-02T21:16:05Z	cifertech/nRF-jammer
-2023-03-02T21:16:02Z	cifertech/WiFiBox
-2023-03-02T21:15:58Z	cifertech/nRFBox
-2023-03-02T21:15:54Z	cifertech/315Mhz-jammer
-2023-02-22T23:34:18Z	HimDek/Acenoster-ZSH-Theme
-2023-02-22T23:34:13Z	mangosmoothie/ez-pz
-2023-02-22T02:55:08Z	remkop/picocli
-2023-02-19T02:47:43Z	SunL0w/AlphaRapist
-2023-02-08T12:29:02Z	denisidoro/navi
-2023-02-07T19:37:39Z	sayanarijit/gh-xplr
-2023-02-07T07:43:40Z	xxh/xxh
-2023-02-07T05:35:26Z	Red5d/docker-autocompose
-2023-02-07T03:24:25Z	atusy/zsh-nvrepl
-2023-02-07T03:24:09Z	LazyVim/LazyVim
-2023-02-06T10:03:54Z	Flipper-XFW/Xtreme-Firmware
-2023-01-29T10:31:58Z	kal1gh0st/WhatsAppHACK-RCE
-2023-01-29T10:08:26Z	rmountjoy92/DashMachine
-2023-01-29T09:30:34Z	weibell/reverse-shell-generator
-2023-01-29T09:29:03Z	ewilded/shelling
-2023-01-29T08:57:55Z	0dayCTF/reverse-shell-generator
-2023-01-28T10:06:00Z	owenrumney/lazytrivy
-2023-01-28T10:05:43Z	yusufarbc/DockerVuln
-2023-01-27T06:48:17Z	u-blox/XPLR-IOT-1-software
-2023-01-26T11:28:34Z	garywill/BigSearch
-2023-01-26T11:26:10Z	garywill/proxc
-2023-01-26T11:23:52Z	garywill/LAN-port-scan-forbidder
-2023-01-26T11:21:45Z	garywill/linux-router
-2023-01-26T11:19:33Z	lakinduakash/linux-wifi-hotspot
-2023-01-26T11:08:56Z	OWASP/crAPI
-2023-01-25T03:48:14Z	Adastra-thw/KrakenRdi
-2023-01-22T00:19:23Z	SelfhostedPro/selfhosted_templates
-2023-01-21T23:16:10Z	mrjackwills/oxker
-2023-01-21T14:52:07Z	HatBashBR/HatDecrypter
-2023-01-21T14:48:07Z	HatBashBR/Hatwitch
-2023-01-21T10:16:11Z	papusingh2sms/mysms
-2023-01-21T10:13:56Z	nvim-lua/kickstart.nvim
-2023-01-19T19:46:35Z	RetroPackets/Nmap-Pro
-2023-01-19T19:46:24Z	RetroPackets/Xurma-Dox
-2023-01-19T19:46:16Z	RetroPackets/Email-Invader
-2023-01-18T22:14:54Z	elkowar/eww
-2023-01-17T19:40:28Z	Athena-OS/athena-iso
-2023-01-05T22:14:42Z	XavierBerger/RPi-Monitor
-2023-01-05T20:47:14Z	unixabg/cryptmypi
-2023-01-04T23:19:17Z	farag2/Utilities
-2023-01-02T18:50:09Z	MrChromebox/scripts
-2023-01-02T00:45:24Z	alvatip/Radioactive-nord
-2023-01-01T20:46:36Z	fastfetch-cli/fastfetch
-2023-01-01T18:56:16Z	pucherot/Pi.Alert
-2023-01-01T18:55:24Z	alexjustesen/speedtest-tracker
-2023-01-01T18:54:51Z	gethomepage/homepage
-2022-12-23T04:30:20Z	portainer/portainer
-2022-12-23T04:28:41Z	netdata/netdata
-2022-11-29T07:33:41Z	LunarVim/Launch.nvim
-2022-11-27T14:39:25Z	gnebbia/kb
-2022-11-27T14:39:11Z	cheat/cheatsheets
-2022-11-27T14:39:02Z	click-contrib/click-man
-2022-11-27T09:02:43Z	davatorium/rofi
-2022-11-27T09:01:22Z	JohnnyMorganz/StyLua
-2022-11-27T09:00:23Z	microsoft/debugpy
-2022-11-27T09:00:15Z	PyCQA/isort
-2022-11-27T09:00:07Z	psf/black
-2022-11-27T08:59:53Z	skydie22/my-polybar-theme
-2022-11-27T08:59:24Z	Flammable-Duck/polybar-aesthetic
-2022-11-27T08:58:29Z	adi1090x/kitty-cat
-2022-11-27T08:58:13Z	adi1090x/polybar-themes
-2022-11-27T08:57:59Z	adi1090x/dynamic-wallpaper
-2022-11-27T08:57:52Z	adi1090x/rofi
-2022-11-27T08:57:21Z	marcos-inja/polybar-theme
-2022-11-22T06:27:55Z	LunarVim/colorgen-nvim
-2022-11-18T09:12:35Z	sharkdp/bat
-2022-10-22T08:09:01Z	cotes2020/chirpy-starter
-2022-10-22T07:34:44Z	sayanarijit/xplr
-2022-10-21T21:38:42Z	folke/tokyonight.nvim
+git clone --recursive https://github.com/ins1gn1a/Hexcat.git
+git clone --recursive https://github.com/albfan/miraclecast.git
+git clone --recursive https://github.com/bee-san/pyWhat.git
+git clone --recursive https://github.com/bnjbvr/cargo-machete.git
+git clone --recursive https://github.com/pombadev/cargo-updater.git
+git clone --recursive https://github.com/nabijaczleweli/cargo-update.git
+git clone --recursive https://github.com/PaulDance/cargo-liner.git
+git clone --recursive https://github.com/Canop/broot.git
+git clone --recursive https://github.com/ekzhang/bore.git
+git clone --recursive https://github.com/charmbracelet/vhs.git
+git clone --recursive https://github.com/qeeqbox/social-analyzer.git
+git clone --recursive https://github.com/uriel1998/quite-intriguing.git
+git clone --recursive https://github.com/sheepla/fzpac.git
+git clone --recursive https://github.com/BartSte/fzf-help.git
+git clone --recursive https://github.com/MLFlexer/mal.git
+git clone --recursive https://github.com/eylles/wal-choose.git
+git clone --recursive https://github.com/Lissy93/portainer-templates.git
+git clone --recursive https://github.com/evilsocket/medusa.git
+git clone --recursive https://github.com/ex0dus-0x/awesome-rust-security.git
+git clone --recursive https://github.com/TaKO8Ki/awesome-alternatives-in-rust.git
+git clone --recursive https://github.com/cyclone-github/regx.git
+git clone --recursive https://github.com/SDWebImage/SDWebImage.git
+git clone --recursive https://github.com/sharkdp/fd.git
+git clone --recursive https://github.com/MohamedElashri/fd-zsh.git
+git clone --recursive https://github.com/hillaryychan/ulauncher-fzf.git
+git clone --recursive https://github.com/rust-unofficial/awesome-rust.git
+git clone --recursive https://github.com/atuinsh/atuin.git
+git clone --recursive https://github.com/microsoft/windows-rs.git
+git clone --recursive https://github.com/JamesTurland/JimsGarage.git
+git clone --recursive https://github.com/G33kzD3n/Catalogue.git
+git clone --recursive https://github.com/tmux-plugins/tpm.git
+git clone --recursive https://github.com/ansible/ansible-examples.git
+git clone --recursive https://github.com/GhostWriters/DockSTARTer.git
+git clone --recursive https://github.com/cyclone-github/wordlist.git
+git clone --recursive https://github.com/ipinfo/cli.git
+git clone --recursive https://github.com/oldratlee/useful-scripts.git
+git clone --recursive https://github.com/Gogh-Co/Gogh.git
+git clone --recursive https://github.com/learnbyexample/cli_text_processing_coreutils.git
+git clone --recursive https://github.com/sstadick/hck.git
+git clone --recursive https://github.com/birchb1024/frangipanni.git
+git clone --recursive https://github.com/learnbyexample/Command-line-text-processing.git
+git clone --recursive https://github.com/cheat/cheat.git
+git clone --recursive https://github.com/chmln/sd.git
+git clone --recursive https://github.com/jqlang/jq.git
+git clone --recursive https://github.com/theryangeary/choose.git
+git clone --recursive https://github.com/sharkdp/hexyl.git
+git clone --recursive https://github.com/sharkdp/lscolors.git
+git clone --recursive https://github.com/sharkdp/binocle.git
+git clone --recursive https://github.com/sharkdp/pastel.git
+git clone --recursive https://github.com/philipperemy/name-dataset.git
+git clone --recursive https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone --recursive https://github.com/trapd00r/zsh-syntax-highlighting-filetypes.git
+git clone --recursive https://github.com/trapd00r/LS_COLORS.git
+git clone --recursive https://github.com/ascii-boxes/boxes.git
+git clone --recursive https://github.com/dracula/bashtop.git
+git clone --recursive https://github.com/Grimmstar/Grimmstar-Bashtop-Theme.git
+git clone --recursive https://github.com/rose-pine/i3.git
+git clone --recursive https://github.com/rose-pine/rofi.git
+git clone --recursive https://github.com/rose-pine/polybar.git
+git clone --recursive https://github.com/rose-pine/alacritty.git
+git clone --recursive https://github.com/rose-pine/firefox.git
+git clone --recursive https://github.com/rose-pine/btop.git
+git clone --recursive https://github.com/iambeingtracked/btop-everforest.git
+git clone --recursive https://github.com/catppuccin/btop.git
+git clone --recursive https://github.com/jidro/bashtop-themes.git
+git clone --recursive https://github.com/moktavizen/material-btop.git
+git clone --recursive https://github.com/ekkinox/yai.git
+git clone --recursive https://github.com/pmarrapese/iot.git
+git clone --recursive https://github.com/vzhn/bstreamer.git
+git clone --recursive https://github.com/intx82/a9-v720.git
+git clone --recursive https://github.com/OpenEMS/openems.git
+git clone --recursive https://github.com/d4rckh/iptk.git
+git clone --recursive https://github.com/wavestone-cdt/wavecrack.git
+git clone --recursive https://github.com/tp7309/TTPassGen.git
+git clone --recursive https://github.com/SySS-Research/hashcathelper.git
+git clone --recursive https://github.com/dizcza/docker-hashcat.git
+git clone --recursive https://github.com/nesfit/fitcrack.git
+git clone --recursive https://github.com/Orange-Cyberdefense/graphcat.git
+git clone --recursive https://github.com/HashPals/Search-That-Hash.git
+git clone --recursive https://github.com/hmaverickadams/breach-parse.git
+git clone --recursive https://github.com/reconweird/breach-parse.git
+git clone --recursive https://github.com/Fechin/reference.git
+git clone --recursive https://github.com/MichaelDim02/Narthex.git
+git clone --recursive https://github.com/prasanthrangan/hyprdots.git
+git clone --recursive https://github.com/simplex-chat/simplex-chat.git
+git clone --recursive https://github.com/KRTirtho/spotube.git
+git clone --recursive https://github.com/powenn/spotube.git
+git clone --recursive https://github.com/movie-web/movie-web.git
+git clone --recursive https://github.com/bionicbone/433mhz_Rolling_Code.git
+git clone --recursive https://github.com/junegunn/tmux-fzf-url.git
+git clone --recursive https://github.com/DanielFGray/fzf-scripts.git
+git clone --recursive https://github.com/3hhh/fzfuncs.git
+git clone --recursive https://github.com/amaya382/zsh-fzf-widgets.git
+git clone --recursive https://github.com/rayiik/Fzf-bash-ide-resource.git
+git clone --recursive https://github.com/zaproxy/browser-extension.git
+git clone --recursive https://github.com/horsicq/Detect-It-Easy.git
+git clone --recursive https://github.com/charmbracelet/bubbletea.git
+git clone --recursive https://github.com/muesli/termenv.git
+git clone --recursive https://github.com/mgunyho/tere.git
+git clone --recursive https://github.com/p-gen/smenu.git
+git clone --recursive https://github.com/pterm/pterm.git
+git clone --recursive https://github.com/sxyazi/yazi.git
+git clone --recursive https://github.com/akavel/up.git
+git clone --recursive https://github.com/wtfutil/wtf.git
+git clone --recursive https://github.com/muesli/duf.git
+git clone --recursive https://github.com/sensepost/shinai-fi.git
+git clone --recursive https://github.com/sensepost/dwn.git
+git clone --recursive https://github.com/JakeWnuk/Rules.git
+git clone --recursive https://github.com/hashcat/hashcat-utils.git
+git clone --recursive https://github.com/philsmd/7z2hashcat.git
+git clone --recursive https://github.com/semeion/handshake-cracker.git
+git clone --recursive https://github.com/sensepost/common-substr.git
+git clone --recursive https://github.com/SpacehuhnTech/DeauthDetector.git
+git clone --recursive https://github.com/SpacehuhnTech/WiFiDuck.git
+git clone --recursive https://github.com/SpacehuhnTech/esp8266_deauther.git
+git clone --recursive https://github.com/SpacehuhnTech/Huhnitor.git
+git clone --recursive https://github.com/gphoenix14/Stealth-Gmail-C2-2024-Ready.git
+git clone --recursive https://github.com/Acceis/leakScraper.git
+git clone --recursive https://github.com/stryku/okon.git
+git clone --recursive https://github.com/tliron/install-gnome-themes.git
+git clone --recursive https://github.com/oivas000/GNOME-THEME-CLONER.git
+git clone --recursive https://github.com/ALEX11BR/ThemeChanger.git
+git clone --recursive https://github.com/plexydesk/plexydesk.git
+git clone --recursive https://github.com/imarkoff/Marble-shell-theme.git
+git clone --recursive https://github.com/themix-project/themix-gui.git
+git clone --recursive https://github.com/anmoljagetia/Flatabulous.git
+git clone --recursive https://github.com/alankrantas/microbit-micropython-cookbook.git
+git clone --recursive https://github.com/pizayanz/pxt-linebeacon.git
+git clone --recursive https://github.com/katlol/awesome-flipperzero-pack.git
+git clone --recursive https://github.com/OWASP/owasp-mastg.git
+git clone --recursive https://github.com/k4m4/movies-for-hackers.git
+git clone --recursive https://github.com/carlospolop/hacktricks.git
+git clone --recursive https://github.com/ngn13/ezcat.git
+git clone --recursive https://github.com/kefranabg/readme-md-generator.git
+git clone --recursive https://github.com/brianvoe/gofakeit.git
+git clone --recursive https://github.com/bchavez/Bogus.git
+git clone --recursive https://github.com/tobozo/ESP32-BLECollector.git
+git clone --recursive https://github.com/cocoahuke/coBlue.git
+git clone --recursive https://github.com/darkhz/bluetuith.git
+git clone --recursive https://github.com/seemoo-lab/internalblue.git
+git clone --recursive https://github.com/myhomeiot/DahuaVTO.git
+git clone --recursive https://github.com/S0Ulle33/asleep_scanner.git
+git clone --recursive https://github.com/jorhelp/Ingram.git
+git clone --recursive https://github.com/mcw0/DahuaConsole.git
+git clone --recursive https://github.com/bp2008/DahuaLoginBypass.git
+git clone --recursive https://github.com/rootrilla/rfid-flipper-firmware.git
+git clone --recursive https://github.com/safing/portmaster.git
+git clone --recursive https://github.com/ChrisTitusTech/winutil.git
+git clone --recursive https://github.com/beigeworm/Posh-LAN.git
+git clone --recursive https://github.com/beigeworm/Powershell-Tools-and-Toys.git
+git clone --recursive https://github.com/rudiratlos/hotspot.git
+git clone --recursive https://github.com/owtf/owtf.git
+git clone --recursive https://github.com/Znerox/wifimap.git
+git clone --recursive https://github.com/e-m3din4/wigle-wifi.git
+git clone --recursive https://github.com/designer2k2/warpi.git
+git clone --recursive https://github.com/JosephHewitt/wardriver_rev3.git
+git clone --recursive https://github.com/DarkenCode/yara-rules.git
+git clone --recursive https://github.com/Neo23x0/signature-base.git
+git clone --recursive https://github.com/bartblaze/Yara-rules.git
+git clone --recursive https://github.com/VirusTotal/yara.git
+git clone --recursive https://github.com/Yara-Rules/rules.git
+git clone --recursive https://github.com/sophos/yaraml_rules.git
+git clone --recursive https://github.com/malpedia/signator-rules.git
+git clone --recursive https://github.com/h3x2b/yara-rules.git
+git clone --recursive https://github.com/chronicle/GCTI.git
+git clone --recursive https://github.com/mandiant/red_team_tool_countermeasures.git
+git clone --recursive https://github.com/elastic/protections-artifacts.git
+git clone --recursive https://github.com/kevoreilly/CAPEv2.git
+git clone --recursive https://github.com/codewatchorg/Burp-Yara-Rules.git
+git clone --recursive https://github.com/deadbits/yara-rules.git
+git clone --recursive https://github.com/AlienVault-Labs/AlienVaultLabs.git
+git clone --recursive https://github.com/InQuest/awesome-yara.git
+git clone --recursive https://github.com/TheR1D/shell_gpt.git
+git clone --recursive https://github.com/victornpb/undiscord.git
+git clone --recursive https://github.com/fregante/GhostText.git
+git clone --recursive https://github.com/browserpass/browserpass-extension.git
+git clone --recursive https://github.com/toggl/track-extension.git
+git clone --recursive https://github.com/ninoseki/mitaka.git
+git clone --recursive https://github.com/mandatoryprogrammer/CursedChrome.git
+git clone --recursive https://github.com/Ibit-to/google-unlocked.git
+git clone --recursive https://github.com/AutomaApp/automa.git
+git clone --recursive https://github.com/gildas-lormeau/SingleFile.git
+git clone --recursive https://github.com/Gallopsled/pwntools.git
+git clone --recursive https://github.com/expandpi/wallpapers.git
+git clone --recursive https://github.com/mxrch/penglab.git
+git clone --recursive https://github.com/expandpi/pwntools-tutorial.git
+git clone --recursive https://github.com/Athena-OS/athena-base-docker.git
+git clone --recursive https://github.com/Athena-OS/bspwm.git
+git clone --recursive https://github.com/Keyitdev/sddm-astronaut-theme.git
+git clone --recursive https://github.com/Rokin05/sddm-themes.git
+git clone --recursive https://github.com/3ximus/abstractdark-sddm-theme.git
+git clone --recursive https://github.com/rototrash/tokyo-night-sddm.git
+git clone --recursive https://github.com/3ximus/aerial-sddm-theme.git
+git clone --recursive https://github.com/EricKotato/sddm-slice.git
+git clone --recursive https://github.com/killman/SlimThemes.git
+git clone --recursive https://github.com/minos-org/slim-theme-minos-login.git
+git clone --recursive https://github.com/AnotherKamila/slim-theme-arch-glow.git
+git clone --recursive https://github.com/liamg/grace.git
+git clone --recursive https://github.com/vdjagilev/nmap-formatter.git
+git clone --recursive https://github.com/Beyarz/Portforge.git
+git clone --recursive https://github.com/stanford-esrg/lzr.git
+git clone --recursive https://github.com/snovvcrash/DivideAndScan.git
+git clone --recursive https://github.com/jmetzger/2020-linux-advanced-networking.git
+git clone --recursive https://github.com/securisec/chepy.git
+git clone --recursive https://github.com/m3n0sd0n4ld/uDork.git
+git clone --recursive https://github.com/m3n0sd0n4ld/GooFuzz.git
+git clone --recursive https://github.com/virtualabs/btlejack.git
+git clone --recursive https://github.com/hickory-dns/hickory-dns.git
+git clone --recursive https://github.com/bitquark/dnspop.git
+git clone --recursive https://github.com/vortexau/dnsvalidator.git
+git clone --recursive https://github.com/yarrick/iodine.git
+git clone --recursive https://github.com/hackclub/dns.git
+git clone --recursive https://github.com/v1s1t0r1sh3r3/airgeddon.git
+git clone --recursive https://github.com/novaspirit/Alpine_xfce4_noVNC.git
+git clone --recursive https://github.com/CristianEduardMihai/alexa-wol.git
+git clone --recursive https://github.com/nirui/sshwifty.git
+git clone --recursive https://github.com/dj95/zjstatus.git
+git clone --recursive https://github.com/imsnif/monocle.git
+git clone --recursive https://github.com/karimould/zellij-forgot.git
+git clone --recursive https://github.com/honeynet/droidbot.git
+git clone --recursive https://github.com/rpmsphere/x86_64.git
+git clone --recursive https://github.com/rpmsphere/source.git
+git clone --recursive https://github.com/mandiant/Ghidrathon.git
+git clone --recursive https://github.com/seachicken/gh-poi.git
+git clone --recursive https://github.com/extrawurst/gitui.git
+git clone --recursive https://github.com/slimtoolkit/slim.git
+git clone --recursive https://github.com/crycode-de/http-server-upload.git
+git clone --recursive https://github.com/coqui-ai/TTS.git
+git clone --recursive https://github.com/rany2/edge-tts.git
+git clone --recursive https://github.com/alexrudall/ruby-openai.git
+git clone --recursive https://github.com/ronaldstoner/AppleJuice-ESP32.git
+git clone --recursive https://github.com/aceberg/WatchYourLAN.git
+git clone --recursive https://github.com/pi-hosted/pi-hosted.git
+git clone --recursive https://github.com/wimpysworld/deb-get.git
+git clone --recursive https://github.com/PeterDaveHello/tor-socks-proxy.git
+git clone --recursive https://github.com/awesome-selfhosted/awesome-selfhosted.git
+git clone --recursive https://github.com/gchq/CyberChef.git
+git clone --recursive https://github.com/mpepping/docker-cyberchef.git
+git clone --recursive https://github.com/Rishang/torrent-search.git
+git clone --recursive https://github.com/esphome/esphome-devices.git
+git clone --recursive https://github.com/RoganDawes/esphome-devices.git
+git clone --recursive https://github.com/RoganDawes/esphome.git
+git clone --recursive https://github.com/RoganDawes/P4wnP1_aloa.git
+git clone --recursive https://github.com/RoganDawes/LOGITacker.git
+git clone --recursive https://github.com/TheSmashy/Pi-Bash.git
+git clone --recursive https://github.com/ResearchandDestroy/DorXNG.git
+git clone --recursive https://github.com/dylanaraps/pure-bash-bible.git
+git clone --recursive https://github.com/onceupon/Bash-Oneliner.git
+git clone --recursive https://github.com/kvz/bash3boilerplate.git
+git clone --recursive https://github.com/Aleph-works/pure-bash-bible.git
+git clone --recursive https://github.com/AvenCores/HZF-ORION-Bomber.git
+git clone --recursive https://github.com/slorixsh/Spotify-Follower-Sender.git
+git clone --recursive https://github.com/SaeidJavadi/Advanced-WhatsApp-Sender.git
+git clone --recursive https://github.com/sdmg15/Best-websites-a-programmer-should-visit.git
+git clone --recursive https://github.com/assetnote/kiterunner.git
+git clone --recursive https://github.com/Xenov-X/PoSH_Teams_Message_Theif.git
+git clone --recursive https://github.com/Xenov-X/UhOh365.git
+git clone --recursive https://github.com/Tuhinshubhra/ExtAnalysis.git
+git clone --recursive https://github.com/danny0838/content-farm-terminator.git
+git clone --recursive https://github.com/deathau/markdownload.git
+git clone --recursive https://github.com/LasCC/HackTools.git
+git clone --recursive https://github.com/alyssaxuu/screenity.git
+git clone --recursive https://github.com/streetturtle/awesome-wm-widgets.git
+git clone --recursive https://github.com/0x48piraj/incarcero.git
+git clone --recursive https://github.com/0x48piraj/gz-bomb.git
+git clone --recursive https://github.com/0x48piraj/wrong8007.git
+git clone --recursive https://github.com/zombieFox/nightTab.git
+git clone --recursive https://github.com/dnakov/little-rat.git
+git clone --recursive https://github.com/iamadamdev/bypass-paywalls-chrome.git
+git clone --recursive https://github.com/dessant/buster.git
+git clone --recursive https://github.com/dutiyesh/chrome-extension-cli.git
+git clone --recursive https://github.com/orhun/cargo-hack.git
+git clone --recursive https://github.com/orhun/runst.git
+git clone --recursive https://github.com/Toqozz/wired-notify.git
+git clone --recursive https://github.com/orhun/felix.git
+git clone --recursive https://github.com/orhun/kmon.git
+git clone --recursive https://github.com/dylanaraps/paleta.git
+git clone --recursive https://github.com/dylanaraps/pywal.git
+git clone --recursive https://github.com/dylanaraps/torque.git
+git clone --recursive https://github.com/dylanaraps/pure-sh-bible.git
+git clone --recursive https://github.com/gcla/termshark.git
+git clone --recursive https://github.com/dylanaraps/fff.git
+git clone --recursive https://github.com/Builditluc/wiki-tui.git
+git clone --recursive https://github.com/gusbemacbe/suru-plus.git
+git clone --recursive https://github.com/congard/nvidia-system-monitor-qt.git
+git clone --recursive https://github.com/blrsn/zentile.git
+git clone --recursive https://github.com/ctlos/skel.git
+git clone --recursive https://github.com/nsz32/docklike-plugin.git
+git clone --recursive https://github.com/gtkhash/gtkhash.git
+git clone --recursive https://github.com/addy-dclxvi/xfwm4-theme-collections.git
+git clone --recursive https://github.com/rozniak/xfce-winxp-tc.git
+git clone --recursive https://github.com/ctlos/ctlosiso.git
+git clone --recursive https://github.com/Perl/perl5.git
+git clone --recursive https://github.com/vikdevelop/SaveDesktop.git
+git clone --recursive https://github.com/denesb/xfce4-i3-workspaces-plugin.git
+git clone --recursive https://github.com/riverloopsec/killerbee.git
+git clone --recursive https://github.com/kmaasrud/awesome-obsidian.git
+git clone --recursive https://github.com/caronc/apprise-api.git
+git clone --recursive https://github.com/nikhilh-20/ELFEN.git
+git clone --recursive https://github.com/careyjames/dns-scout.git
+git clone --recursive https://github.com/marvinkreis/rofi-file-browser-extended.git
+git clone --recursive https://github.com/jluttine/rofi-power-menu.git
+git clone --recursive https://github.com/davatorium/rofi-scripts.git
+git clone --recursive https://github.com/P3rf/rofi-network-manager.git
+git clone --recursive https://github.com/zbaylin/rofi-wifi-menu.git
+git clone --recursive https://github.com/newmanls/rofi-themes-collection.git
+git clone --recursive https://github.com/s77rt/hashcat.launcher.git
+git clone --recursive https://github.com/odedshimon/BruteShark.git
+git clone --recursive https://github.com/TarunYenni/FCracker.git
+git clone --recursive https://github.com/ScriptSathi/HashKitty.git
+git clone --recursive https://github.com/Are-s-h/GovCracker.git
+git clone --recursive https://github.com/grugnoymeme/flipperzero-CLI-wifi-cracker.git
+git clone --recursive https://github.com/ZerBea/hcxkeys.git
+git clone --recursive https://github.com/remigermain/advanced-cli.git
+git clone --recursive https://github.com/codingo/VHostScan.git
+git clone --recursive https://github.com/brightio/penelope.git
+git clone --recursive https://github.com/ronin-rb/ronin.git
+git clone --recursive https://github.com/ffffffff0x/f8x.git
+git clone --recursive https://github.com/RickdeJager/stegseek.git
+git clone --recursive https://github.com/EC-DIGIT-CSIRC/sysdiagnose.git
+git clone --recursive https://github.com/sensepost/ntcrack.git
+git clone --recursive https://github.com/sensepost/impersonate.git
+git clone --recursive https://github.com/sensepost/kwetza.git
+git clone --recursive https://github.com/sensepost/hostapd-mana.git
+git clone --recursive https://github.com/sensepost/godoh.git
+git clone --recursive https://github.com/juba0x00/Rummage.git
+git clone --recursive https://github.com/Ekultek/WhatBreach.git
+git clone --recursive https://github.com/EC-DIGIT-CSIRC/ForensicVM.git
+git clone --recursive https://github.com/aidenlx/obsidian-icon-shortcodes.git
+git clone --recursive https://github.com/oslabs-beta/obsidian-8.0-demo.git
+git clone --recursive https://github.com/open-source-labs/obsidian-developer-tool.git
+git clone --recursive https://github.com/JanLikar/cargo-clone.git
+git clone --recursive https://github.com/cli/gh-webhook.git
+git clone --recursive https://github.com/zap-zsh/zap.git
+git clone --recursive https://github.com/twelvelabs/gh-repo-config.git
+git clone --recursive https://github.com/hashue/gh-fuzzyclone.git
+git clone --recursive https://github.com/HaywardMorihara/gh-tidy.git
+git clone --recursive https://github.com/gennaro-tedesco/gh-s.git
+git clone --recursive https://github.com/gennaro-tedesco/gh-f.git
+git clone --recursive https://github.com/keshavbhatt/whatsie.git
+git clone --recursive https://github.com/KillianLucas/open-interpreter.git
+git clone --recursive https://github.com/tonikelope/megabasterd.git
+git clone --recursive https://github.com/lencx/app.git
+git clone --recursive https://github.com/f/awesome-chatgpt-prompts.git
+git clone --recursive https://github.com/lencx/nofwl.git
+git clone --recursive https://github.com/siyuan-note/siyuan.git
+git clone --recursive https://github.com/dair-ai/Prompt-Engineering-Guide.git
+git clone --recursive https://github.com/mouredev/Hello-Python.git
+git clone --recursive https://github.com/KoromeloDev/MindMate.git
+git clone --recursive https://github.com/redcode-labs/YAS.git
+git clone --recursive https://github.com/redcode-labs/RedHash.git
+git clone --recursive https://github.com/Xenov-X/BashDB.git
+git clone --recursive https://github.com/adon90/BreachCompilation.git
+git clone --recursive https://github.com/filiparag/wikiman.git
+git clone --recursive https://github.com/SiriusScan/Sirius.git
+git clone --recursive https://github.com/HaveIBeenPwned/PwnedPasswordsDownloader.git
+git clone --recursive https://github.com/r4ulcl/talks.git
+git clone --recursive https://github.com/Matheus-Garbelini/sweyntooth_bluetooth_low_energy_attacks.git
+git clone --recursive https://github.com/Matheus-Garbelini/esp32_bluetooth_classic_sniffer.git
+git clone --recursive https://github.com/nicslabdev/NRF52840-Beacon_Scanner.git
+git clone --recursive https://github.com/kshoji/microbit-beacon-finder.git
+git clone --recursive https://github.com/openblockcc/openblock-desktop.git
+git clone --recursive https://github.com/microbit-foundation/microbit-blue.git
+git clone --recursive https://github.com/thegecko/microbit-web-bluetooth.git
+git clone --recursive https://github.com/seemoo-lab/openhaystack.git
+git clone --recursive https://github.com/contact-discovery/rt_phone_numbers.git
+git clone --recursive https://github.com/nominetresearch/microbit-networking-book.git
+git clone --recursive https://github.com/dakota-mewt/mewt.git
+git clone --recursive https://github.com/Telefonica/Airdrop-Crazy.git
+git clone --recursive https://github.com/jasperan/whatsapp-osint.git
+git clone --recursive https://github.com/google/GiftStick.git
+git clone --recursive https://github.com/gaulliath/operative-framework.git
+git clone --recursive https://github.com/emanuele-em/proxelar.git
+git clone --recursive https://github.com/sharkdp/hyperfine.git
+git clone --recursive https://github.com/Prototyyppi/RemoteHub.git
+git clone --recursive https://github.com/alunux/usbip-service-discovery.git
+git clone --recursive https://github.com/m-antonov/USBIPManager.git
+git clone --recursive https://github.com/jiegec/usbip.git
+git clone --recursive https://github.com/Williangalvani/BlueOS-UsbIp.git
+git clone --recursive https://github.com/dorssel/usbipd-win.git
+git clone --recursive https://github.com/shadowbq/usbip-python3.git
+git clone --recursive https://github.com/george-hopkins/usbip-windows.git
+git clone --recursive https://github.com/sachaos/viddy.git
+git clone --recursive https://github.com/jlevy/the-art-of-command-line.git
+git clone --recursive https://github.com/sharkdp/vivid.git
+git clone --recursive https://github.com/pacstall/pacstall.git
+git clone --recursive https://github.com/ObcbO/getproxy.git
+git clone --recursive https://github.com/K3V1991/ADBKit.git
+git clone --recursive https://github.com/daddyparodz/adminexploit.git
+git clone --recursive https://github.com/canarddu38/DUCKSPLOIT.git
+git clone --recursive https://github.com/MenkeTechnologies/zpwr.git
+git clone --recursive https://github.com/K3V1991/ADB-and-FastbootPlusPlus.git
+git clone --recursive https://github.com/rhysd/hgrep.git
+git clone --recursive https://github.com/embark-theme/bashtop.git
+git clone --recursive https://github.com/embark-theme/firefox-old.git
+git clone --recursive https://github.com/ArmandPhilippot/coldark-bat.git
+git clone --recursive https://github.com/huytd/nvim-forest-all-nighter.git
+git clone --recursive https://github.com/dotcs/xkcd-cli.git
+git clone --recursive https://github.com/RaulSanchezzt/auto-bspwm.git
+git clone --recursive https://github.com/yorkox0/autoBspwm.sh.git
+git clone --recursive https://github.com/yorkox0/autoBspwm.git
+git clone --recursive https://github.com/NTBBloodbath/doom-one.nvim.git
+git clone --recursive https://github.com/m8mble/nord-kitty.git
+git clone --recursive https://github.com/TIAcode/GPTKitten.git
+git clone --recursive https://github.com/dflock/kitty-save-session.git
+git clone --recursive https://github.com/davidmathers/tokyo-night-kitty-theme.git
+git clone --recursive https://github.com/JoeKarlsson/iot-kitty-litter-box-frontend.git
+git clone --recursive https://github.com/JoeKarlsson/iot-kitty-litter-box.git
+git clone --recursive https://github.com/dexpota/kitty-themes.git
+git clone --recursive https://github.com/fretboardfreak/kitty-theme-changer.git
+git clone --recursive https://github.com/ronald0x00/dotfiles.git
+git clone --recursive https://github.com/PrettyCoffee/yet-another-generic-startpage.git
+git clone --recursive https://github.com/bgrnwd/everforest-kitty.git
+git clone --recursive https://github.com/dracula/kitty.git
+git clone --recursive https://github.com/pineapplegiant/spaceduck.git
+git clone --recursive https://github.com/pineapplegiant/spaceduck-terminal.git
+git clone --recursive https://github.com/Rigellute/rigel.git
+git clone --recursive https://github.com/mrjones2014/smart-splits.nvim.git
+git clone --recursive https://github.com/joouha/euporie.git
+git clone --recursive https://github.com/jdssl/colorize.git
+git clone --recursive https://github.com/k0nserv/kitty-icon.git
+git clone --recursive https://github.com/xfce-mirror/xfce4-terminal.git
+git clone --recursive https://github.com/bitbrute/evillimiter.git
+git clone --recursive https://github.com/wiire-a/pixiewps.git
+git clone --recursive https://github.com/Fadi002/unshackle.git
+git clone --recursive https://github.com/tiagorlampert/CHAOS.git
+git clone --recursive https://github.com/AzeemIdrisi/PhoneSploit-Pro.git
+git clone --recursive https://github.com/OlivierLaflamme/Cheatsheet-God.git
+git clone --recursive https://github.com/MatrixTM/MHDDoS.git
+git clone --recursive https://github.com/sighook/pixload.git
+git clone --recursive https://github.com/FD-/usb-toolbox.git
+git clone --recursive https://github.com/cyclone-github/challenge.git
+git clone --recursive https://github.com/The-Art-of-Hacking/h4cker.git
+git clone --recursive https://github.com/Ciphey/Ciphey.git
+git clone --recursive https://github.com/Hacker0x01/hacker101.git
+git clone --recursive https://github.com/secdev/awesome-scapy.git
+git clone --recursive https://github.com/Samsung/cotopaxi.git
+git clone --recursive https://github.com/frawau/aioblescan.git
+git clone --recursive https://github.com/AMOSSYS/Fragscapy.git
+git clone --recursive https://github.com/HalilDeniz/DNSWatch.git
+git clone --recursive https://github.com/4n4nk3/HikPwn.git
+git clone --recursive https://github.com/SuperFola/DoNotSend.git
+git clone --recursive https://github.com/mnemonic-no/ScapySMS.git
+git clone --recursive https://github.com/sahilmgandhi/IotShark.git
+git clone --recursive https://github.com/drsh4rky/hacking-with-python.git
+git clone --recursive https://github.com/usama-365/hackipy.git
+git clone --recursive https://github.com/Zaeem20/Predator.git
+git clone --recursive https://github.com/nxenon/xegtor.git
+git clone --recursive https://github.com/ajackal/cherrywasp.git
+git clone --recursive https://github.com/pivpn/pivpn.git
+git clone --recursive https://github.com/microsoft/IoT-For-Beginners.git
+git clone --recursive https://github.com/FD-/RPiPlay.git
+git clone --recursive https://github.com/mikeroyal/Self-Hosting-Guide.git
+git clone --recursive https://github.com/saladandonionrings/leaky.git
+git clone --recursive https://github.com/saladandonionrings/NextGen-Spoofer.git
+git clone --recursive https://github.com/rambasnet/NetworkSecurity.git
+git clone --recursive https://github.com/Nisitay/pyp0f.git
+git clone --recursive https://github.com/Drew-Alleman/ccrack.git
+git clone --recursive https://github.com/brannondorsey/wifi-cracking.git
+git clone --recursive https://github.com/Drew-Alleman/zipCracker.git
+git clone --recursive https://github.com/Drew-Alleman/dystopia.git
+git clone --recursive https://github.com/r1cksec/thoth.git
+git clone --recursive https://github.com/zyedidia/eget.git
+git clone --recursive https://github.com/ramimac/breach-list-database.git
+git clone --recursive https://github.com/zxsecurity/steamer.git
+git clone --recursive https://github.com/xakepnz/BLUELAY.git
+git clone --recursive https://github.com/FreeZeroDays/breach-rip.git
+git clone --recursive https://github.com/andrew-vii/hookshot.git
+git clone --recursive https://github.com/sensepost/Frack.git
+git clone --recursive https://github.com/arthurnunesc/fedora-scripts.git
+git clone --recursive https://github.com/fcchn4/ansible-fedora.git
+git clone --recursive https://github.com/David-Else/developer-workstation-setup-script.git
+git clone --recursive https://github.com/felbinger/PostInstall_Fedora.git
+git clone --recursive https://github.com/snwh/fedora-post-install.git
+git clone --recursive https://github.com/Cyclenerd/postinstall.git
+git clone --recursive https://github.com/virtual-meme-machine/fedora-desktop.git
+git clone --recursive https://github.com/hmthien050209/fedora-post-install-script.git
+git clone --recursive https://github.com/smittix/fedorable.git
+git clone --recursive https://github.com/Aloxaf/fzf-tab.git
+git clone --recursive https://github.com/manishprivet/dynamic-gnome-wallpapers.git
+git clone --recursive https://github.com/nvim-neorg/neorg.git
+git clone --recursive https://github.com/juergh/rpi-install.git
+git clone --recursive https://github.com/kerolloz/transparent.git
+git clone --recursive https://github.com/Andrew-Brad/Colonizer.git
+git clone --recursive https://github.com/procamora/fedora_pentesting.git
+git clone --recursive https://github.com/osmosis-labs/osmosis-installer.git
+git clone --recursive https://github.com/kerolloz/go-installer.git
+git clone --recursive https://github.com/SteavenGamerYT/os-install-scripts.git
+git clone --recursive https://github.com/kerolloz/installify.git
+git clone --recursive https://github.com/Imperial-Slug/Linux-Post-install-Helper.git
+git clone --recursive https://github.com/bbcmicrobit/micropython.git
+git clone --recursive https://github.com/alcir/microbit-ble.git
+git clone --recursive https://github.com/hackgnar/ble_ctf.git
+git clone --recursive https://github.com/pentesteracademy/blemystique.git
+git clone --recursive https://github.com/lancaster-university/microbit.git
+git clone --recursive https://github.com/mikeryan/crackle.git
+git clone --recursive https://github.com/deadc0de6/dotdrop.git
+git clone --recursive https://github.com/thombashi/gh-upgrade.git
+git clone --recursive https://github.com/joeyespo/grip.git
+git clone --recursive https://github.com/sindresorhus/github-markdown-css.git
+git clone --recursive https://github.com/yusukebe/gh-markdown-preview.git
+git clone --recursive https://github.com/jparise/gh-cat.git
+git clone --recursive https://github.com/gabe565/gh-profile.git
+git clone --recursive https://github.com/LangLangBart/gh-find-code.git
+git clone --recursive https://github.com/securesauce/gh-alerts.git
+git clone --recursive https://github.com/mislav/gh-cp.git
+git clone --recursive https://github.com/github/gh-net.git
+git clone --recursive https://github.com/Genymobile/scrcpy.git
+git clone --recursive https://github.com/kornelski/cargo-deb.git
+git clone --recursive https://github.com/rossmacarthur/sheldon.git
+git clone --recursive https://github.com/RichiH/vcsh.git
+git clone --recursive https://github.com/trevatk/Wifi-Cracker.git
+git clone --recursive https://github.com/PabloLec/pyWhat.git
+git clone --recursive https://github.com/PabloLec/cast-sh.git
+git clone --recursive https://github.com/PabloLec/livelog.git
+git clone --recursive https://github.com/flaggx1/cracktrack.git
+git clone --recursive https://github.com/thinkst/canaryfy.git
+git clone --recursive https://github.com/carvilsi/flipper0-wifi-map.git
+git clone --recursive https://github.com/carvilsi/esp32-wifi-map.git
+git clone --recursive https://github.com/carvilsi/systemd-usb-monitor-example.git
+git clone --recursive https://github.com/carvilsi/canaryfy.git
+git clone --recursive https://github.com/sliceratwork/flipper-zero-tutorials.git
+git clone --recursive https://github.com/linuxserver/Heimdall-Apps.git
+git clone --recursive https://github.com/malectricasoftware/rainbownator.git
+git clone --recursive https://github.com/cqcore/OSINT-Browser-Extensions.git
+git clone --recursive https://github.com/ECTO-1A/AppleJuice.git
+git clone --recursive https://github.com/stryker-project/app.git
+git clone --recursive https://github.com/Aircoookie/WLED.git
+git clone --recursive https://github.com/Chan5k/ArchOps.git
+git clone --recursive https://github.com/noctuid/tdrop.git
+git clone --recursive https://github.com/LemonBoy/bar.git
+git clone --recursive https://github.com/lencx/ChatGPT.git
+git clone --recursive https://github.com/tasooshi/pentesting-bootstrap.git
+git clone --recursive https://github.com/tasooshi/torboost.git
+git clone --recursive https://github.com/S3cur3Th1sSh1t/OffensiveVBA.git
+git clone --recursive https://github.com/S3cur3Th1sSh1t/WinPwn.git
+git clone --recursive https://github.com/ryanmrestivo/windows-tools-portable.git
+git clone --recursive https://github.com/PlagueHO/LabBuilder.git
+git clone --recursive https://github.com/AutomatedLab/AutomatedLab.git
+git clone --recursive https://github.com/outflanknl/Invoke-ADLabDeployer.git
+git clone --recursive https://github.com/sp00ks-git/o365recon.git
+git clone --recursive https://github.com/harelsegev/prefetch-hash-cracker.git
+git clone --recursive https://github.com/redcode-labs/AirStrike.git
+git clone --recursive https://github.com/redcode-labs/talks.git
+git clone --recursive https://github.com/ColumPaget/Hashrat.git
+git clone --recursive https://github.com/Orange-Cyberdefense/arsenal.git
+git clone --recursive https://github.com/migraine-sudo/BTLE-R.git
+git clone --recursive https://github.com/SchoolOfFreelancing/SMS-Harvester.git
+git clone --recursive https://github.com/cho45/hackrf-sweep-webusb.git
+git clone --recursive https://github.com/realraum/hackrf-dvb-t.git
+git clone --recursive https://github.com/MKme/MasterFrequencyList.git
+git clone --recursive https://github.com/JiaoXianjun/BTLE.git
+git clone --recursive https://github.com/ainfosec/FISSURE.git
+git clone --recursive https://github.com/Oros42/IMSI-catcher.git
+git clone --recursive https://github.com/pothosware/SoapyHackRF.git
+git clone --recursive https://github.com/cjcliffe/CubicSDR.git
+git clone --recursive https://github.com/Commander-Crash/HackRF-stuff.git
+git clone --recursive https://github.com/neib/HackRF_Transfer-GUI.git
+git clone --recursive https://github.com/ghostop14/sparrow-wifi.git
+git clone --recursive https://github.com/jhonnybonny/LTE_HACKRF.git
+git clone --recursive https://github.com/kaedenbrinkman/hackrf.git
+git clone --recursive https://github.com/serkankas/HackRF_Tutorial.git
+git clone --recursive https://github.com/fl1ckje/HackRF-tools.git
+git clone --recursive https://github.com/mikeryan/ice9-bluetooth-sniffer.git
+git clone --recursive https://github.com/fsphil/hacktv.git
+git clone --recursive https://github.com/ashok5141/Zigbee_Security.git
+git clone --recursive https://github.com/gqrx-sdr/gqrx.git
+git clone --recursive https://github.com/JvanKatwijk/qt-dab.git
+git clone --recursive https://github.com/mcore1976/cc1101-tool.git
+git clone --recursive https://github.com/sharebrained/portapack-hackrf.git
+git clone --recursive https://github.com/joecupano/SIGpi.git
+git clone --recursive https://github.com/lyusupov/SoftRF.git
+git clone --recursive https://github.com/jvde-github/AIS-catcher.git
+git clone --recursive https://github.com/f4exb/sdrangel.git
+git clone --recursive https://github.com/xwmx/nb.git
+git clone --recursive https://github.com/swsnr/mdcat.git
+git clone --recursive https://github.com/redtide/picom-conf.git
+git clone --recursive https://github.com/SequoiaSan/FlipperZero-Wifi-ESP8266-Deauther-Module.git
+git clone --recursive https://github.com/bitcrackcyber/rurasort.git
+git clone --recursive https://github.com/cyclone-github/hashgen.git
+git clone --recursive https://github.com/cyclone-github/writeups.git
+git clone --recursive https://github.com/eried/Research.git
+git clone --recursive https://github.com/IvRogoz/Tempest_SDR.git
+git clone --recursive https://github.com/evilpete/flipper_toolbox.git
+git clone --recursive https://github.com/BatchDrake/suscan.git
+git clone --recursive https://github.com/BatchDrake/sigutils.git
+git clone --recursive https://github.com/BatchDrake/SigDigger.git
+git clone --recursive https://github.com/JiaoXianjun/LTE-Cell-Scanner.git
+git clone --recursive https://github.com/PentHertz/Modmobmap.git
+git clone --recursive https://github.com/schollz/find3.git
+git clone --recursive https://github.com/morrownr/8821au-20210708.git
+git clone --recursive https://github.com/s0md3v/Hash-Buster.git
+git clone --recursive https://github.com/incredibleindishell/good-read.git
+git clone --recursive https://github.com/danieldurnea/FBI-tools.git
+git clone --recursive https://github.com/We5ter/Scanners-Box.git
+git clone --recursive https://github.com/flipkart-incubator/Astra.git
+git clone --recursive https://github.com/hisxo/gitGraber.git
+git clone --recursive https://github.com/carvilsi/canaryusb.git
+git clone --recursive https://github.com/nsonaniya2010/SubDomainizer.git
+git clone --recursive https://github.com/Rocksiz/wifi_pkmid.git
+git clone --recursive https://github.com/mufeedali/ramsh.git
+git clone --recursive https://github.com/cramik/read-pmkid.git
+git clone --recursive https://github.com/psrodrigues/hostapd_pmkid.git
+git clone --recursive https://github.com/n0mi1k/pmkidcracker.git
+git clone --recursive https://github.com/cablethief/hostap_pmkidding.git
+git clone --recursive https://github.com/Gurpreet06/Wifi-Crack.git
+git clone --recursive https://github.com/RealEnder/dwpa.git
+git clone --recursive https://github.com/MA24th/WiFiHunter.git
+git clone --recursive https://github.com/XORMANCER/WHITECAT.git
+git clone --recursive https://github.com/G4lile0/ESP32-WiFi-Hash-Monster.git
+git clone --recursive https://github.com/optimus10ro/Flipper_Zero-BadUsb.git
+git clone --recursive https://github.com/GMMan/flipperzero-vb-migrate.git
+git clone --recursive https://github.com/Milk-Cool/fz-em4100-generator.git
+git clone --recursive https://github.com/instantiator/flipper-zero-experimental-apps.git
+git clone --recursive https://github.com/ranchordo/flipperzero-cli-bridge.git
+git clone --recursive https://github.com/nmrr/flipperzero-rfidbeacon.git
+git clone --recursive https://github.com/0xchocolate/flipperzero-esp-flasher.git
+git clone --recursive https://github.com/Efeisot/polybar-nordic-bspwm.git
+git clone --recursive https://github.com/thespation/dpux_bspwm.git
+git clone --recursive https://github.com/mehedirm6244/Miserable_Xfce.git
+git clone --recursive https://github.com/krlvm/PowerTunnel.git
+git clone --recursive https://github.com/witchdocsec/SUnami.git
+git clone --recursive https://github.com/UberGuidoZ/Flipper.git
+git clone --recursive https://github.com/FluxionNetwork/fluxion.git
+git clone --recursive https://github.com/jopohl/urh.git
+git clone --recursive https://github.com/pavsa/hackrf-spectrum-analyzer.git
+git clone --recursive https://github.com/fOmey/ESP32Marauder.git
+git clone --recursive https://github.com/RocketGod-git/HackRF-Treasure-Chest.git
+git clone --recursive https://github.com/projectdiscovery/awesome-search-queries.git
+git clone --recursive https://github.com/djsime1/awesome-flipperzero.git
+git clone --recursive https://github.com/DXVVAY/xvirus-firmware.git
+git clone --recursive https://github.com/DXVVAY/Flipper.git
+git clone --recursive https://github.com/Telefonica/discovery-connectedhomeip.git
+git clone --recursive https://github.com/Telefonica/SDK-SMS-Stack.git
+git clone --recursive https://github.com/Telefonica/HomePWN.git
+git clone --recursive https://github.com/Telefonica/HiddenNetworks-Python.git
+git clone --recursive https://github.com/erikdubois/Aureola.git
+git clone --recursive https://github.com/D4Vinci/One-Lin3r.git
+git clone --recursive https://github.com/xajkep/wordlists.git
+git clone --recursive https://github.com/eried/flipperzero-mayhem.git
+git clone --recursive https://github.com/portapack-mayhem/mayhem-firmware.git
+git clone --recursive https://github.com/UPC/ravada.git
+git clone --recursive https://github.com/kvmtool/kvmtool.git
+git clone --recursive https://github.com/htrefil/rkvm.git
+git clone --recursive https://github.com/eisengrind/docker-altv-server.git
+git clone --recursive https://github.com/powenn/AltServer-Linux-PyScript.git
+git clone --recursive https://github.com/powenn/AltServer-LinuxGUI.git
+git clone --recursive https://github.com/tobiabocchi/flipperzero-bruteforce.git
+git clone --recursive https://github.com/GeekMustHave/HackRF.git
+git clone --recursive https://github.com/mentebinaria/retoolkit.git
+git clone --recursive https://github.com/sliceratwork/flipperzero-gate-bruteforce.git
+git clone --recursive https://github.com/sliceratwork/portapack-mayhem.git
+git clone --recursive https://github.com/sliceratwork/Drone-Hacking-Tool.git
+git clone --recursive https://github.com/RocketGod-git/flipper-sub-to-hackrf-portapack-c16-converter.git
+git clone --recursive https://github.com/HEX0DAYS/FlipperZero-PWNDTOOLS.git
+git clone --recursive https://github.com/FroggMaster/ESP32-Wi-Fi-Penetration-Tool.git
+git clone --recursive https://github.com/nkc3g4/wtg-assistant.git
+git clone --recursive https://github.com/MelbourneDeveloper/Device.Net.git
+git clone --recursive https://github.com/thinkst/canarytools-python.git
+git clone --recursive https://github.com/thinkst/canary-utils.git
+git clone --recursive https://github.com/cherry-embedded/CherryUSB.git
+git clone --recursive https://github.com/jsamr/bootiso.git
+git clone --recursive https://github.com/USBGuard/usbguard.git
+git clone --recursive https://github.com/libimobiledevice/usbmuxd.git
+git clone --recursive https://github.com/thinkst/canarytokens-docker.git
+git clone --recursive https://github.com/thinkst/canarytokens.git
+git clone --recursive https://github.com/pyusb/pyusb.git
+git clone --recursive https://github.com/echasnovski/mini.nvim.git
+git clone --recursive https://github.com/kimocoder/sparrow-wifi.git
+git clone --recursive https://github.com/kimocoder/urh.git
+git clone --recursive https://github.com/kimocoder/sweyntooth_bluetooth_low_energy_attacks.git
+git clone --recursive https://github.com/Athena-OS/athena-cyber-hub.git
+git clone --recursive https://github.com/netdiscover-scanner/netdiscover.git
+git clone --recursive https://github.com/ndejong/ouilookup.git
+git clone --recursive https://github.com/gcarq/arp-spoof.git
+git clone --recursive https://github.com/fksvs/inject.git
+git clone --recursive https://github.com/luijait/GONET-Scanner.git
+git clone --recursive https://github.com/elmoiv/elmocut.git
+git clone --recursive https://github.com/v-byte-cpu/sx.git
+git clone --recursive https://github.com/bkbilly/mqtt-network-scanner.git
+git clone --recursive https://github.com/Akbhobhiya/IAS-Project.git
+git clone --recursive https://github.com/formatBCE/ESP32_BLE_presense.git
+git clone --recursive https://github.com/formatBCE/Format-BLE-Tracker.git
+git clone --recursive https://github.com/HeimdallMidgard/ESP-32-BLE-Scanner.git
+git clone --recursive https://github.com/andrewjfreyer/monitor.git
+git clone --recursive https://github.com/machine1337/gmailc2.git
+git clone --recursive https://github.com/faucetsdn/poseidon.git
+git clone --recursive https://github.com/stratosphereips/StratosphereLinuxIPS.git
+git clone --recursive https://github.com/networkit/networkit.git
+git clone --recursive https://github.com/OWASP/Nettacker.git
+git clone --recursive https://github.com/rizwansoaib/whatsapp-monitor.git
+git clone --recursive https://github.com/Rishang/gnome-theme-installer.git
+git clone --recursive https://github.com/UdeshyaDhungana/xfce4-theme-switcher.git
+git clone --recursive https://github.com/C2N14/AutomaThemely.git
+git clone --recursive https://github.com/liamsgotgenes/xfce4-theme-switcher.git
+git clone --recursive https://github.com/inatagan/haze-you.git
+git clone --recursive https://github.com/inatagan/eva-01.git
+git clone --recursive https://github.com/flyingcakes85/eos-clone-i3-theme.git
+git clone --recursive https://github.com/ESPboy-edu/ESPboy_Sub1GHzInspector.git
+git clone --recursive https://github.com/danielmiessler/SecLists.git
+git clone --recursive https://github.com/swisskyrepo/PayloadsAllTheThings.git
+git clone --recursive https://github.com/sqall01/LSMS.git
+git clone --recursive https://github.com/rfquack/RFQuack.git
+git clone --recursive https://github.com/qarmin/czkawka.git
+git clone --recursive https://github.com/babarot/enhancd.git
+git clone --recursive https://github.com/koenvervloesem/humble-explorer.git
+git clone --recursive https://github.com/LSatan/SmartRC-CC1101-Driver-Lib.git
+git clone --recursive https://github.com/yt-dlp/yt-dlp.git
+git clone --recursive https://github.com/openwall/johnny.git
+git clone --recursive https://github.com/gusgorman402/RFmoggy.git
+git clone --recursive https://github.com/dmdhrumilmistry/GooglePhish.git
+git clone --recursive https://github.com/MichaelDim02/x.git
+git clone --recursive https://github.com/MichaelDim02/UnixUtils.git
+git clone --recursive https://github.com/nyxgeek/imgdevil.git
+git clone --recursive https://github.com/nyxgeek/username-lists.git
+git clone --recursive https://github.com/psycho-prince/BruteHash.git
+git clone --recursive https://github.com/NicholasDrexler/4-Character-Password-Cracker.git
+git clone --recursive https://github.com/MrGITit/Wordlist-Zombie.git
+git clone --recursive https://github.com/rootripper/P0lyn0m1c0n.git
+git clone --recursive https://github.com/Mateusz-Peplinski/Password-Missile.git
+git clone --recursive https://github.com/rarecoil/hashes.org-list.git
+git clone --recursive https://github.com/mdsulaiman7870/bulkscanner.git
+git clone --recursive https://github.com/unclesp1d3r/HashSlinger.git
+git clone --recursive https://github.com/cyclone-github/mdxfind.git
+git clone --recursive https://github.com/Thomas-George-T/HackerRank-The-Linux-Shell-Challenges-Solutions.git
+git clone --recursive https://github.com/ysf/anewer.git
+git clone --recursive https://github.com/mattwright324/hashID.git
+git clone --recursive https://github.com/thelinuxuser-choice/AnonCracker.git
+git clone --recursive https://github.com/buhanec/spookyhash.git
+git clone --recursive https://github.com/Adkali/Hashget.git
+git clone --recursive https://github.com/sensepost/hash-cracker.git
+git clone --recursive https://github.com/Ekultek/Dagon.git
+git clone --recursive https://github.com/gcastellov/rust-ripper-wasm.git
+git clone --recursive https://github.com/AnonymousAt3/hashbreak.git
+git clone --recursive https://github.com/xfox64x/Hashcat-Stuffs.git
+git clone --recursive https://github.com/nyxgeek/dumpsniffer.git
+git clone --recursive https://github.com/nyxgeek/nyxgeek-rules.git
+git clone --recursive https://github.com/jRimbault/yadf.git
+git clone --recursive https://github.com/rurban/smhasher.git
+git clone --recursive https://github.com/tasooshi/brutas.git
+git clone --recursive https://github.com/hegusung/WebHashcat.git
+git clone --recursive https://github.com/RUB-SysSec/OMEN.git
+git clone --recursive https://github.com/Cynosureprime/rling.git
+git clone --recursive https://github.com/0xVavaldi/ruleprocessorY.git
+git clone --recursive https://github.com/n0kovo/awesome-password-cracking.git
+git clone --recursive https://github.com/r3nt0n/bopscrk.git
+git clone --recursive https://github.com/someshkar/colabcat.git
+git clone --recursive https://github.com/brannondorsey/naive-hashcat.git
+git clone --recursive https://github.com/JhonnyLusonode/public-apis.git
+git clone --recursive https://github.com/paulpierre/informer.git
+git clone --recursive https://github.com/Forichok/TelegramOnlineSpy.git
+git clone --recursive https://github.com/ItIsMeCall911/Course-Piracy-Index.git
+git clone --recursive https://github.com/redcode-labs/RedSand.git
+git clone --recursive https://github.com/n3tshark/uzname-wordlists.git
+git clone --recursive https://github.com/Orange-Cyberdefense/GOAD.git
+git clone --recursive https://github.com/NightCS/nightlypwn.git
+git clone --recursive https://github.com/saimoomedits/eww-widgets.git
+git clone --recursive https://github.com/rxyhn/tokyo.git
+git clone --recursive https://github.com/niraj998/Rofi-Scripts.git
+git clone --recursive https://github.com/gh0stzk/dotfiles.git
+git clone --recursive https://github.com/initstring/passphrase-wordlist.git
+git clone --recursive https://github.com/cyclone-github/rules.git
+git clone --recursive https://github.com/n0kovo/hashcat-rules-collection.git
+git clone --recursive https://github.com/Unic0rn28/hashcat-rules.git
+git clone --recursive https://github.com/sp00ks-git/hat.git
+git clone --recursive https://github.com/t3l3machus/reverse-shell-generator.git
+git clone --recursive https://github.com/t3l3machus/hoaxshell.git
+git clone --recursive https://github.com/t3l3machus/psudohash.git
+git clone --recursive https://github.com/t3l3machus/eviltree.git
+git clone --recursive https://github.com/romkatv/powerlevel10k.git
+git clone --recursive https://github.com/Jintin/aliasme.git
+git clone --recursive https://github.com/nvbn/thefuck.git
+git clone --recursive https://github.com/maurosoria/dirsearch.git
+git clone --recursive https://github.com/GhettoGeek/EMAGNET.git
+git clone --recursive https://github.com/zellij-org/zellij.git
+git clone --recursive https://github.com/kimocoder/wifite2.git
+git clone --recursive https://github.com/first20hours/google-10000-english.git
+git clone --recursive https://github.com/hashcat/kwprocessor.git
+git clone --recursive https://github.com/VirusTotal/vt-cli.git
+git clone --recursive https://github.com/mrjackwills/havn.git
+git clone --recursive https://github.com/takito1812/web-hacking-playground.git
+git clone --recursive https://github.com/BLACK-SCORP10/Email-Vulnerablity-Checker.git
+git clone --recursive https://github.com/trinitor/CVE-Vulnerability-Information-Downloader.git
+git clone --recursive https://github.com/projectdiscovery/katana.git
+git clone --recursive https://github.com/praetorian-inc/fingerprintx.git
+git clone --recursive https://github.com/seekr-osint/seekr.git
+git clone --recursive https://github.com/thecyberneh/scriptkiddi3.git
+git clone --recursive https://github.com/aleixrodriala/wa-tunnel.git
+git clone --recursive https://github.com/XDeadHackerX/The_spy_job.git
+git clone --recursive https://github.com/OffcierCia/non-typical-OSINT-guide.git
+git clone --recursive https://github.com/Esc4iCEscEsc/skanuvaty.git
+git clone --recursive https://github.com/Lucksi/Mr.Holmes.git
+git clone --recursive https://github.com/AzizKpln/Moriarty-Project.git
+git clone --recursive https://github.com/blacklanternsecurity/bbot.git
+git clone --recursive https://github.com/3nock/SpiderSuite.git
+git clone --recursive https://github.com/yakuza8/peniot.git
+git clone --recursive https://github.com/Charmve/BLE-Security-Attack-Defence.git
+git clone --recursive https://github.com/engn33r/awesome-bluetooth-security.git
+git clone --recursive https://github.com/fO-000/bluing.git
+git clone --recursive https://github.com/kevincar/bless.git
+git clone --recursive https://github.com/hbldh/bleak.git
+git clone --recursive https://github.com/adafruit/Adafruit_CircuitPython_BLE.git
+git clone --recursive https://github.com/Samyak2/toipe.git
+git clone --recursive https://github.com/quantumsheep/sshs.git
+git clone --recursive https://github.com/robherley/snips.sh.git
+git clone --recursive https://github.com/PabloLec/RecoverPy.git
+git clone --recursive https://github.com/max-niederman/ttyper.git
+git clone --recursive https://github.com/blacknon/hwatch.git
+git clone --recursive https://github.com/Biont/sway-launcher-desktop.git
+git clone --recursive https://github.com/pirxthepilot/wtfis.git
+git clone --recursive https://github.com/wssheldon/osintui.git
+git clone --recursive https://github.com/kraanzu/termtyper.git
+git clone --recursive https://github.com/ms-jpq/sad.git
+git clone --recursive https://github.com/bvaisvil/zenith.git
+git clone --recursive https://github.com/ClementTsang/bottom.git
+git clone --recursive https://github.com/Aviral14/Skiddie.git
+git clone --recursive https://github.com/Drew-Alleman/autodeauth.git
+git clone --recursive https://github.com/six2dez/keyhacks.git
+git clone --recursive https://github.com/six2dez/Enum_For_All.git
+git clone --recursive https://github.com/six2dez/Hashcat-Cheatsheet.git
+git clone --recursive https://github.com/six2dez/OneListForAll.git
+git clone --recursive https://github.com/command-line-interface-pages/cli-pages.git
+git clone --recursive https://github.com/rstacruz/cheatsheets.git
+git clone --recursive https://github.com/joke2k/faker.git
+git clone --recursive https://github.com/JakeWnuk/rulecat.git
+git clone --recursive https://github.com/MagnetForensics/dumpit-linux.git
+git clone --recursive https://github.com/JakeWnuk/maskcat.git
+git clone --recursive https://github.com/ShawnDEvans/panalyzer.git
+git clone --recursive https://github.com/dominikwilkowski/cfonts.git
+git clone --recursive https://github.com/pemistahl/grex.git
+git clone --recursive https://github.com/GyulyVGC/sniffnet.git
+git clone --recursive https://github.com/phra/rustbuster.git
+git clone --recursive https://github.com/jerlendds/osintbuddy.git
+git clone --recursive https://github.com/kitsec-labs/kitsec-core.git
+git clone --recursive https://github.com/Drew-Alleman/DataSurgeon.git
+git clone --recursive https://github.com/sharsil/mailcat.git
+git clone --recursive https://github.com/devangshekhawat/Fedora-39-Post-Install-Guide.git
+git clone --recursive https://github.com/sts10/tidy.git
+git clone --recursive https://github.com/shmuelamar/cracken.git
+git clone --recursive https://github.com/LandGrey/pydictor.git
+git clone --recursive https://github.com/sc0tfree/mentalist.git
+git clone --recursive https://github.com/trickest/wordlists.git
+git clone --recursive https://github.com/glitchedgitz/cook.git
+git clone --recursive https://github.com/D3Ext/WEF.git
+git clone --recursive https://github.com/koutto/pi-pwnbox-rogueap.git
+git clone --recursive https://github.com/RaspAP/raspap-webgui.git
+git clone --recursive https://github.com/BornToBeRoot/NETworkManager.git
+git clone --recursive https://github.com/Mpdreamz/shellprogressbar.git
+git clone --recursive https://github.com/rothgar/awesome-tuis.git
+git clone --recursive https://github.com/six2dez/reconftw.git
+git clone --recursive https://github.com/akr3ch/BugBountyBooks.git
+git clone --recursive https://github.com/akr3ch/wicker-gui.git
+git clone --recursive https://github.com/efchatz/WPAxFuzz.git
+git clone --recursive https://github.com/alipay/Owfuzz.git
+git clone --recursive https://github.com/Owfuzz/Owfuzz.git
+git clone --recursive https://github.com/idobarel/wifight.git
+git clone --recursive https://github.com/Illusionghost/hexsms.git
+git clone --recursive https://github.com/nil0x42/duplicut.git
+git clone --recursive https://github.com/dievus/PowerShellForPentesters.git
+git clone --recursive https://github.com/dievus/Oh365UserFinder.git
+git clone --recursive https://github.com/dievus/geeMailUserFinder.git
+git clone --recursive https://github.com/dievus/Firefox-Dumper.git
+git clone --recursive https://github.com/ZerBea/hcxdumptool.git
+git clone --recursive https://github.com/ivanovborislav/rtl8821au.git
+git clone --recursive https://github.com/morrownr/8814au.git
+git clone --recursive https://github.com/skills/secure-code-game.git
+git clone --recursive https://github.com/sil3ntH4ck3r/WebVulnLab.git
+git clone --recursive https://github.com/charmbracelet/gum.git
+git clone --recursive https://github.com/Josue87/EmailFinder.git
+git clone --recursive https://github.com/edoardottt/awesome-hacker-search-engines.git
+git clone --recursive https://github.com/fiskhest/sxhkd-helper-menu.git
+git clone --recursive https://github.com/maledorak/dmenu-hotkeys.git
+git clone --recursive https://github.com/jmcerrejon/PiKISS.git
+git clone --recursive https://github.com/Exodia-OS/exodia-acer-predator-ISO.git
+git clone --recursive https://github.com/Exodia-OS/exodia-wireless-ISO.git
+git clone --recursive https://github.com/egara/buttermanager.git
+git clone --recursive https://github.com/digint/btrbk.git
+git clone --recursive https://github.com/cjnaz/routermonitor.git
+git clone --recursive https://github.com/cifertech/2.4-GHz-band-Scanner.git
+git clone --recursive https://github.com/cifertech/nRF-jammer.git
+git clone --recursive https://github.com/cifertech/WiFiBox.git
+git clone --recursive https://github.com/cifertech/nRFBox.git
+git clone --recursive https://github.com/cifertech/315Mhz-jammer.git
+git clone --recursive https://github.com/HimDek/Acenoster-ZSH-Theme.git
+git clone --recursive https://github.com/mangosmoothie/ez-pz.git
+git clone --recursive https://github.com/remkop/picocli.git
+git clone --recursive https://github.com/SunL0w/AlphaRapist.git
+git clone --recursive https://github.com/denisidoro/navi.git
+git clone --recursive https://github.com/sayanarijit/gh-xplr.git
+git clone --recursive https://github.com/xxh/xxh.git
+git clone --recursive https://github.com/Red5d/docker-autocompose.git
+git clone --recursive https://github.com/atusy/zsh-nvrepl.git
+git clone --recursive https://github.com/LazyVim/LazyVim.git
+git clone --recursive https://github.com/Flipper-XFW/Xtreme-Firmware.git
+git clone --recursive https://github.com/kal1gh0st/WhatsAppHACK-RCE.git
+git clone --recursive https://github.com/rmountjoy92/DashMachine.git
+git clone --recursive https://github.com/weibell/reverse-shell-generator.git
+git clone --recursive https://github.com/ewilded/shelling.git
+git clone --recursive https://github.com/0dayCTF/reverse-shell-generator.git
+git clone --recursive https://github.com/owenrumney/lazytrivy.git
+git clone --recursive https://github.com/yusufarbc/DockerVuln.git
+git clone --recursive https://github.com/u-blox/XPLR-IOT-1-software.git
+git clone --recursive https://github.com/garywill/BigSearch.git
+git clone --recursive https://github.com/garywill/proxc.git
+git clone --recursive https://github.com/garywill/LAN-port-scan-forbidder.git
+git clone --recursive https://github.com/garywill/linux-router.git
+git clone --recursive https://github.com/lakinduakash/linux-wifi-hotspot.git
+git clone --recursive https://github.com/OWASP/crAPI.git
+git clone --recursive https://github.com/Adastra-thw/KrakenRdi.git
+git clone --recursive https://github.com/SelfhostedPro/selfhosted_templates.git
+git clone --recursive https://github.com/mrjackwills/oxker.git
+git clone --recursive https://github.com/HatBashBR/HatDecrypter.git
+git clone --recursive https://github.com/HatBashBR/Hatwitch.git
+git clone --recursive https://github.com/papusingh2sms/mysms.git
+git clone --recursive https://github.com/nvim-lua/kickstart.nvim.git
+git clone --recursive https://github.com/RetroPackets/Nmap-Pro.git
+git clone --recursive https://github.com/RetroPackets/Xurma-Dox.git
+git clone --recursive https://github.com/RetroPackets/Email-Invader.git
+git clone --recursive https://github.com/elkowar/eww.git
+git clone --recursive https://github.com/Athena-OS/athena-iso.git
+git clone --recursive https://github.com/XavierBerger/RPi-Monitor.git
+git clone --recursive https://github.com/unixabg/cryptmypi.git
+git clone --recursive https://github.com/farag2/Utilities.git
+git clone --recursive https://github.com/MrChromebox/scripts.git
+git clone --recursive https://github.com/alvatip/Radioactive-nord.git
+git clone --recursive https://github.com/fastfetch-cli/fastfetch.git
+git clone --recursive https://github.com/pucherot/Pi.Alert.git
+git clone --recursive https://github.com/alexjustesen/speedtest-tracker.git
+git clone --recursive https://github.com/gethomepage/homepage.git
+git clone --recursive https://github.com/portainer/portainer.git
+git clone --recursive https://github.com/netdata/netdata.git
+git clone --recursive https://github.com/LunarVim/Launch.nvim.git
+git clone --recursive https://github.com/gnebbia/kb.git
+git clone --recursive https://github.com/cheat/cheatsheets.git
+git clone --recursive https://github.com/click-contrib/click-man.git
+git clone --recursive https://github.com/davatorium/rofi.git
+git clone --recursive https://github.com/JohnnyMorganz/StyLua.git
+git clone --recursive https://github.com/microsoft/debugpy.git
+git clone --recursive https://github.com/PyCQA/isort.git
+git clone --recursive https://github.com/psf/black.git
+git clone --recursive https://github.com/skydie22/my-polybar-theme.git
+git clone --recursive https://github.com/Flammable-Duck/polybar-aesthetic.git
+git clone --recursive https://github.com/adi1090x/kitty-cat.git
+git clone --recursive https://github.com/adi1090x/polybar-themes.git
+git clone --recursive https://github.com/adi1090x/dynamic-wallpaper.git
+git clone --recursive https://github.com/adi1090x/rofi.git
+git clone --recursive https://github.com/marcos-inja/polybar-theme.git
+git clone --recursive https://github.com/LunarVim/colorgen-nvim.git
+git clone --recursive https://github.com/sharkdp/bat.git
+git clone --recursive https://github.com/cotes2020/chirpy-starter.git
+git clone --recursive https://github.com/sayanarijit/xplr.git
+git clone --recursive https://github.com/folke/tokyonight.nvim.git
