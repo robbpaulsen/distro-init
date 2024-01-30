@@ -1,0 +1,23 @@
+{
+  "background": "#012841",
+  "cursorColor": "#eef1f2",
+  "foreground": "#c5ced4",
+  "name": "Ice",
+  "selectionBackground": "#eef1f2",
+  "black": "#353a45",
+  "blue": "#859dc3",
+  "cyan": "#0fc6d7",
+  "green": "#85c3ab",
+  "purple": "#c385bc",
+  "red": "#ff7575",
+  "white": "#acaeb3",
+  "yellow": "#d9d326",
+  "brightBlack": "#888b92",
+  "brightBlue": "#80bfff",
+  "brightCyan": "#0fa5d7",
+  "brightGreen": "#89b971",
+  "brightPurple": "#f28ca6",
+  "brightRed": "#ef7b6d",
+  "brightWhite": "#c5c6c9",
+  "brightYellow": "#f5d780"
+}

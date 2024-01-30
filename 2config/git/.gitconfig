@@ -1,0 +1,27 @@
+[user]
+	email = ozymandias.1987@protonmail.com
+	name = robbpaulsen
+[color]
+	ui = auto
+  branch = on
+  diff = on
+  interactive = on
+  status = on
+[core]
+	editor = nvim
+  pager = bat
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[init]
+	defaultBranch = main
+[web]
+  browser = firefox
+[color]
+	ui = auto
+[sequence]
+	editor = interactive-rebase-tool
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

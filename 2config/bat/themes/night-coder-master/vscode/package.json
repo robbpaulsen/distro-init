@@ -1,0 +1,74 @@
+{
+  "author": "a5hk",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Night Coder Ember",
+        "path": "./themes/night-coder-ember-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Ember Contrast",
+        "path": "./themes/night-coder-ember-contrast-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Flame",
+        "path": "./themes/night-coder-flame-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Flame Contrast",
+        "path": "./themes/night-coder-flame-contrast-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Ash",
+        "path": "./themes/night-coder-ash-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Ash Contrast",
+        "path": "./themes/night-coder-ash-contrast-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Charcoal",
+        "path": "./themes/night-coder-charcoal-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Charcoal Contrast",
+        "path": "./themes/night-coder-charcoal-contrast-color-theme.json",
+        "uiTheme": "vs-dark"
+      }
+    ]
+  },
+  "description": "The dark side of coding.",
+  "displayName": "Night Coder",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "galleryBanner": {
+    "color": "#030917",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/a5hk/night-coder",
+  "icon": "icon.png",
+  "keywords": [
+    "NightCoder",
+    "Night Coder",
+    "Dark"
+  ],
+  "license": "MIT",
+  "name": "night-coder",
+  "publisher": "a5hk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a5hk/night-coder"
+  },
+  "version": "5.0.0"
+}

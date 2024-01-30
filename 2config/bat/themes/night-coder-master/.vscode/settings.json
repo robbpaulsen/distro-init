@@ -1,0 +1,35 @@
+{
+  "cSpell.words": [
+    "backgrounde",
+    "Builtins",
+    "Cascadia",
+    "cterm",
+    "ctermfg",
+    "cursorline",
+    "Deref",
+    "feijoa",
+    "guibg",
+    "guifg",
+    "Mayukai",
+    "mischka",
+    "nightcoder",
+    "pink",
+    "termguicolors",
+    "tonys",
+    "vim",
+    "vspack"
+  ],
+  "cSpell.ignoreWords": [
+    "Consolas",
+    "Fira",
+    "Vazir",
+    "backgroundaa",
+    "backgroundbb",
+    "backgroundc",
+    "backgroundcc",
+    "backgrounddd",
+    "backgroundee",
+    "monospace",
+    "ngci"
+  ]
+}

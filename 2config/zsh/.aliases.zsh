@@ -23,16 +23,9 @@ alias cat='mdcat'
 alias fdh='sudo $HOME/.cargo/bin/fd --search-path $HOME -u -H 2>& /dev/null'
 alias fdr='sudo $HOME/.cargo/bin/fd --search-path / -u -H 2>& /dev/null'
 
-# faster sorting
-alias sort='sort --parallel=6 -S 6G'
 
 # open files with their respective program
 alias open='xdg-open'
-
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
-alias ~="cd ~"
-alias dotfiles='cd $DOTFILES_PATH'
 
 # Git
 alias gaa="git add -A"
@@ -79,9 +72,9 @@ alias udpte="update"
 alias nfd='dnf'
 
 # Colorize the grep command output for ease of use (good for log files)##
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias grep='grep --color=always'
+alias egrep='egrep --color=always'
+alias fgrep='fgrep --color=always'
 
 # # readable output
 alias df='df -h'
@@ -97,7 +90,7 @@ alias userlist="cut -d: -f1 /etc/passwd"
 
 # # merge new settings
 alias merge="xrdb -merge ~/.Xresources"
-#
+
 # # Aliases for software managment
 # # pacman or pm / apt / dpkg
 alias ainfo="apt info"
@@ -144,8 +137,6 @@ alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
 # # get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 #
-alias nash="nvim ~/.bashrc"
-alias nzsh="nvim ~/.zshrc"
 
 # #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
@@ -158,7 +149,6 @@ alias sr="sudo reboot"
 #give the list of all installed desktops - xsessions desktops
 alias xd="lsd /usr/share/xsessions"
 
-
 # preview images
 alias icat="kitty +kitten icat"
 
@@ -167,7 +157,7 @@ alias ls='lsd'
 alias l='lsd -1'
 alias la='lsd -a'
 alias ll='lsd -alFh'
-alias l.="'lsd -A | grep -E '^\.'"
+alias l.='lsd -A | grep -E "^\."'
 # directory
 alias mkdir='mkdir -pv'
 
@@ -187,7 +177,7 @@ alias topcpu="/bin/ps -eo pcpu,pid,user,args | sort -k 1 -r | head -10"
 
 # reload bash/zsh conf
 alias rebash='source ~/.bashrc'
-alias rezsh='source ~/.zshrc'
+alias zource='source ~/.zshrc'
 alias nzprof='nvim ~/.zprofile'
 alias nzrc='nvim ~/.zshrc'
 alias nalias='nvim ~/.aliases.zsh'

@@ -1,0 +1,34 @@
+ARTDIR=/usr/share/asciiville/art
+MUSEDIR=/usr/share/asciiville/music
+SONG=/usr/asciiville/music/Chronos.mp3
+ALTSONG=/usr/asciiville/music/Epic_Dramatic-Yuriy_Bespalov.wav
+
+AUDIO=1
+BROWSER=w3m
+COMMAND="cmatrix -u 8"
+FULLSCREEN=
+LOLCAT="lolcat"
+MTITLE="Asciiville"
+CURRENT=
+GNOME=
+RETRO=
+TILIX=
+KITTY=1
+XFCE4=
+
+shuffle=1
+length=0
+use_lolcat=1
+use_lol=YES
+journal="default"
+style="markdown"
+show_interval=5
+zoom_depth=7
+zoom_interval=4
+art_font_size=4
+txt_font_size=20
+
+defchars='   ...,;:clodxkO0KXNWM'
+revchars='MWNXK0Okxdolc:;,...   '
+revlong='WMZO0QLCJUYXzcvun1il;:,^.. '
+longchars=' ..^,:;li1nuvczXYUJCLQ0OZMW'

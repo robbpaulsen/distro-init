@@ -1,0 +1,10 @@
+.vscode/**
+dist/**
+node_modules/**
+screenshot/**
+src/**
+vim/**
+.eslintrc.json
+.gitignore
+*.vsix
+tsconfig.json

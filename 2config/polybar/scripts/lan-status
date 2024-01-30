@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "%{F#2495e7}󰈀 %{F#ffffff}$(/usr/sbin/networkctl status | grep 'Address:' | cut -d ':' -f 2 | awk '{print $1}')%{u-}"

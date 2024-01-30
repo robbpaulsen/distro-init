@@ -199,6 +199,69 @@ function test_colors2() {
 
 }
 
+function test_colors3() {
+
+  awk 'BEGIN{
+  s="/\\/\\/\\/\\/\\"; s=s s s s s s s s;
+  for (colnum = 0; colnum<77; colnum++) {
+    r = 255-(colnum*255/76);
+    g = (colnum*510/76);
+    b = (colnum*255/76);
+    if (g>255) g = 510-g;
+      printf "\033[48;2;%d;%d;%dm", r,g,b;
+      printf "\033[38;2;%d;%d;%dm", 255-r,255-g,255-b;
+      printf "%s\033[0m", substr(s,colnum+1,1);
+    }
+    printf "\n";
+  }'
+
+}
+
+function knowledge() {
+  tldr --list |
+    fzf --layout=reverse --preview 'tldr {1} --color=always' --preview-window=right,70% |
+    xargs tldr
+}
+
+#------------------------------------------------------------------------------------------------------
+# Color Testing for zsh
+
+typeset -AHg FX FG BG
+
+FX=(
+  reset     "%{%}"
+  bold      "%{%}" no-bold      "%{%}"
+  dim       "%{%}" no-dim       "%{%}"
+  italic    "%{%}" no-italic    "%{%}"
+  underline "%{%}" no-underline "%{%}"
+  blink     "%{%}" no-blink     "%{%}"
+  reverse   "%{%}" no-reverse   "%{%}"
+)
+
+for color in {000..255}; do
+  FG[$color]="%{color}m%}"
+  BG[$color]="%{color}m%}"
+done
+
+# Show all 256 colors with color number
+function spectrum_ls() {
+  setopt localoptions nopromptsubst
+  local ZSH_SPECTRUM_TEXT=${ZSH_SPECTRUM_TEXT:-Arma virumque cano Troiae qui primus ab oris}
+  for code in {000..255}; do
+    print -P -- "$code: ${FG[$code]}${ZSH_SPECTRUM_TEXT}%{$reset_color%}"
+  done
+}
+
+# Show all 256 colors where the background is set to specific color
+function spectrum_bls() {
+  setopt localoptions nopromptsubst
+  local ZSH_SPECTRUM_TEXT=${ZSH_SPECTRUM_TEXT:-Arma virumque cano Troiae qui primus ab oris}
+  for code in {000..255}; do
+    print -P -- "$code: ${BG[$code]}${ZSH_SPECTRUM_TEXT}%{$reset_color%}"
+  done
+}
+#-----------------------------------------------------------------------------------------------------------
+
 function commands() {
   echo "\033[0;91m ============== ALL COMMANDS AVAILABLE =============="
   echo "weather [city]              - Check weather"
@@ -211,14 +274,15 @@ function commands() {
   echo "rndmtip                     - Recieve a random tip from Cowsays"
   echo "get_term_size               - Get the terminal size in columns"
   echo "get_window_size [command]   - Get the window size in columns"
-  echo "testcolors1                 - Test colors #1"
-  echo "testcolors2                 - Test colors #2"
+  echo "test_colors1                 - Test colors #1"
+  echo "test_colors2                 - Test colors #2"
+  echo "test_colors3                 - Test colors #3"
   echo "mode            [file]      - Find the most common/repeated word on a file"
   echo "usort           [file]      - in place sort the order of a file with many lines"
   echo "get_display                 - Get the name of the Display Manager"
   echo "ex              [file]      - EXtractor for all kind of archives"
   echo "kln_lns         [file]      - Print unsorted unique lines from a list/text file"
- # echo "                       - (npm install -g npm-check-updates@latest)"
+  echo "knowledge                   - Explore the TLDR pages and search for a command"
  # echo "ncu -i --format group  - Group packages to update"
   echo "\033[0;91m ===================================================="
 }

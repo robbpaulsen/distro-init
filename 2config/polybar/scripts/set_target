@@ -1,0 +1,10 @@
+#!/bin/bash
+ 
+ip_address=$(cat /home/s4vitar/.config/bin/target | awk '{print $1}')
+target_name=$(cat /home/s4vitar/.config/bin/target | awk '{print $2}')
+ 
+if [ $ip_address ] && [ $target_name ]; then
+    echo "%{F#e51d0b}󱓈 %{F#ffffff}$ip_address%{u-} - $target_name"
+else
+    echo "%{F#e51d0b}󱓈{u-}%{F#ffffff} No target"
+fi
