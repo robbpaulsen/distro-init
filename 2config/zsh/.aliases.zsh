@@ -45,6 +45,13 @@ alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
 
+# ls aliases
+alias ls='lsd'
+alias la='lsd -a'
+alias ll='lsd -alFh'
+alias l='lsd -1'
+alias l.="lsd -A | grep -E '^\.'"
+
 # fix obvious typo's
 alias cd..='cd ../'
 alias cd.='cd ../'
@@ -136,7 +143,13 @@ alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
 
 # # get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
-#
+
+# get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+# edit most common rc files
+alias nash="nvim ~/.bashrc"
+alias nzsh="nvim ~/.zshrc"
 
 # #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
@@ -152,12 +165,6 @@ alias xd="lsd /usr/share/xsessions"
 # preview images
 alias icat="kitty +kitten icat"
 
-# list files
-alias ls='lsd'
-alias l='lsd -1'
-alias la='lsd -a'
-alias ll='lsd -alFh'
-alias l.='lsd -A | grep -E "^\."'
 # directory
 alias mkdir='mkdir -pv'
 
@@ -189,8 +196,10 @@ alias checkmon='iw dev | grep type | cut -d " " -f 2'
 alias checkrfkill='sudo rfkill list all'
 alias unblockwlan='sudo rfkill unblock wlan'
 
-# rmt
-alias rmt="rmt -i --verbose"
+# cargo
+alias krgo-init="cargo clean && cargo update"
+alias krgo="cargo update --all-features --path=."
+alias krgo2deb="cargo-deb --verbose --strip --compress-type xz --package"
 
 # zoxide
 alias z=__zoxide_z
@@ -208,9 +217,17 @@ alias list_repos_off='dnf repolist all | grep disabled'
 alias list_repos_on='dnf repolist all | grep enabled'
 alias group_list_all='sudo dnf grouplist --hidden'
 
-# check command examples and manuals on Cheat.sh
 alias huatperm="stat -c '%A %a %n'"
+
+# Clever editing with opo up search window
+alias n="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
 
 # Downlad th ebest audio and video with `yt-dlp`
 alias ydlmp4='yt-dlp -f "bestvideo&#91;ext=mp4]+bestaudio&#91;ext=m4a]/best&#91;ext=mp4]/best"'
 alias ydlmkv='yt-dlp -f "bestvideo&#91;ext=mkv]+bestaudio&#91;ext=mka]/best&#91;ext=mkv]/best"'
+
+# check alll ports
+alias ports='netstat -tulanp'
+
+# Do not wait interval 1 second, go fast #
+alias fastping='ping -c 100 -s.3'

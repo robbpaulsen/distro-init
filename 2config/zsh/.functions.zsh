@@ -71,6 +71,19 @@ function rmk() {
 	shred -zun 10 -v $1
 }
 
+function sterile() {
+  history | awk '$2 != "history" { $1=""; print $0 }' | egrep -vi"\
+    curl\b+.*(-E|--cert)\b+.*\b*|\
+    curl\b+.*--pass\b+.*\b*|\
+    curl\b+.*(-U|--proxy-user).*:.*\b*|\
+    curl\b+.*(-u|--user).*:.*\b*
+      .*(-H|--header).*(token|auth.*)\b+.*|\
+        wget\b+.*--.*password\b+.*\b*|\
+        http.?://.+:.+@.*\
+        " > $HOME/histbuff; history -r $HOME/histbuff;
+}
+export PROMPT_COMMAND="sterile"
+
 # Get a random shell tip
 function rndmtip() {
   curl -s https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md | 
@@ -260,6 +273,47 @@ function spectrum_bls() {
     print -P -- "$code: ${BG[$code]}${ZSH_SPECTRUM_TEXT}%{$reset_color%}"
   done
 }
+
+ function wiface() {
+     basename /sys/class/net/wl*
+ }
+
+function devstat() {
+	iw dev |
+		grep type |
+		cut -d " " -f 2-
+}
+
+function nic_down() {
+	sudo ip link set wiface down
+}
+
+function nic_up() {
+	sudo ip link set wiface up
+}
+
+function rnd_mac() {
+  sudo macchanger -a wiface
+}
+
+function nic_mon() {
+  sudo iw dev wlan0 set type monitor &&
+    echo wiface
+}
+
+fucntion perm_mac() {
+  nic_down &&
+    sudo macchanger -p wiface
+}
+
+function servs_down() {
+  sudo systemctl stop --now wpa_wupplicant.service NetworkManager.service
+}
+
+function servs_up() {
+  sudo systemctl start --now wpa_wupplicant.service NetworkManager.service
+}
+
 #-----------------------------------------------------------------------------------------------------------
 
 function commands() {

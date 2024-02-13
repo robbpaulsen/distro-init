@@ -21,12 +21,6 @@ white='\033[0;37m'
 lred='\033[0;31m'
 IWhite="\[\033[0;97m\]"
 
-trap ctrl_c INT
-
-function ctrl_c() {
-	exit_script
-}
-
 # VARIABLE DATABASE AND OTHER THINGS
 USERNAME=$(whoami)
 LOCALPATH="/home/${USERNAME}"
@@ -36,31 +30,22 @@ HOST=$(uname -n)
 BIT=$(uname -m)
 ROWTE=$(pwd)
 
-# SCRIPT PRESENTATION
-banner() {
-	echo -e "${White} ╔───────────────────────────────────────────────╗                 	"
-	echo -e "${White} |${Cyan} ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗${White} |      "
-	echo -e "${White} |${Cyan} ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║${White} |      "
-	echo -e "${White} |${Cyan} ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║${White} |      "
-	echo -e "${White} |${Cyan} ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║${White} |	"
-	echo -e "${White} |${Cyan} ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║${White} |	"
-	echo -e "${White} |${Cyan} ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝${White} |	"
-	echo -e "${White} ┖───────────────────────────────────────────────┙			"
-	echo ""
-	echo -e "${White} [${Blue}i${White}] BSPWM Setup"
-	echo -e "${White} [${Blue}i${White}] Ozymandias"
-	echo ""
-	echo -e "${White} [${Blue}i${White}] Setup Iniciando"
-	echo ""
-	sleep 4
-	echo -e "${White} [${Blue}i${White}] Hello ${Red}${USERNAME}${White}, This is the bspwm installation script for kali linux"
-}
-
-if [ "$EUID" -ne 0 ]; then
-	echo -e "\n\n[+]Se te olvido el sudo ...\n"
-	exit
-fi
-dfiles=$1
+echo -e "${White} ╔───────────────────────────────────────────────╗                 	"
+echo -e "${White} |${Cyan} ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗${White} |      "
+echo -e "${White} |${Cyan} ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║${White} |      "
+echo -e "${White} |${Cyan} ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║${White} |      "
+echo -e "${White} |${Cyan} ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║${White} |	"
+echo -e "${White} |${Cyan} ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║${White} |	"
+echo -e "${White} |${Cyan} ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝${White} |	"
+echo -e "${White} ┖───────────────────────────────────────────────┙			"
+echo ""
+echo -e "${White} [${Blue}i${White}] BSPWM Auto Setup"
+echo -e "${White} [${Blue}i${White}] Ozymandias"
+echo ""
+echo -e "${White} [${Blue}i${White}] Iniciando"
+echo ""
+sleep 4
+echo -e "${White} [${Blue}i${White}] Hello ${Red}${USERNAME}${White}, This is the bspwm installation script for kali linux"
 
 trap ctrl_c INT
 
@@ -69,18 +54,18 @@ function ctrl_c() {
 }
 
 if [ "$EUID" -ne 0 ]; then
-	echo -e "\n\n[+] Se te olvido el sudo ...\n"
+	echo -e "${Yellow}\n[+]Se te olvido el sudo ...\n${Yellow}"
 	exit
 fi
 
-echo -e "\n\n[+] Iniciando ...\n"
+echo -e "$(tput blink)${lred}\n[+]${lred}${IWhite}Iniciando ...\n${IWhite}"
 
-apt-get --assume-yes update &>/dev/null &&
-	apt-get --assume-yes full-upgrade &>/dev/null
+apt-get --assume-yes update &&
+	apt-get --assume-yes full-upgrade
 
 while read -r line; do
-	echo -e "\n\n[+] Instalando "$line"\n"
+	echo -e "$(tput blink)${Cyan}\n[+]${Cyan} ${Green}Instalando $line\n${Green}"
 	apt -qq --assume-yes install "$line" &>/dev/null
-done <"$dfiles"
+done <assets/dubuntu.lst
 #readarray -t pkgsArr <"$(pwd)"/dubuntu.lst
 #apt-get --assume-yes install "${pkgsArr[@]}" &>/dev/null &&
