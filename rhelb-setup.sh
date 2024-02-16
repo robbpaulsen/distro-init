@@ -1,14 +1,68 @@
 #!/usr/bin/env bash
-##
+##################################################################################################################
+# Author:	Robbpaulsen
+# Website:	https://github.com/robbpaulsen
+# Email:	pemmetest.087@gmail.com
+##################################################################################################################
 #
-# Author:   Robbpaulsen
-# GitHub:   github.com/robbpaulsem
-##
-#set -x
-
+# Script for a more unattended, headless setup and configurationg for the basic things on any new linux installation.
+#
+##################################################################################################################
+#tput setaf 0 = black
+#tput setaf 1 = red
+#tput setaf 2 = green
+#tput setaf 3 = yellow
+#tput setaf 4 = dark blue
+#tput setaf 5 = purple
+#tput setaf 6 = cyan
+#tput setaf 7 = gray
+#tput setaf 8 = light blue
+##################################################################################################################
+# set -x -e
 # Redhat dnf packages and libraries to install for a Tiling Window Manager setup
 
 clear
+
+# COLOR USE THE SCRIPT
+Black='\033[1;30m'
+Red='\033[1;31m'
+Green='\033[1;32m'
+Yellow='\033[1;33m'
+Blue='\033[1;34m'
+Purple='\033[1;35m'
+Cyan='\033[1;36m'
+White='\033[1;37m'
+NC='\033[0m'
+blue='\033[0;34m'
+white='\033[0;37m'
+lred='\033[0;31m'
+IWhite="\[\033[0;97m\]"
+
+# VARIABLE DATABASE AND OTHER THINGS
+USERNAME=$(whoami)
+LOCALPATH="/home/${USERNAME}"
+KERNEL=$(uname -r)
+DISTRIBUTION=$(uname -o)
+HOST=$(uname -n)
+BIT=$(uname -m)
+ROWTE=$(pwd)
+
+echo -e "${White} ╔───────────────────────────────────────────────╗                 	"
+echo -e "${White} |${Cyan} ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗${White} |      "
+echo -e "${White} |${Cyan} ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║${White} |      "
+echo -e "${White} |${Cyan} ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║${White} |      "
+echo -e "${White} |${Cyan} ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║${White} |	"
+echo -e "${White} |${Cyan} ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║${White} |	"
+echo -e "${White} |${Cyan} ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝${White} |	"
+echo -e "${White} ┖───────────────────────────────────────────────┙			"
+echo ""
+echo -e "${White} [${Blue}i${White}] BSPWM Auto Setup"
+echo -e "${White} [${Blue}i${White}] Ozymandias"
+echo ""
+echo -e "${White} [${Blue}i${White}] Iniciando"
+echo ""
+sleep 4
+echo -e "${White} [${Blue}i${White}] Hello ${Red}${USERNAME}${White}, This is the bspwm installation script for kali linux"
 
 trap ctrl_c INT
 
@@ -17,12 +71,15 @@ function ctrl_c() {
 }
 
 if [ "$EUID" -ne 0 ]; then
-	echo -e "\n\n[+] Please run as root\n"
+	echo -e "\n${Yellow}[+] Se te olvido el sudo ...\n${Yellow}"
 	exit
 fi
 
-echo -e "\n\nInitializing Setup...\n"
+echo -e "${lred}\n[+]${lred} ${IWhite}Iniciando ...\n${IWhite}"
 
-readarray -t pkgsArr <"$(pwd)"/dnf-pkgs.lst
-dnf --assumeyes install "${pkgsArr[@]}" &>/dev/null &&
-	echo -e "\n\n[+] All Packages and Libraries Installed\n"
+dnf --assumeyes distro-sync &>/dev/null
+
+while read -r line; do
+	echo -e "${Cyan}\n[+]${Cyan} ${Green}Instalando $line\n${Green}"
+	dnf --assumeyes install "$line" &>/dev/null
+done <assets/rhel-deps.lst

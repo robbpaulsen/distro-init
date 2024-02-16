@@ -19,3 +19,10 @@ and the downloaded packages were AMD64 :( , had to start all over again. #_ (Don
 - (Done) Delete a lot nonsense scripts and lists
 - Create independent pkg manager based script for Cargo, flatpak, NPM and Go
 
+# Feb 2024
+
+- Finished debia/ubuntu script
+- Finished Fedora/Rhel script
+- Up to date RC Files
+
+###### Arch linux script missing
