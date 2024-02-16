@@ -80,11 +80,10 @@ fi
 echo -e "${lred}\n[+]${lred}${IWhite}Iniciando ...\n${EC}"
 
 apt-get -y update &>/dev/null &&
-	apt -y full-upgrade
+	apt-get -y full-upgrade &&
+	sleep 2
 
 while read -r line; do
 	echo -e "${Cyan}\n[+]${EC} ${Green}Instalando $line\n${EC}"
-	apt -y install "$line" &>/dev/null
+	apt-get -y install "$line" &>/dev/null
 done <assets/dubuntu.lst
-#readarray -t pkgsArr <"$(pwd)"/dubuntu.lst
-#apt-get --assume-yes install "${pkgsArr[@]}" &>/dev/null &&
