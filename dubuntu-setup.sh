@@ -38,6 +38,7 @@ blue='\033[0;34m'
 white='\033[0;37m'
 lred='\033[0;31m'
 IWhite="\[\033[0;97m\]"
+EC="\033[0m\e[0m"
 
 # VARIABLE DATABASE AND OTHER THINGS
 USERNAME=$(whoami)
@@ -72,18 +73,18 @@ function ctrl_c() {
 }
 
 if [ "$EUID" -ne 0 ]; then
-	echo -e "${Yellow}\n[+]Se te olvido el sudo ...\n${Yellow}"
+	echo -e "${Yellow}\n[+]Se te olvido el sudo ...\n${EC}"
 	exit
 fi
 
-echo -e "${lred}\n[+]${lred}${IWhite}Iniciando ...\n${IWhite}"
+echo -e "${lred}\n[+]${lred}${IWhite}Iniciando ...\n${EC}"
 
-apt-get --assume-yes update &&
-	apt-get --assume-yes full-upgrade
+apt-get -y update &>/dev/null &&
+	apt -y full-upgrade
 
 while read -r line; do
-	echo -e "$(tput blink)${Cyan}\n[+]${Cyan} ${Green}Instalando $line\n${Green}"
-	apt -qq --assume-yes install "$line" &>/dev/null
+	echo -e "${Cyan}\n[+]${EC} ${Green}Instalando $line\n${EC}"
+	apt -y install "$line" &>/dev/null
 done <assets/dubuntu.lst
 #readarray -t pkgsArr <"$(pwd)"/dubuntu.lst
 #apt-get --assume-yes install "${pkgsArr[@]}" &>/dev/null &&
