@@ -1,8 +1,12 @@
-#!/usr/bin/env bash
+alias iw='sudo iw'
+alias ip='sudo ip'
+alias macchanger='sudo macchanger'
+alias rfkill='sudo rfkill'
 
-function wiface() {
-	basename /sys/class/net/wl*
-}
+source "$HOME/Projects/distro-init/functions/sys-services/services-functions.sh"
+
+wiface="$(basename /sys/class/net/wl*)"
+
 
 function devstat() {
 	iw dev |
@@ -11,32 +15,39 @@ function devstat() {
 }
 
 function nic_down() {
-	sudo ip link set wiface down
+	ip link set "$wiface" down
 }
 
 function nic_up() {
-	sudo ip link set wiface up
+	ip link set "$wiface" up
 }
 
 function org_mac() {
-	sudo maccahnger -p
+	maccahnger -p "$wiface"
 }
 
 function rnd_mac() {
-	sudo macchanger -a
+	macchanger -a "$wiface"
 }
 
 function nic_mon() {
-	sudo iw dev wlan0 set type monitor &&
-		echo wiface
+	iw dev "$wiface" set type monitor &&
+		echo -e "\n[+] devstat\n"
 }
 
-function perm_mac() {
-	nic_down &&
-		org_mac wiface
+function nic_org() {
+	iw dev "$wiface" set type managed &&
+		echo -e "\n[+] devstat\n"
 }
+
 function other_mac() {
-	nic_down &&
-		rnd_mac &&
-		nic_up
+	macchanger -a "$wiface"
+}
+
+function mac_show() {
+	macchanger -s "$wiface"
+}
+
+function wless_scan() {
+	iw dev "$wiface" scan
 }

@@ -1,14 +1,12 @@
-#!/usr/bin/env bash
-
 function which_pmngr() {
 	DNF="$(command -v dnf &>/dev/null)"
 	APPT="$(command -v apt &>/dev/null)"
 	PACMAN="$(command -v pacman &>/dev/null)"
 
-	if $DNF; then
+	if [ $DNF]; then
 		echo -e "\n[+] "DNF"\n"
 	elif
-		$APPT
+		[ $APT ]
 	then
 		echo -e "\n[+] "APT"\n"
 	elif

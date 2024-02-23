@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # COLOR USE THE SCRIPT
 Black='\033[1;30m'
 Red='\033[1;31m'

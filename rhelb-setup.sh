@@ -83,4 +83,4 @@ dnf --assumeyes distro-sync &>/dev/null
 while read -r line; do
 	echo -e "${Cyan}\n[+]${EC} ${Green}Instalando $line\n${EC}"
 	dnf --assumeyes install "$line" &>/dev/null
-done <assets/rhel-deps.lst
+done <assets/dnf-pkgs.lst

@@ -19,18 +19,19 @@
 #tput setaf 7 = gray
 #tput setaf 8 = light blue
 ##################################################################################################################
+##
+# NVM, NPM, Node, Rust and Cargo Installtion
 
 clear
 
 # NVM headless installation
 
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
-	. "$HOME"/.zshrc &&
+	source "$HOME"/.zshrc &&
 	nvm install --lts &&
 	nvm use --lts &&
 	sleep 2 &&
 
 	# Yarn installation with npm
-	sudo npm install -g yarn &&
+	npm install -g yarn &&
 	sleep 2
-
