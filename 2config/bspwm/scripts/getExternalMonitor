@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+while getopts ":i:" opt; do
+	case $opt in
+	i)
+		INTERNAL_MONITOR="$OPTARGS"
+		;;
+	\?)
+		echo "Invalid option -$OPTARG" >&2
+		;;
+	esac
+done
+
+TMP_FILE=~/.externalmonitor.txt
+EXTERNAL_MONITOR=$(xrandr -q | grep "\bconnected\b" | grep -v "$INTERNAL_MONITOR" | awk '{print $1}')
+if [[ -z $EXTERNAL_MONITOR ]]; then
+	EXTERNAL_MONITOR=$(cat $TMP_FILE)
+
+	echo "$EXTERNAL_MONITOR" >"$TMP_FILE"
+fi
+echo "$EXTERNAL_MONITOR"

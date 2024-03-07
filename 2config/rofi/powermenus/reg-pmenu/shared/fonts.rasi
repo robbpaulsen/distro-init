@@ -1,0 +1,5 @@
+/* Import the font that's going to be uased on your rofi launcher */
+
+* {
+    font: "JetBrains Mono Nerd Font 10";
+}

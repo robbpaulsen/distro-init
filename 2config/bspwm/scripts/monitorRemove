@@ -1,0 +1,27 @@
+#!/bin/bash
+while getopts ":i:e:" opt; do
+  case $opt in
+    i)INTERNAL_MONITOR="$OPTARG"
+    ;;
+    e)EXTERNAL_MONITOR="$OPTARG"
+    ;;
+    \?) echo "Invalid option -$OPTARG" >&2
+    ;;
+  esac
+done
+# Add default temp desktop because a minimum of one desktop is required per monitor
+bspc monitor "$EXTERNAL_MONITOR" -a eleven
+
+# Move all desktops except the last default desktop to internal monitor
+bspc desktop one  --to-monitor "$INTERNAL_MONITOR"
+bspc desktop two --to-monitor "$INTERNAL_MONITOR"
+bspc desktop three --to-monitor "$INTERNAL_MONITOR"
+bspc desktop four --to-monitor "$INTERNAL_MONITOR"
+bspc desktop five --to-monitor "$INTERNAL_MONITOR"
+ # delete default desktops
+bspc desktop Desktop --remove
+bspc desktop eleven --remove
+bspc monitor "$EXTERNAL_MONITOR" --remove
+
+ # reorder desktops
+bspc monitor "$INTERNAL_MONITOR" -o one two three four five six seven eight nine ten

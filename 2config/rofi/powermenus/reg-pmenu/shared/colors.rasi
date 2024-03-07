@@ -1,0 +1,4 @@
+
+/* Import color scheme from the "colors/" directory */
+
+@import "~/.config/rofi/colors/onedark.rasi"

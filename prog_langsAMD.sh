@@ -25,9 +25,8 @@
 clear
 
 # NVM headless installation
-
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
-	source "$HOME"/.zshrc &&
+	source "$HOME/.zshrc" &&
 	nvm install --lts &&
 	nvm use --lts &&
 	sleep 2 &&
@@ -37,12 +36,11 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 	sleep 2
 
 # Rustup and cargo installation
-
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -sSf | sh -s -- --verbose -y --default-toolchain stable &&
 	source $HOME/.cargo/env &&
 	sleep 2
 
 # Go installer
-cd "$HOME"
+cd
 wget https://git.io/go-installer.sh &&
-	bash go-installer.sh
+	chmod u+x go-installer.sh && bash go-installer.sh
