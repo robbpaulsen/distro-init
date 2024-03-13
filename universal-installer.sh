@@ -63,6 +63,21 @@ if [ "$EUID" -ne 0 ]; then
 	exit
 fi
 
+#########################################################################################
+#                                                                                       #
+#           EXPERIMENTAL BLOCK                                                          #
+#                                                                                       #
+#########################################################################################
+#manager=$(
+#pmgrs=(apt dnf pacman)
+#for manager in "${managers[@]}"; do
+#    if command -v $manager &> /dev/null; then
+#        echo -e "\n${GREEN}[+]${NORMAL} ${manager} -> $(command -v $manager)\n"
+#        sleep 0.05
+#    fi
+#done
+#)
+
 clear
 
 read -p "
@@ -118,6 +133,12 @@ function deps() {
         done <assets/dubuntu.lst
 }
 
+function plangs() {
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+    wget https://git.io/go-installer.sh && bash go-installer.sh
+}
+
 #########################################################################################
 ##                                                                                     ##
 ##                                Arch                                                 ##
@@ -151,6 +172,12 @@ function deps() {
         echo -e "${CYAN}\n[+]${NORMAL} ${GREEN}Instalando $line\n${NORMAL}"
         pacman -S --needed --noconfirm "$line" &>/dev/null
       done <assets/archLibsPkgs.lst
+}
+
+function plangs() {
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+    wget https://git.io/go-installer.sh && bash go-installer.sh
 }
 
 #########################################################################################
@@ -187,6 +214,12 @@ function deps() {
         echo -e "${CYAN}\n[+]${NORMAL} ${GREEN}Instalando $line\n${NORMAL}"
         dnf --assumeyes install "$line" &>/dev/null
       done <assets/dnf-pkgs.lst
+}
+
+function plangs() {
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+    wget https://git.io/go-installer.sh && bash go-installer.sh
 }
 
 #########################################################################################
@@ -233,6 +266,7 @@ function deps() {
 
 update
 deps
+plangs
 #setup
 
 #########################################################################################
