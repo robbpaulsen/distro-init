@@ -19,22 +19,6 @@
 #########################################################################################
 #########################################################################################
 
-echo -e "${WHITE} ╔───────────────────────────────────────────────╗"
-echo -e "${WHITE} |${CYAN} ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗${WHITE} |"
-echo -e "${WHITE} |${CYAN} ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║${WHITE} |"
-echo -e "${WHITE} |${CYAN} ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║${WHITE} |"
-echo -e "${WHITE} |${CYAN} ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║${WHITE} |"
-echo -e "${WHITE} |${CYAN} ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║${WHITE} |"
-echo -e "${WHITE} |${CYAN} ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝${WHITE} |"
-echo -e "${WHITE} ┖───────────────────────────────────────────────┙"
-echo ""
-echo -e "${WHITE} [${BLUE}i${WHITE}] BSPWM Auto Setup"
-echo -e "${WHITE} [${BLUE}i${WHITE}] Ozymandias"
-echo ""
-echo -e "${WHITE} [${BLUE}i${WHITE}] Iniciando"
-echo ""
-sleep 3
-
 NORMAL='\033[0m'
 RED='\033[00;31m'
 GREEN='\033[00;32m'
@@ -78,27 +62,6 @@ fi
 #done
 #)
 
-clear
-
-read -p "
-
-$USER Este Script empezara por actualizar el sistema,  instalar dependencias, librerias y lenguages de programacion
-necesarias para un entorno con BSPWM como Tiling Window Manager.
-
-Deseas Continuar ?
-
-(1) Si
-(*) No
-
-(?) Seleccionar opcion: " res_1
-
-if [[ $res_1 == "1" ]]; then
-  sleep 2;
-  clear
-else
-  exit
-fi
-
 #########################################################################################
 ##                                                                                     ##
 ##                                     Debian                                          ##
@@ -106,7 +69,7 @@ fi
 #########################################################################################
 
 if command -v apt &>/dev/null; then
-function update() {
+function deb_update() {
     cat << EOF
 
     [ System Update ]
@@ -119,7 +82,7 @@ function update() {
                   clear
 }
 
-function deps() {
+function deb_deps() {
     cat << EOF
 
     [ Dependencies ]
@@ -134,9 +97,17 @@ function deps() {
 }
 
 function plangs() {
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
-    wget https://git.io/go-installer.sh && bash go-installer.sh
+      clear
+    /bin/cat << EOF
+
+  [ Lenguajes de Programacion ]
+
+  EOF
+      sleep 2
+
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+            wget https://git.io/go-installer.sh && bash go-installer.sh
 }
 
 #########################################################################################
@@ -147,7 +118,7 @@ function plangs() {
 
 elif command -v pacman &>/dev/null; then
 
-  function update() {
+  function arch_update() {
     /bin/cat << EOF
 
     [ System Update ]
@@ -160,7 +131,7 @@ elif command -v pacman &>/dev/null; then
           clear
 }
 
-function deps() {
+function arch_deps() {
   /bin/cat << EOF
 
   [ Dependencies ]
@@ -175,9 +146,17 @@ function deps() {
 }
 
 function plangs() {
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
-    wget https://git.io/go-installer.sh && bash go-installer.sh
+    clear
+    /bin/cat << EOF
+
+  [ Lenguajes de Programacion ]
+
+  EOF
+      sleep 2
+
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+            wget https://git.io/go-installer.sh && bash go-installer.sh
 }
 
 #########################################################################################
@@ -188,7 +167,7 @@ function plangs() {
 
 else command -v dnf &>/dev/null;then
 
-function update() {
+function rhel_update() {
   /bin/cat << EOF
 
   [ System Update ]
@@ -202,7 +181,7 @@ function update() {
         clear
 }
 
-function deps() {
+function rhel_deps() {
   /bin/cat << EOF
 
   [ Dependencies ]
@@ -217,9 +196,22 @@ function deps() {
 }
 
 function plangs() {
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
-    wget https://git.io/go-installer.sh && bash go-installer.sh
+  clear
+  /bin/cat << EOF
+
+  [ Lenguajes de Programacion ]
+
+  EOF
+      sleep 2
+
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+          wget https://git.io/go-installer.sh && bash go-installer.sh
+}
+
+function sys_reboot() {
+  sleep 5 &&
+    systemctl reboot
 }
 
 #########################################################################################
@@ -263,11 +255,58 @@ function plangs() {
 ##                                Run Functions                                        ##
 ##                                                                                     ##
 #########################################################################################
+function menu() {
+  while true do
+    echo -e "${WHITE} ╔───────────────────────────────────────────────╗"
+    echo -e "${WHITE} |${CYAN} ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗${WHITE} |"
+    echo -e "${WHITE} |${CYAN} ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║${WHITE} |"
+    echo -e "${WHITE} |${CYAN} ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║${WHITE} |"
+    echo -e "${WHITE} |${CYAN} ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║${WHITE} |"
+    echo -e "${WHITE} |${CYAN} ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║${WHITE} |"
+    echo -e "${WHITE} |${CYAN} ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝${WHITE} |"
+    echo -e "${WHITE} ┖───────────────────────────────────────────────┙"
+    echo ""
+    echo -e "${WHITE} [${BLUE}i${WHITE}] BSPWM Auto Setup"
+    echo -e "${WHITE} [${BLUE}i${WHITE}] Ozymandias"
+    echo ""
+    echo -e "${WHITE} [${BLUE}i${WHITE}] Iniciando"
+    echo ""
+    echo ""
+    echo "-------------------------------------------------------------------------------"
+    echo ""
+    echo ""
+    echo -e "${CYAN}[+] Elige el Sistema Operativo en el que deseas instalar ...${NORMAL}"
+    echo -e "${RED}$1: [+] Debian${NORMAL}"
+    echo -e "${BLUE}$2: [+] ArchLinux${NORMAL}"
+    echo -e "${LBLUE}$3: [+] Fedora${NORMAL}"
+    echo -e "${LGREEN}$4: [+] Reiniciar Sistema${NORMAL}"
+    echo -e "${LYELLOW}$5: [!] Salir ...${NORMAL}"
+    echo ""
+    echo ""
+    echo "-------------------------------------------------------------------------------"
+    read -p "${YELLOW}Escribe el numero de la seleccion deseada: " numero
+    case $numero in
+        1) deb_update &&
+          deb_deps &&
+          plangs
+                  ;;
+        2) arch_update &&
+          arch_deps &&
+          plangs
+                  ;;
+        3) rhel_update &&
+          rhel_deps &&
+          plangs
+                  ;;
+        4) sys_reboot
+                  ;;
+        5) exit
+                  ;;
 
-update
-deps
-plangs
-#setup
+#
+esac
+done
+}
 
 #########################################################################################
 ##                                                                                     ##
@@ -275,22 +314,43 @@ plangs
 ##                                                                                     ##
 #########################################################################################
 
-read -r -p "
-Instalacion Completa, este script fue hecho por Robbpaulsen.
+#read -r -p "
+#Instalacion Completa, este script fue hecho por Robbpaulsen.
 
-Deseas reinicar?
+#Deseas reinicar?
 
-(1) Si
-(*) No
+#(1) Si
+#(*) No
 
-(?) Selecciona una opcion: " rbt
+#(?) Selecciona una opcion: " rbt
 
-if [[ "$rbt" -eq 1 ]]; then
-  sleep 3
-  clear
-  systemctl reboot
+#if [[ "$rbt" -eq 1 ]]; then
+#  sleep 3
+#  clear
+#  systemctl reboot
 
-else
-  echo -e "\n${YELLOW}[+]${NORMAL}${CYAN} Saliendo sin reiniciar  ...${NORMAL}\n"
+#else
+#  echo -e "\n${YELLOW}[+]${NORMAL}${CYAN} Saliendo sin reiniciar  ...${NORMAL}\n"
 
-fi
+#fi
+
+#clear
+
+#read -p "
+
+#$USER Este Script empezara por actualizar el sistema,  instalar dependencias, librerias y lenguages de programacion
+#necesarias para un entorno con BSPWM como Tiling Window Manager.
+
+#Deseas Continuar ?
+
+#(1) Si
+#(*) No
+
+#(?) Seleccionar opcion: " res_1
+
+#if [[ $res_1 == "1" ]]; then
+#  sleep 2;
+#  clear
+#else
+#  exit
+#fi
