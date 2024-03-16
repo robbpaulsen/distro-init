@@ -23,3 +23,19 @@ function servs_down() {
 function servs_up() {
 	sys_start --now wpa_wupplicant.service NetworkManager.service
 }
+
+function docker_servdown() {
+	sys_stop docker.service docker.socket
+}
+
+function docker_servup() {
+	sys_start docker.service docker.socket
+}
+
+function ssh_servdown() {
+	sys_stop sshd.service
+}
+
+function ssh_servup() {
+	sys_start sshd.service
+}

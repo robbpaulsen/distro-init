@@ -15,4 +15,3 @@ export DISTRIBUTION=$(uname -o)
 export HOST=$(uname -n)
 export BIT=$(uname -m)
 export ROWTE=$(pwd)
-export CONF="$(LOCALPATH)/.config"

@@ -3,10 +3,12 @@ alias ip='sudo ip'
 alias macchanger='sudo macchanger'
 alias rfkill='sudo rfkill'
 
-source "$HOME/Projects/distro-init/functions/sys-services/services-functions.sh"
+source $HOME/.local/functions/sys-services/services-functions.sh
 
-wiface="$(basename /sys/class/net/wl*)"
-
+wiface=$(
+	iw dev | grep "Interface" | xargs | cut -d " "
+	-f 2-
+)
 
 function devstat() {
 	iw dev |
@@ -22,6 +24,10 @@ function nic_up() {
 	ip link set "$wiface" up
 }
 
+function show_mac() {
+	macchanger -s "$wiface"
+}
+
 function org_mac() {
 	maccahnger -p "$wiface"
 }
@@ -31,23 +37,24 @@ function rnd_mac() {
 }
 
 function nic_mon() {
-	iw dev "$wiface" set type monitor &&
-		echo -e "\n[+] devstat\n"
+	nic_down &&
+		rnd_mac &&
+		iw dev "$wiface" set type monitor &&
+		nic_up
 }
 
 function nic_org() {
-	iw dev "$wiface" set type managed &&
-		echo -e "\n[+] devstat\n"
+	nic_down && org_mac
 }
 
 function other_mac() {
 	macchanger -a "$wiface"
 }
 
-function mac_show() {
-	macchanger -s "$wiface"
-}
-
 function wless_scan() {
 	iw dev "$wiface" scan
+}
+
+function get_ssids() {
+	wless_scan | grep "SSID" | tee ssids.lst
 }

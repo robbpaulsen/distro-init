@@ -12,7 +12,7 @@
 ## Email:	ozymandias.1987@protonmail.com
 #########################################################################################
 ## Descripcion:
-## 
+##
 ## Script for a more unattended, headless setup and configurationg for the basic things
 ## on any new linux installation.
 ##
@@ -62,6 +62,16 @@ fi
 #done
 #)
 
+function sys_reboot() {
+	/bnin/cat <<EOF
+
+[ El Sistema se Reiniciara en 5 segundos ]
+
+EOF
+	sleep 5 &&
+		systemctl reboot
+}
+
 #########################################################################################
 ##                                                                                     ##
 ##                                     Debian                                          ##
@@ -69,46 +79,64 @@ fi
 #########################################################################################
 
 if command -v apt &>/dev/null; then
-function deb_update() {
-    cat << EOF
+	function deb_update() {
+		clear
+		/bin/cat <<EOF
 
-    [ System Update ]
+[ Actualizando la base de Apt ]
 
-    EOF
-        sleep 2
-        apt-get --assume-yes update &>/dev/null &&
-          apt-get --assume-yes full-upgrade
-                  sleep 2
-                  clear
-}
+EOF
+		sleep 2
+		apt-get --assume-yes update &>/dev/null &&
+			sleep 2
 
-function deb_deps() {
-    cat << EOF
+		/bin/cat <<EOF
 
-    [ Dependencies ]
+[ Termino la actualizacion de la base de Apt ]
 
-    EOF
-        sleep 2
+EOF
+		clear
+	}
 
-        while read -r line; do
-          echo -e "${CYAN}\n[+]${NORMAL} ${GREEN}Instalando $line\n${NORMAL}"
-          apt-get --assume-yes install "$line" &>/dev/null
-        done <assets/dubuntu.lst
-}
+	function deb_upgrade() {
+		clear
+		/bin/cat <<EOF
 
-function plangs() {
-      clear
-    /bin/cat << EOF
+[ Instalando Actualizaciones de Apt ]
 
-  [ Lenguajes de Programacion ]
+EOF
+		sleep 2
+		apt-get --assume-yes full-upgrade
+		sleep 2
+	}
 
-  EOF
-      sleep 2
+	function deb_deps() {
+		cat <<EOF
 
-          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
-            wget https://git.io/go-installer.sh && bash go-installer.sh
-}
+[ Instalando las Dependencias y Librerias ]
+
+EOF
+		sleep 2
+
+		while read -r line; do
+			echo -e "${CYAN}\n[+]${NORMAL} ${GREEN}Instalando $line\n${NORMAL}"
+			apt-get --assume-yes install "$line" &>/dev/null
+		done <assets/dubuntu.lst
+	}
+
+	function plangs() {
+		clear
+		/bin/cat <<EOF
+
+[ Lenguajes de Programacion ]
+
+EOF
+		sleep 2
+
+		curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
+			curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+			wget https://git.io/go-installer.sh && bash go-installer.sh
+	}
 
 #########################################################################################
 ##                                                                                     ##
@@ -118,46 +146,73 @@ function plangs() {
 
 elif command -v pacman &>/dev/null; then
 
-  function arch_update() {
-    /bin/cat << EOF
+	function arch_fix() {
+		/bin/cat <<EOF
 
-    [ System Update ]
+[ Borrando la base de PACMAN ]
 
-    EOF
+EOF
+		sleep 2
+		rm /var/lib/pacman/sync/* &>/dev/null
+		rm -rf /etc/pacman.d/gnupg/* &>/dev/null
 
-        sleep 2
-        pacman -Syyu --noconfirm &>/dev/null &&
-          sleep 2
-          clear
-}
+		/bin/cat <<EOF
 
-function arch_deps() {
-  /bin/cat << EOF
+[ Reinicializando las llaves y firmas de PACMAN ]
 
-  [ Dependencies ]
+EOF
+		sleep 2
+		pacman-key --init
+		sleep 2
+		pacman-key --populate
+		sleep 2
+		pacman -Sy
+	}
 
-  EOF
-      sleep 2
+	function arch_update() {
+		clear
+		/bin/cat <<EOF
 
-      while read -r line; do
-        echo -e "${CYAN}\n[+]${NORMAL} ${GREEN}Instalando $line\n${NORMAL}"
-        pacman -S --needed --noconfirm "$line" &>/dev/null
-      done <assets/archLibsPkgs.lst
-}
+[ Actualizando el Sistema ]
 
-function plangs() {
-    clear
-    /bin/cat << EOF
+EOF
+		sleep 2
+		pacman -Syyu --noconfirm &>/dev/null &&
+			sleep 2
 
-  [ Lenguajes de Programacion ]
+		/bin/cat <<EOF
 
-  EOF
-      sleep 2
+[ Termino la Actualiacion ]
 
-          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
-            wget https://git.io/go-installer.sh && bash go-installer.sh
-}
+EOF
+	}
+
+	function arch_deps() {
+		clear
+		/bin/cat <<EOF
+
+[ Instalacion de Dependencias y Librerias ]
+
+EOF
+		sleep 2
+		while read -r line; do
+			echo -e "${CYAN}\n[+]${NORMAL} ${GREEN}Instalando $line\n${NORMAL}"
+			pacman -S --needed --noconfirm "$line" &>/dev/null
+		done <assets/archLibsPkgs.lst
+	}
+
+	function plangs() {
+		clear
+		/bin/cat <<EOF
+
+[ Lenguajes de Programacion ]
+
+EOF
+		sleep 2
+		curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
+			curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+			wget https://git.io/go-installer.sh && bash go-installer.sh
+	}
 
 #########################################################################################
 ##                                                                                     ##
@@ -165,149 +220,160 @@ function plangs() {
 ##                                                                                     ##
 #########################################################################################
 
-else command -v dnf &>/dev/null;then
+else
+	command -v dnf &>/dev/null
 
-function rhel_update() {
-  /bin/cat << EOF
+	function rhel_update() {
+		clear
+		/bin/cat <<EOF
 
-  [ System Update ]
+[ Actualizando Sistema ]
 
-  EOF
-      sleep 2
+EOF
+		sleep 2
 
-      dnf --assumeyes check-update &>/dev/null &&
-      dnf --assumeyes distro-sync
-        sleep 2
-        clear
-}
+		dnf --assumeyes check-update &>/dev/null &&
+			dnf --assumeyes distro-sync
+		sleep 2
 
-function rhel_deps() {
-  /bin/cat << EOF
+		/bin/cat <<EOF
 
-  [ Dependencies ]
+[ Termino la Actualizacion ]
 
-  EOF
-      sleep 2
+EOF
+	}
 
-      while read -r line; do
-        echo -e "${CYAN}\n[+]${NORMAL} ${GREEN}Instalando $line\n${NORMAL}"
-        dnf --assumeyes install "$line" &>/dev/null
-      done <assets/dnf-pkgs.lst
-}
+	function rhel_deps() {
+		clear
+		/bin/cat <<EOF
 
-function plangs() {
-  clear
-  /bin/cat << EOF
+[ Instalando Dependencias y Librerias ]
 
-  [ Lenguajes de Programacion ]
+EOF
+		sleep 2
+		while read -r line; do
+			echo -e "${CYAN}\n[+]${NORMAL} ${GREEN}Instalando $line\n${NORMAL}"
+			dnf --assumeyes install "$line" &>/dev/null
+		done <assets/dnf-pkgs.lst
+	}
 
-  EOF
-      sleep 2
+	function plangs() {
+		clear
+		/bin/cat <<EOF
 
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
-          wget https://git.io/go-installer.sh && bash go-installer.sh
-}
+[ Lenguajes de Programacion ]
 
-function sys_reboot() {
-  sleep 5 &&
-    systemctl reboot
-}
+EOF
+		sleep 2
+		curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y &&
+			curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+			wget https://git.io/go-installer.sh && bash go-installer.sh
+	}
 
-#########################################################################################
-##                                                                                     ##
-##                                SETUP                                                ##
-##                                                                                     ##
-#########################################################################################
+	#########################################################################################
+	##                                                                                     ##
+	##                                SETUP                                                ##
+	##                                                                                     ##
+	#########################################################################################
 
-#setup() {
+	#setup() {
 
-#	sleep 3;
-	
-#	echo "Copying files, please wait.."
+	#	sleep 3;
 
-#	pushd ~/dotfiles
-#	cp -r home/. ~/
-#	su -c 'cp -r usr/share/* /usr/share/'
-#	su -c 'cp -r usr/bin/* /usr/bin/'
-#	popd
+	#	echo "Copying files, please wait.."
 
-#	if test -f /usr/local/share/xsessions/awesome.desktop; then
-#		su -c 'mv /usr/local/share/xsessions/awesome.desktop /usr/share/xsessions/awesome.desktop'
-#	fi
+	#	pushd ~/dotfiles
+	#	cp -r home/. ~/
+	#	su -c 'cp -r usr/share/* /usr/share/'
+	#	su -c 'cp -r usr/bin/* /usr/bin/'
+	#	popd
 
-#	if command -v loginctl >/dev/null; then
-#		su -c 'ln -s /etc/sv/dbus /var/service'
-#	fi
+	#	if test -f /usr/local/share/xsessions/awesome.desktop; then
+	#		su -c 'mv /usr/local/share/xsessions/awesome.desktop /usr/share/xsessions/awesome.desktop'
+	#	fi
 
-#	chmod u+x ~/.config/awesome/bin/*
-#	fc-cache -fv
-#	xrdb ~/.Xresources
-#	xdg-user-dirs-update
-#	mkdir ~/Pictures/Screenshots
+	#	if command -v loginctl >/dev/null; then
+	#		su -c 'ln -s /etc/sv/dbus /var/service'
+	#	fi
 
-#	sleep 3; clear
+	#	chmod u+x ~/.config/awesome/bin/*
+	#	fc-cache -fv
+	#	xrdb ~/.Xresources
+	#	xdg-user-dirs-update
+	#	mkdir ~/Pictures/Screenshots
 
-#}
+	#	sleep 3; clear
 
-#########################################################################################
-##                                                                                     ##
-##                                Run Functions                                        ##
-##                                                                                     ##
-#########################################################################################
-function menu() {
-  while true do
-    echo -e "${WHITE} ╔───────────────────────────────────────────────╗"
-    echo -e "${WHITE} |${CYAN} ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗${WHITE} |"
-    echo -e "${WHITE} |${CYAN} ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║${WHITE} |"
-    echo -e "${WHITE} |${CYAN} ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║${WHITE} |"
-    echo -e "${WHITE} |${CYAN} ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║${WHITE} |"
-    echo -e "${WHITE} |${CYAN} ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║${WHITE} |"
-    echo -e "${WHITE} |${CYAN} ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝${WHITE} |"
-    echo -e "${WHITE} ┖───────────────────────────────────────────────┙"
-    echo ""
-    echo -e "${WHITE} [${BLUE}i${WHITE}] BSPWM Auto Setup"
-    echo -e "${WHITE} [${BLUE}i${WHITE}] Ozymandias"
-    echo ""
-    echo -e "${WHITE} [${BLUE}i${WHITE}] Iniciando"
-    echo ""
-    echo ""
-    echo "-------------------------------------------------------------------------------"
-    echo ""
-    echo ""
-    echo -e "${CYAN}[+] Elige el Sistema Operativo en el que deseas instalar ...${NORMAL}"
-    echo -e "${RED}$1: [+] Debian${NORMAL}"
-    echo -e "${BLUE}$2: [+] ArchLinux${NORMAL}"
-    echo -e "${LBLUE}$3: [+] Fedora${NORMAL}"
-    echo -e "${LGREEN}$4: [+] Reiniciar Sistema${NORMAL}"
-    echo -e "${LYELLOW}$5: [!] Salir ...${NORMAL}"
-    echo ""
-    echo ""
-    echo "-------------------------------------------------------------------------------"
-    read -p "${YELLOW}Escribe el numero de la seleccion deseada: " numero
-    case $numero in
-        1) deb_update &&
-          deb_deps &&
-          plangs
-                  ;;
-        2) arch_update &&
-          arch_deps &&
-          plangs
-                  ;;
-        3) rhel_update &&
-          rhel_deps &&
-          plangs
-                  ;;
-        4) sys_reboot
-                  ;;
-        5) exit
-                  ;;
+	#}
 
-#
-esac
-done
-}
+	#########################################################################################
+	##                                                                                     ##
+	##                                Run Functions                                        ##
+	##                                                                                     ##
+	#########################################################################################
+	function menu() {
+		while true; do
+			echo -e "${WHITE} ╔───────────────────────────────────────────────╗"
+			echo -e "${WHITE} |${CYAN} ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗${WHITE} |"
+			echo -e "${WHITE} |${CYAN} ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║${WHITE} |"
+			echo -e "${WHITE} |${CYAN} ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║${WHITE} |"
+			echo -e "${WHITE} |${CYAN} ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║${WHITE} |"
+			echo -e "${WHITE} |${CYAN} ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║${WHITE} |"
+			echo -e "${WHITE} |${CYAN} ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝${WHITE} |"
+			echo -e "${WHITE} ┖───────────────────────────────────────────────┙"
+			echo ""
+			echo -e "${WHITE} [${BLUE}i${WHITE}] BSPWM Auto Setup"
+			echo -e "${WHITE} [${BLUE}i${WHITE}] Ozymandias"
+			echo ""
+			echo -e "${WHITE} [${BLUE}i${WHITE}] Iniciando"
+			echo ""
+			echo ""
+			echo "-------------------------------------------------------------------------------"
+			echo ""
+			echo ""
+			echo -e "${CYAN}[+] Elige el Sistema Operativo en el que deseas instalar ...${NORMAL}"
+			echo -e "${RED} 1: [+] Debian${NORMAL}"
+			echo -e "${BLUE} 2: [+] ArchLinux${NORMAL}"
+			echo -e "${BLUE} 3: [+] Reparar Errores de PACMAN${NORMAL}"
+			echo -e "${LBLUE} 4: [+] Fedora${NORMAL}"
+			echo -e "${LGREEN} 5: [+] Reiniciar Sistema${NORMAL}"
+			echo -e "${LYELLOW} 6: [!] Salir ...${NORMAL}"
+			echo ""
+			echo ""
+			echo "-------------------------------------------------------------------------------"
+			read -p "Escribe el numero de la seleccion deseada: " numero
+			case $numero in
+			1)
+				deb_update &&
+					deb_deps &&
+					plangs
+				;;
+			2)
+				arch_update &&
+					arch_update &&
+					arch_deps &&
+					plangs
+				;;
+			3)
+				arch_fix
+				;;
+			4)
+				rhel_update &&
+					rhel_deps &&
+					plangs
+				;;
+			5)
+				sys_reboot
+				;;
+			6)
+				exit
+				;;
 
+			esac
+		done
+	}
+	menu
+fi
 #########################################################################################
 ##                                                                                     ##
 ##                                End                                                  ##
@@ -353,4 +419,4 @@ done
 #  clear
 #else
 #  exit
-#fi
+#
